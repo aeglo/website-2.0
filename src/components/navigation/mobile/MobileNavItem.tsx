@@ -6,7 +6,7 @@ import { NextChakraLink } from "../NextChakraLink";
 interface MobileNavItemProps {}
 
 export const MobileNavItem: React.FC<MobileNavItemProps> = ({ label, href }: NavigationItem) => {
-  const { isOpen, onToggle } = useDisclosure();
+  const { onToggle } = useDisclosure();
 
   return (
     <Stack spacing={4} onClick={onToggle}>
@@ -19,7 +19,7 @@ export const MobileNavItem: React.FC<MobileNavItemProps> = ({ label, href }: Nav
         }}
       >
         <NextChakraLink href={href}>
-          <Text fontWeight={600} color={useColorModeValue("gray.600", "gray.200")}>
+          <Text fontWeight={600} color="main">
             {label}
           </Text>
         </NextChakraLink>

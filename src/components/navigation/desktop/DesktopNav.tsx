@@ -8,9 +8,6 @@ interface DesktopNavProps {
 }
 
 export const DesktopNav: React.FC<DesktopNavProps> = ({ navigationItems }: DesktopNavProps) => {
-  const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
-
   return (
     <Stack direction={"row"} spacing={4}>
       {navigationItems.map((navItem) => (
@@ -22,11 +19,11 @@ export const DesktopNav: React.FC<DesktopNavProps> = ({ navigationItems }: Deskt
                 href={navItem.href ?? "#"}
                 fontSize={"lg"}
                 fontWeight={500}
-                color={linkColor}
+                color="main"
                 target={navItem.target}
                 _hover={{
                   textDecoration: "none",
-                  color: linkHoverColor
+                  color: "secondary"
                 }}
               >
                 {navItem.label}
