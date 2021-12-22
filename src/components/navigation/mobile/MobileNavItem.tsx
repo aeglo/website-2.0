@@ -1,4 +1,4 @@
-import { Flex, Stack, Text, useColorModeValue, useDisclosure } from "@chakra-ui/react";
+import { Flex, Stack, Text, useDisclosure } from "@chakra-ui/react";
 import React from "react";
 import { NavigationItem } from "../NavBar";
 import { NextChakraLink } from "../NextChakraLink";

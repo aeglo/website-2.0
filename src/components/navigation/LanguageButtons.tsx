@@ -11,7 +11,7 @@ export const LanguageButtons: React.FC<LanguageButtonsProps> = ({}) => {
 
   return (
     <Menu>
-      <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+      <MenuButton as={Button} background="none" rightIcon={<ChevronDownIcon />}>
         {currentLocale.toUpperCase()}
       </MenuButton>
       <MenuList>
