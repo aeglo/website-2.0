@@ -2430,6 +2430,11 @@ react-style-singleton@^2.1.0:
     invariant "^2.2.4"
     tslib "^1.0.0"
 
+react-use-system-theme@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-use-system-theme/-/react-use-system-theme-1.1.1.tgz#90f21cc8182fec86e22584ce5c11d54d1f1decc3"
+  integrity sha512-Mlohol/QkEIbIKt8lXJP0iVvRAgOMml2iZ+bwvE1KpQFAG5DKJGFjZmEqebdj7WCu24u+34kpMtFDGMb4+5uSA==
+
 react@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
