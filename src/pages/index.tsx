@@ -1,15 +1,13 @@
 import type { GetStaticProps } from "next";
 import { I18nProps, useI18n } from "next-rosetta";
-import { useRouter } from "next/dist/client/router";
 import Head from "next/head";
 import React from "react";
+import useSystemTheme from 'react-use-system-theme';
 import { Hero } from "../components/Hero";
 import type { AegloLocale } from "../i18n";
 import { Layout } from "../layout/Layout";
-import useSystemTheme from 'react-use-system-theme';
 
 const Index = () => {
-  const { locale, locales, asPath } = useRouter();
   const i18n = useI18n<AegloLocale>();
   const { t } = i18n;
   const systemTheme = useSystemTheme();
