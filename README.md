@@ -3,8 +3,6 @@
 
 </h1></a>
 
-<!---> TODO Remplacer le link par http://aeglo.ift.ulaval.ca/ quand la migration va etre faite<--->
-
 <br/>
 
 <p align="center">AEGLO's website made with <b>React</b>, <b>Next.js</b> and <b>Typescript</b></p>
