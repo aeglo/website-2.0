@@ -67,16 +67,19 @@ export default function NavBar() {
           />
         </Flex>
 
-        <Logo />
+        <Flex paddingLeft={{ base: 0, md: "32px" }}>
+          <Logo />
+        </Flex>
+
         <Flex flex={{ base: 1 }} justify="center">
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav navigationItems={NAV_ITEMS} />
           </Flex>
         </Flex>
 
-        <Stack flex={{ base: 1, md: 0 }} justify={"flex-end"} direction={"row"} spacing={6}>
+        <Flex flex={{ base: 1, md: 0 }} justify={"flex-end"} paddingRight={{ base: 0, md: 32 }}>
           <LanguageButtons />
-        </Stack>
+        </Flex>
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
