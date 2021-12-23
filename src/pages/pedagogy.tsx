@@ -1,3 +1,4 @@
+import { Heading } from "@chakra-ui/layout";
 import type { GetStaticProps } from "next";
 import { I18nProps, useI18n } from "next-rosetta";
 import Head from "next/head";
@@ -9,9 +10,8 @@ import { Hero } from "../components/Hero";
 import useEvents from "../hooks/useEvents";
 import type { AegloLocale } from "../i18n";
 import { Layout } from "../layout/Layout";
-import { AspectRatio, Image } from "@chakra-ui/react";
 
-const Index = () => {
+const Pedagogy = () => {
   const { locale } = useRouter();
   const i18n = useI18n<AegloLocale>();
   const { t } = i18n;
@@ -23,7 +23,7 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>{"AEGLO - " + t("navigation.home")}</title>
+        <title>{"AEGLO - " + t("navigation.pedagogy")}</title>
         {systemTheme !== "dark" && (
           <>
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon_dark/favicon-32x32.png" />
@@ -44,16 +44,12 @@ const Index = () => {
         )}
       </Head>
       <Layout>
-        <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
-        <AspectRatio width="90vw" ratio={16 / 8}>
-          <Image src="images/background_home.png" alt="Home image" />
-        </AspectRatio>
-        <EventSection title={t("events.title")} eventItems={events} locale={locale} />
+        <Hero title={t("pedagogy.title")} subtitle={t("pedagogy.subtitle")} />
       </Layout>
     </>
   );
 };
-export default Index;
+export default Pedagogy;
 
 export const getStaticProps: GetStaticProps<I18nProps<AegloLocale>> = async (context) => {
   const locale = context.locale || context.defaultLocale;

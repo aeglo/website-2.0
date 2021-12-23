@@ -1,10 +1,10 @@
 import { Link, Stack } from "@chakra-ui/layout";
 import { Box, IconButton } from "@chakra-ui/react";
 import React from "react";
-import { DiscordIcon } from "../icons/DiscordIcon";
-import { FacebookIcon } from "../icons/FacebookIcon";
-import { GithubIcon } from "../icons/GithubIcon";
-import { LinkedInIcon } from "../icons/LinkedInIcon";
+import { DiscordIcon } from "../../icons/DiscordIcon";
+import { FacebookIcon } from "../../icons/FacebookIcon";
+import { GithubIcon } from "../../icons/GithubIcon";
+import { LinkedInIcon } from "../../icons/LinkedInIcon";
 
 interface SocialMediasProps {
   direction: "row" | "column";

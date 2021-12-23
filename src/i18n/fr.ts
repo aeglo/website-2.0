@@ -39,12 +39,37 @@ export const table: AegloLocale = {
       grid: "",
       department: "",
       facebook: ""
-    },
-    footer: {
-      address: "Pavillon Alexandre Vachon - Local 00113",
-      email: "",
-      follow: "",
-      madeBy: ""
     }
+  },
+  pedagogy: {
+    title: "Pédagogie",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor.",
+    comity: {
+      title: "Comité de programme",
+      descrition:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor."
+    },
+    reprensentative: {
+      title: "Représentant aux affaires pédagogiques",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor."
+    },
+    documents: {
+      title: "Documents utiles",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor."
+    },
+    problem: {
+      title: "Traitement d'une problématique",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor."
+    }
+  },
+  footer: {
+    address: "Pavillon Alexandre Vachon - Local 00113",
+    email: "",
+    follow: "",
+    madeBy: ""
   }
 };

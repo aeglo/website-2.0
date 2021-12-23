@@ -37,11 +37,31 @@ export interface AegloLocale {
       department: string;
       facebook: string;
     };
-    footer: {
-      address: string;
-      email: string;
-      follow: string;
-      madeBy: string;
+  };
+  pedagogy: {
+    title: string;
+    subtitle: string;
+    comity: {
+      title: string;
+      descrition: string;
     };
+    reprensentative: {
+      title: string;
+      description: string;
+    };
+    documents: {
+      title: string;
+      description: string;
+    };
+    problem: {
+      title: string;
+      description: string;
+    };
+  };
+  footer: {
+    address: string;
+    email: string;
+    follow: string;
+    madeBy: string;
   };
 }

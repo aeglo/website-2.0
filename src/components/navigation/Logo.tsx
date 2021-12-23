@@ -7,7 +7,7 @@ interface LogoProps {}
 
 export const Logo: React.FC<LogoProps> = ({}) => {
   return (
-    <NextChakraLink href="#">
+    <NextChakraLink href="/">
       <AegloLogoFull boxSize={36} />
     </NextChakraLink>
   );

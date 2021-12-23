@@ -1,4 +1,4 @@
-import { Event } from "../components/EventSection";
+import { Event } from "../components/home/EventSection";
 
 interface RawEvent {
   date: string;
