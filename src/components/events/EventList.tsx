@@ -5,13 +5,14 @@ import { EventItem } from "./EventItem";
 
 interface EventListProps {
   events: Event[];
+  locale: string;
 }
 
-export const EventList: React.FC<EventListProps> = ({ events }) => {
+export const EventList: React.FC<EventListProps> = ({ events, locale }) => {
   return (
     <EventCarousel gap={32}>
       {events.map((event, index) => (
-        <EventItem event={event} key={index} />
+        <EventItem key={index} event={event} locale={locale} />
       ))}
     </EventCarousel>
   );

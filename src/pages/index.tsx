@@ -44,7 +44,7 @@ const Index = () => {
       </Head>
       <Layout>
         <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
-        <EventSection title={t("events.title")} eventItems={events} />
+        <EventSection title={t("events.title")} eventItems={events} locale={locale} />
       </Layout>
     </>
   );
