@@ -6,7 +6,7 @@ import React from "react";
 import useSystemTheme from "react-use-system-theme";
 import { EventSection } from "../components/EventSection";
 import { Hero } from "../components/Hero";
-import { useEvents } from "../hooks";
+import useEvents from "../hooks/useEvents";
 import type { AegloLocale } from "../i18n";
 import { Layout } from "../layout/Layout";
 

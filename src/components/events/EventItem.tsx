@@ -1,7 +1,8 @@
 import { Link, Text } from "@chakra-ui/layout";
 import { Flex, Heading, VStack } from "@chakra-ui/react";
 import React from "react";
-import { getMonthFromDate, getWeekdayFromDate } from "../../utils";
+import getMonthFromDate from "../../utils/getMonthFromDate";
+import getWeekdayFromDate from "../../utils/getWeekdayFromDate";
 import { Event } from "../EventSection";
 
 interface EventItemProps {
