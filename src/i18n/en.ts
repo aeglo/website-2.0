@@ -58,7 +58,7 @@ export const table: AegloLocale = {
     documents: {
       title: "Useful documents",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae facilisis tellus. Proin lacinia purus sit amet enim efficitur ullamcorper. Pellentesque molestie commodo diam, ut aliquet quam tincidunt nec. Duis magna augue, sollicitudin eu sodales vel, vestibulum in dolor. Sed et accumsan nisi. In nec sapien at velit vestibulum porttitor. Sed finibus vulputate purus, eget posuere lectus pellentesque non. Quisque ut diam nec enim consectetur pulvinar sed ac lectus. Curabitur fermentum nunc in nisl accumsan pharetra. Aliquam erat volutpat. Morbi mollis cursus libero, sed feugiat eros luctus ut. Quisque facilisis neque ultricies eros venenatis vestibulum. Phasellus nec ante a ex aliquet molestie. Nunc magna orci, dictum sed porta eu, lacinia luctus nibh. Cras ac sollicitudin lectus. Sed nec orci et urna dictum consectetur nec eget purus. Aliquam erat volutpat."
     },
     problem: {
       title: "Solving an issue",

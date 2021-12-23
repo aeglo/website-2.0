@@ -8,6 +8,7 @@ import { Hero } from "../components/Hero";
 import { FileIcon } from "../components/icons/FileIcon";
 import { UserIcon } from "../components/icons/UserIcon";
 import { UsersThreeIcon } from "../components/icons/UsersThreeIcon";
+import { ProblemSolvingSection } from "../components/pedagogy/ProblemSolvingSection";
 import { SectionItem } from "../components/pedagogy/SectionItem";
 import { SectionList } from "../components/pedagogy/SectionList";
 import type { AegloLocale } from "../i18n";
@@ -68,6 +69,7 @@ const Pedagogy = () => {
       <Layout>
         <Hero title={t("pedagogy.title")} subtitle={t("pedagogy.subtitle")} />
         <SectionList sections={SECTIONS} />
+        <ProblemSolvingSection title={t("pedagogy.problem.title")} subtitle={t("pedagogy.problem.description")} />
       </Layout>
     </>
   );
