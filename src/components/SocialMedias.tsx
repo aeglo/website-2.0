@@ -41,7 +41,7 @@ export const SocialMedias: React.FC<SocialMediasProps> = ({}) => {
   // TODO find a way to stick to the right without using margins
   // TODO Find a way to have hero under this component
   return (
-    <Box sx={{ position: "sticky", top: "25%" }} marginLeft="90%" marginRight="32px">
+    <Box sx={{ position: "sticky", top: "25%" }} marginLeft="90%" marginRight="32px" display={{ base: "none", md: "grid" }}>
       <Stack direction="column" spacing={4}>
         {SOCIAL_MEDIAS.map((media) => (
           <Link key={media.name} href={media.href} isExternal>
