@@ -3,7 +3,8 @@ import { css, Global } from "@emotion/react";
 import "focus-visible/dist/focus-visible";
 import { I18nProvider } from "next-rosetta";
 import { AppProps } from "next/app";
-import theme from "../theme";
+import theme from "../theme/theme";
+import Fonts from '../theme/fonts'
 
 const GlobalStyles = css`
   /*
@@ -20,6 +21,7 @@ const GlobalStyles = css`
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
+      <Fonts />
       <I18nProvider table={pageProps.table}>
         <Global styles={GlobalStyles} />
         <Component {...pageProps} />
