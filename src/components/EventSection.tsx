@@ -14,6 +14,7 @@ export interface Event {
   time: string;
   title: string;
   location: string;
+  link: string;
 }
 
 export const EventSection: React.FC<EventSectionProps> = ({ title, eventItems, locale }) => {

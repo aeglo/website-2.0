@@ -1,5 +1,5 @@
-import { Text, Box } from "@chakra-ui/layout";
-import { Flex, VStack, Heading, HStack, Tag, Button } from "@chakra-ui/react";
+import { Link, Text } from "@chakra-ui/layout";
+import { Flex, Heading, VStack } from "@chakra-ui/react";
 import React from "react";
 import { getMonthFromDate, getWeekdayFromDate } from "../../utils";
 import { Event } from "../EventSection";
@@ -14,9 +14,10 @@ export const EventItem: React.FC<EventItemProps> = ({ event, key, locale }) => {
   const eventDay = getWeekdayFromDate(event.date, locale);
   const eventDate = `${event.date.getDate()} ${getMonthFromDate(event.date, locale)}`;
 
+  console.log(event.link);
+
   return (
     <Flex
-      key={key}
       boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
       justifyContent="left"
       flexDirection="column"
@@ -31,13 +32,19 @@ export const EventItem: React.FC<EventItemProps> = ({ event, key, locale }) => {
         <Text color="secondary" fontSize="xl">
           {eventDay}
         </Text>
+
         <Heading fontSize="4xl">{eventDate}</Heading>
+
         <Text fontSize="lg" fontWeight="semibold">
           {event.time}
         </Text>
-        <Heading color="secondary" fontSize="5xl">
-          {event.title}
-        </Heading>
+
+        <Link key={key} href={event.link} isExternal>
+          <Heading color="secondary" fontSize="5xl">
+            {event.title}
+          </Heading>
+        </Link>
+
         <Text fontSize="lg" fontWeight="semibold">
           {event.location}
         </Text>
