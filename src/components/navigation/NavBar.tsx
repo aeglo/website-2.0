@@ -22,15 +22,15 @@ export default function NavBar() {
   const NAV_ITEMS: Array<NavigationItem> = [
     {
       label: t("navigation.home"),
-      href: "#home"
+      href: "/"
     },
     {
       label: t("navigation.members"),
-      href: "#members"
+      href: "/#members"
     },
     {
       label: t("navigation.partners"),
-      href: "#partners"
+      href: "/#partners"
     },
     {
       label: t("navigation.pedagogy"),
