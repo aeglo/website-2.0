@@ -19,12 +19,12 @@ export const SocialMedias: React.FC<SocialMediasProps> = ({}) => {
     {
       name: "Discord",
       href: "https://discord.gg/3VenuWm",
-      icon: <DiscordIcon boxSize={8} />
+      icon: <DiscordIcon boxSize={10} />
     },
     {
       name: "Facebook",
       href: "https://www.facebook.com/AEGLO-101893238568874/",
-      icon: <FacebookIcon boxSize={8} />
+      icon: <FacebookIcon boxSize={10} />
     },
     {
       name: "LinkedIn",
