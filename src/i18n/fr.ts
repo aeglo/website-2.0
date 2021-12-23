@@ -12,7 +12,8 @@ export const table: AegloLocale = {
   },
   hero: {
     title: "Bienvenue sur le site web de l'AEGLO",
-    subtitle: "",
+    subtitle:
+      "Bienvenue sur le site officiel de l'AEGLO, votre association étudiante. Vous trouverez ici les liens vers toutes les ressources importantes en lien avec le baccalauréat en génie logiciel de l'Université Laval ainsi que les événements, sorties et  partys.",
     eventTitle: "",
     membersTitle: "",
     membersSubtitle: "",

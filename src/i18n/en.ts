@@ -12,7 +12,8 @@ export const table: AegloLocale = {
   },
   hero: {
     title: "Welcome to the AEGLO website",
-    subtitle: "",
+    subtitle:
+      "Welcome to the AEGLO's, your students' association, website. You will find here all resources related to the software engineering degree at Laval University as well as our events and parties.",
     eventTitle: "",
     membersTitle: "",
     membersSubtitle: "",

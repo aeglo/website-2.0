@@ -1,13 +1,13 @@
 import React from "react";
 import { Footer } from "../components/Footer";
+import { DesktopMediaOverlay } from "../components/medias/DesktopMediaOverlay";
 import NavBar from "../components/navigation/NavBar";
-import { SocialMedias } from "../components/SocialMedias";
 
 export const Layout = ({ children }) => {
   return (
     <>
       <NavBar />
-      <SocialMedias />
+      <DesktopMediaOverlay />
       {children}
       <Footer />
     </>
