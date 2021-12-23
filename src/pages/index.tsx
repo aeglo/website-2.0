@@ -1,22 +1,29 @@
 import type { GetStaticProps } from "next";
 import { I18nProps, useI18n } from "next-rosetta";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import React from "react";
-import useSystemTheme from 'react-use-system-theme';
+import useSystemTheme from "react-use-system-theme";
+import { EventSection } from "../components/EventSection";
 import { Hero } from "../components/Hero";
+import { useEvents } from "../hooks/useEvents";
 import type { AegloLocale } from "../i18n";
 import { Layout } from "../layout/Layout";
 
 const Index = () => {
+  const { locale } = useRouter();
   const i18n = useI18n<AegloLocale>();
   const { t } = i18n;
+
   const systemTheme = useSystemTheme();
+
+  const events = useEvents(locale);
 
   return (
     <>
       <Head>
         <title>{"AEGLO - " + t("navigation.home")}</title>
-        {systemTheme !== 'dark' && (
+        {systemTheme !== "dark" && (
           <>
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon_dark/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon_dark/favicon-16x16.png" />
@@ -25,7 +32,7 @@ const Index = () => {
             <meta name="theme-color" content="#ffffff" />
           </>
         )}
-        {systemTheme === 'dark' && (
+        {systemTheme === "dark" && (
           <>
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon_light/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon_light/favicon-16x16.png" />
@@ -37,6 +44,7 @@ const Index = () => {
       </Head>
       <Layout>
         <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
+        <EventSection title={t("events.title")} eventItems={events} />
       </Layout>
     </>
   );

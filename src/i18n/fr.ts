@@ -22,7 +22,7 @@ export const table: AegloLocale = {
     linksSubtitle: ""
   },
   events: {
-    title: ""
+    title: "Événements à venir"
   },
   members: {
     title: "",
