@@ -21,27 +21,28 @@ export const SocialMedias: React.FC<SocialMediasProps> = ({ direction }) => {
     {
       name: "Discord",
       href: "https://discord.gg/3VenuWm",
-      icon: <DiscordIcon boxSize={10} />
+      icon: <DiscordIcon boxSize={8} />
     },
     {
       name: "Facebook",
       href: "https://www.facebook.com/AEGLO-101893238568874/",
-      icon: <FacebookIcon boxSize={10} />
+      icon: <FacebookIcon boxSize={7} />
     },
     {
       name: "LinkedIn",
       href: "https://www.linkedin.com/company/19022634",
-      icon: <LinkedInIcon boxSize={8} />
+      icon: <LinkedInIcon boxSize={6} />
     },
     {
       name: "Github",
       href: "https://github.com/aeglo",
-      icon: <GithubIcon boxSize={12} />
+      icon: <GithubIcon boxSize={10} />
     }
   ];
 
   // TODO find a way to stick to the right without using margins
   // TODO Find a way to have hero under this component
+  // TODO Fix bug where buttons dissapear when clicking on it
   return (
     <Stack direction={direction} spacing={4}>
       {SOCIAL_MEDIAS.map((media) => (
@@ -51,9 +52,10 @@ export const SocialMedias: React.FC<SocialMediasProps> = ({ direction }) => {
             icon={media.icon}
             borderRadius="50%"
             padding={6}
-            boxSize={16}
+            boxSize={8}
             backgroundColor="black"
             _hover={{ backgroundColor: "secondary" }}
+            _focus={{ backgroundColor: "secondary" }}
           />
         </Link>
       ))}

@@ -6,7 +6,7 @@ interface MobileMediaOverlayProps {}
 
 export const MobileMediaOverlay: React.FC<MobileMediaOverlayProps> = ({}) => {
   return (
-    <Box sx={{ position: "sticky", top: "25%" }} marginLeft="90%" marginRight="32px" display={{ base: "grid", md: "none" }}>
+    <Box justifyItems="center" display={{ base: "grid", md: "none" }}>
       <SocialMedias direction="row" />
     </Box>
   );
