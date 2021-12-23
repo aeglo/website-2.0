@@ -38,12 +38,13 @@ export interface AegloLocale {
       facebook: string;
     };
   };
+
   pedagogy: {
     title: string;
     subtitle: string;
     comity: {
       title: string;
-      descrition: string;
+      description: string;
     };
     reprensentative: {
       title: string;

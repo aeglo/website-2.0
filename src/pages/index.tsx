@@ -10,6 +10,8 @@ import useEvents from "../hooks/useEvents";
 import type { AegloLocale } from "../i18n";
 import { Layout } from "../layout/Layout";
 import { AspectRatio, Image } from "@chakra-ui/react";
+import { DesktopMediaOverlay } from "../components/home/medias/DesktopMediaOverlay";
+import { MobileMediaOverlay } from "../components/home/medias/MobileMediaOverlay";
 
 const Index = () => {
   const { locale } = useRouter();
@@ -44,7 +46,9 @@ const Index = () => {
         )}
       </Head>
       <Layout>
+        <DesktopMediaOverlay />
         <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
+        <MobileMediaOverlay />
         <AspectRatio width="90vw" ratio={16 / 8}>
           <Image src="images/background_home.png" alt="Home image" />
         </AspectRatio>

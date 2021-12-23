@@ -47,7 +47,7 @@ export const table: AegloLocale = {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor.",
     comity: {
       title: "Degree comity",
-      descrition:
+      description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor."
     },
     reprensentative: {
