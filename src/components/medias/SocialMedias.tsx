@@ -50,7 +50,7 @@ export const SocialMedias: React.FC<SocialMediasProps> = ({ direction }) => {
           <IconButton
             aria-label={media.name}
             icon={media.icon}
-            borderRadius="50%"
+            borderRadius="full"
             padding={6}
             boxSize={8}
             backgroundColor="black"
