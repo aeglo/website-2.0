@@ -7,7 +7,7 @@ interface RawEvent {
   location: string;
 }
 
-export const useEvents = (locale: string) => {
+const useEvents = (locale: string) => {
   const events: RawEvent[] = require("../data/events.json");
 
   // TODO refactor ca ptetre c'est pas tant nice
@@ -22,3 +22,5 @@ export const useEvents = (locale: string) => {
       return [];
   }
 };
+
+export default useEvents;
