@@ -8,11 +8,12 @@ interface HeroProps {
 
 export const Hero = ({ title, subtitle }: HeroProps) => {
   return (
-    <Box id="home" justify="start" height="40vh" paddingX="25%" paddingTop="10vh">
-      <Heading fontSize="2vw">{title}</Heading>
+    <Box id="home" justify="start" height="40vh" paddingX={{ base: "5vw", md: "25%" }} paddingTop={{ base: 0, md: "10vh" }}>
+      <Heading fontSize="4xl">{title}</Heading>
       <Text marginTop="2vh" fontWeight="semibold">
         {subtitle}
       </Text>
     </Box>
   );
+  // TODO Add photoshopped picture
 };
