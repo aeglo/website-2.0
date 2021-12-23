@@ -11,10 +11,10 @@ export const LanguageButtons: React.FC<LanguageButtonsProps> = ({}) => {
 
   return (
     <Menu>
-      <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+      <MenuButton as={Button} background="none" rightIcon={<ChevronDownIcon />}>
         {currentLocale.toUpperCase()}
       </MenuButton>
-      <MenuList>
+      <MenuList minWidth="5rem">
         {locales.map((locale) => (
           <MenuItem key={locale} onClick={() => router.push({ pathname, query }, asPath, { locale: locale })}>
             {locale.toUpperCase()}
