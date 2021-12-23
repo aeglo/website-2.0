@@ -1,4 +1,5 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import React from "react";
 
 interface HeroProps {
   title: string;
@@ -7,8 +8,11 @@ interface HeroProps {
 
 export const Hero = ({ title, subtitle }: HeroProps) => {
   return (
-    <Flex id="home" justifyContent="center" alignItems="center" height="100vh" bgGradient="linear(to-l, #7928CA, #FF0080)" bgClip="text">
-      <Heading fontSize="6vw">{title}</Heading>
-    </Flex>
+    <Box id="home" justify="start" height="40vh" paddingX="25%" paddingTop="10vh">
+      <Heading fontSize="2vw">{title}</Heading>
+      <Text marginTop="2vh" fontWeight="semibold">
+        {subtitle}
+      </Text>
+    </Box>
   );
 };
