@@ -1,79 +1,72 @@
 [
   {
-    "name": "Laurent Aubin",
-    "roleFR": "Représentant aux affaires pédagogiques",
-    "roleEN": "Educational affairs representative",
-    "pictureUrl": "/images/laurent.png",
-    "email": "laaub14@ulaval.ca"
+    "name": "Fabien Poulin",
+    "roleFR": "Président",
+    "roleEN": "President",
+    "pictureUrl": "/images/reps/fabien.jpg",
+    "email": "president-aeglo@ift.ulaval.ca"
+  },
+  {
+    "name": "Erika Bouret",
+    "roleFR": "Secrétaire-trésorière",
+    "roleEN": "Secretary-treasurer",
+    "pictureUrl": "/images/reps/erika.jpg",
+    "email": "tresorier.aeglo@ift.ulaval.ca"
+  },
+  {
+    "name": "Marc-Antoine Robin",
+    "roleFR": "Représentant aux commandites",
+    "roleEN": "Partnerships representative",
+    "pictureUrl": "/images/reps/marc-antoine.jpg",
+    "email": "commandite.aeglo@ift.ulaval.ca"
+  },
+  {
+    "name": "Christophe Duchesne",
+    "roleFR": "Représentant aux communications",
+    "roleEN": "Communications representative",
+    "pictureUrl": "/images/reps/christo.jpg",
+    "email": "aeglo@aeglo.ift.ulaval.ca"
   },
   {
     "name": "Laurent Aubin",
     "roleFR": "Représentant aux affaires pédagogiques",
     "roleEN": "Educational affairs representative",
-    "pictureUrl": "/images/laurent.png",
+    "pictureUrl": "/images/reps/laurent.jpg",
     "email": "laaub14@ulaval.ca"
   },
   {
-    "name": "Laurent Aubin",
-    "roleFR": "Représentant aux affaires pédagogiques",
-    "roleEN": "Educational affairs representative",
-    "pictureUrl": "/images/laurent.png",
-    "email": "laaub14@ulaval.ca"
+    "name": "Vincent Mercier",
+    "roleFR": "Représentant aux affaires socioculturelles",
+    "roleEN": "Sociocultural affairs representative",
+    "pictureUrl": "/images/reps/vincent.jpg",
+    "email": "socioculturelle.aeglo@ift.ulaval.ca"
   },
   {
-    "name": "Laurent Aubin",
-    "roleFR": "Représentant aux affaires pédagogiques",
-    "roleEN": "Educational affairs representative",
-    "pictureUrl": "/images/laurent.png",
-    "email": "laaub14@ulaval.ca"
+    "name": "Corine Bélanger",
+    "roleFR": "Représentant aux affaires finissantes",
+    "roleEN": "Senior affairs representative",
+    "pictureUrl": "/images/reps/corine.jpg",
+    "email": "corine.belanger.1@ulaval.ca"
   },
   {
-    "name": "Laurent Aubin",
-    "roleFR": "Représentant aux affaires pédagogiques",
-    "roleEN": "Educational affairs representative",
-    "pictureUrl": "/images/laurent.png",
-    "email": "laaub14@ulaval.ca"
+    "name": "Laurence Vachon",
+    "roleFR": "Représentant aux affaires externes",
+    "roleEN": "External affairs representative",
+    "pictureUrl": "/images/reps/laurence.jpg",
+    "email": "laurence.vachon.1@ulaval.ca"
   },
   {
-    "name": "Laurent Aubin",
-    "roleFR": "Représentant aux affaires pédagogiques",
-    "roleEN": "Educational affairs representative",
-    "pictureUrl": "/images/laurent.png",
-    "email": "laaub14@ulaval.ca"
+    "name": "Émile Savard",
+    "roleFR": "Représentant génie logiciel",
+    "roleEN": "Software engineering representative",
+    "pictureUrl": "/images/reps/emile.jpg",
+    "email": "aeglo@aeglo.ift.ulaval.ca"
   },
   {
-    "name": "Laurent Aubin",
-    "roleFR": "Représentant aux affaires pédagogiques",
-    "roleEN": "Educational affairs representative",
-    "pictureUrl": "/images/laurent.png",
-    "email": "laaub14@ulaval.ca"
-  },
-  {
-    "name": "Laurent Aubin",
-    "roleFR": "Représentant aux affaires pédagogiques",
-    "roleEN": "Educational affairs representative",
-    "pictureUrl": "/images/laurent.png",
-    "email": "laaub14@ulaval.ca"
-  },
-  {
-    "name": "Laurent Aubin",
-    "roleFR": "Représentant aux affaires pédagogiques",
-    "roleEN": "Educational affairs representative",
-    "pictureUrl": "/images/laurent.png",
-    "email": "laaub14@ulaval.ca"
-  },
-  {
-    "name": "Laurent Aubin",
-    "roleFR": "Représentant aux affaires pédagogiques",
-    "roleEN": "Educational affairs representative",
-    "pictureUrl": "/images/laurent.png",
-    "email": "laaub14@ulaval.ca"
-  },
-  {
-    "name": "Laurent Aubin",
-    "roleFR": "Représentant aux affaires pédagogiques",
-    "roleEN": "Educational affairs representative",
-    "pictureUrl": "/images/laurent.png",
-    "email": "laaub14@ulaval.ca"
+    "name": "Marc-Anthony Girard",
+    "roleFR": "Représentant première année",
+    "roleEN": "First year representative",
+    "pictureUrl": "/images/reps/marc-anthony.jpg",
+    "email": "marc-anthony.girard.1@ulaval.ca"
   }
 ]

@@ -12,13 +12,13 @@ interface RepItemProps {
 
 export const RepItem: React.FC<RepItemProps> = ({ rep }) => {
   return (
-    <VStack>
-      <Avatar src={rep.pictureUrl} />
+    <VStack marginTop={8}>
+      <Avatar src={rep.pictureUrl} boxSize={32} />
       <Text fontSize="xl" fontWeight="semibold">
         {rep.name}
       </Text>
-      <Text>{rep.role}</Text>
-      <Link href={`mailto:${rep.email}`} color="secondary" display="flex">
+      <Text marginTop="0 !important">{rep.role}</Text>
+      <Link href={`mailto:${rep.email}`} color="secondary" display="flex" marginTop="0 !important">
         <EmailIcon />
         <Text marginLeft={2}>{rep.email}</Text>
       </Link>

@@ -10,7 +10,7 @@ interface RepListProps {
 
 export const RepList: React.FC<RepListProps> = ({ reps }) => {
   return (
-    <ItemCarousel gap={32}>
+    <ItemCarousel gap={0}>
       {reps.map((rep, index) => (
         <RepItem key={index} rep={rep} />
       ))}
