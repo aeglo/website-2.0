@@ -71,7 +71,7 @@ export const table: AegloLocale = {
     subtitle:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie laoreet quam eu ultricies. Fusce rhoncus tincidunt augue et condimentum. Aliquam vitae purus in nisi ultricies consequat ac non dui. Cras sollicitudin, leo et scelerisque scelerisque, ligula nisl dapibus mi, id egestas eros dui vel dui. Pellentesque vitae enim lacus. Vivamus sed commodo urna, vitae venenatis augue. Praesent blandit fermentum felis, consectetur fringilla neque maximus et. Sed pellentesque consectetur convallis. Mauris interdum volutpat commodo. Sed mi sem, elementum quis purus nec, venenatis interdum eros. Vivamus id tortor nisl.",
     location: {
-      name: "AEGLO - Laval University",
+      name: "AEGLO - LAVAL UNIVERSITY",
       address: "Pavillon Alexandre Vachon - Room 00113, Laval University, G1V 0A6"
     },
     form: {

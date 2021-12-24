@@ -77,7 +77,7 @@ export const ContactUsForm: React.FC<ContactUsFormProps> = ({
   };
 
   return (
-    <VStack width={{ base: "100%", md: "40%" }} alignItems="start">
+    <VStack width={{ base: "100%", md: "50%" }} alignItems="start">
       <FormControl isRequired isInvalid={isNameInvalid}>
         <FormLabel>{namePlaceholder}</FormLabel>
         <Input value={name} onChange={({ target }) => setName(target.value)} />

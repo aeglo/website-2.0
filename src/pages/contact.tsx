@@ -6,6 +6,7 @@ import Head from "next/head";
 import React from "react";
 import useSystemTheme from "react-use-system-theme";
 import { ContactUsForm } from "../components/contact/ContactUsForm";
+import { GoogleMap } from "../components/contact/GoogleMap";
 import { Hero } from "../components/Hero";
 import type { AegloLocale } from "../i18n";
 import { Layout } from "../layout/Layout";
@@ -40,7 +41,12 @@ const Contact = () => {
       </Head>
       <Layout>
         <Hero title={t("contact.title")} subtitle={t("contact.subtitle")} />
-        <Stack direction={{ base: "column", md: "row" }} marginX={12}>
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          marginX={{ base: 8, md: 24 }}
+          marginY={{ base: 8, md: 24 }}
+          spacing={{ base: 12, md: 36 }}
+        >
           <ContactUsForm
             namePlaceholder={t("contact.form.name")}
             emailPlaceholder={t("contact.form.email")}
@@ -48,6 +54,7 @@ const Contact = () => {
             buttonText={t("contact.form.button")}
             errorText={t("contact.form.errorMessage")}
           />
+          <GoogleMap title={t("contact.location.name")} address={t("contact.location.address")} />
         </Stack>
       </Layout>
     </>
