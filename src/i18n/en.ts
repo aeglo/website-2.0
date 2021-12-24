@@ -29,7 +29,7 @@ export const table: AegloLocale = {
     subtitle: ""
   },
   partners: {
-    title: ""
+    title: "Our partners"
   },
   links: {
     title: "",
