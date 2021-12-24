@@ -54,8 +54,8 @@ export const SocialMedias: React.FC<SocialMediasProps> = ({ direction }) => {
             padding={6}
             boxSize={8}
             backgroundColor="black"
-            _hover={{ backgroundColor: "secondary" }}
-            _focus={{ backgroundColor: "secondary" }}
+            _hover={{ backgroundColor: "secondary.default" }}
+            _focus={{ backgroundColor: "secondary.default" }}
           />
         </Link>
       ))}

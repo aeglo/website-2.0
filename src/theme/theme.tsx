@@ -12,7 +12,10 @@ const theme = extendTheme({
   colors: {
     black: "#16161D",
     main: "#242A2D",
-    secondary: "#0577FF",
+    secondary: {
+      default: "#0577FF",
+      hover: "#6baeff"
+    },
     dark: "#1c1d2c"
   },
   fonts: {

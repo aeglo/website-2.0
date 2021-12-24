@@ -29,7 +29,7 @@ export const table: AegloLocale = {
     subtitle: "Below are the wonderful people making our team here to help you and plan activities !"
   },
   partners: {
-    title: ""
+    title: "Our partners"
   },
   links: {
     title: "",
@@ -64,6 +64,22 @@ export const table: AegloLocale = {
       title: "Solving an issue",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor."
+    }
+  },
+  contact: {
+    title: "Contact us",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie laoreet quam eu ultricies. Fusce rhoncus tincidunt augue et condimentum. Aliquam vitae purus in nisi ultricies consequat ac non dui. Cras sollicitudin, leo et scelerisque scelerisque, ligula nisl dapibus mi, id egestas eros dui vel dui. Pellentesque vitae enim lacus. Vivamus sed commodo urna, vitae venenatis augue. Praesent blandit fermentum felis, consectetur fringilla neque maximus et. Sed pellentesque consectetur convallis. Mauris interdum volutpat commodo. Sed mi sem, elementum quis purus nec, venenatis interdum eros. Vivamus id tortor nisl.",
+    location: {
+      name: "AEGLO - LAVAL UNIVERSITY",
+      address: "Pavillon Alexandre Vachon - Room 00113, Laval University, G1V 0A6"
+    },
+    form: {
+      name: "First and last name",
+      email: "Email address",
+      body: "Message",
+      button: "Send message",
+      errorMessage: "Something went wrong. Please try again or contact us directly at aeglo@aeglo.ift.ulaval.ca"
     }
   },
   footer: {

@@ -58,6 +58,21 @@ export interface AegloLocale {
       description: string;
     };
   };
+  contact: {
+    title: string;
+    subtitle: string;
+    location: {
+      name: string;
+      address: string;
+    };
+    form: {
+      name: string;
+      email: string;
+      body: string;
+      button: string;
+      errorMessage: string;
+    };
+  };
   footer: {
     address: string;
     email: string;

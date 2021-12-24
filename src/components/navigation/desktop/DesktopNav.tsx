@@ -23,7 +23,7 @@ export const DesktopNav: React.FC<DesktopNavProps> = ({ navigationItems }: Deskt
                 target={navItem.target}
                 _hover={{
                   textDecoration: "none",
-                  color: "secondary"
+                  color: "secondary.default"
                 }}
               >
                 {navItem.label}

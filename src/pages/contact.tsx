@@ -1,38 +1,27 @@
+import { HStack, Stack } from "@chakra-ui/layout";
+import { Center } from "@chakra-ui/react";
 import type { GetStaticProps } from "next";
 import { I18nProps, useI18n } from "next-rosetta";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import React from "react";
 import useSystemTheme from "react-use-system-theme";
-import { EventSection } from "../components/home/EventSection";
+import { ContactUsForm } from "../components/contact/ContactUsForm";
+import { GoogleMap } from "../components/contact/GoogleMap";
 import { Hero } from "../components/Hero";
-import useEvents from "../hooks/useEvents";
 import type { AegloLocale } from "../i18n";
 import { Layout } from "../layout/Layout";
-import { AspectRatio, Image } from "@chakra-ui/react";
-import { DesktopMediaOverlay } from "../components/home/medias/DesktopMediaOverlay";
-import { MobileMediaOverlay } from "../components/home/medias/MobileMediaOverlay";
-import { PartnersSection } from "../components/home/PartnersSection";
-import { RepresentativesSecion as RepresentativesSection } from "../components/home/RepresentativesSection";
-import { usePartners } from "../hooks/usePartners";
-import { useReps } from "../hooks/useReps";
 
-const Index = () => {
-  const { locale } = useRouter();
+const Contact = () => {
   const i18n = useI18n<AegloLocale>();
   const { t } = i18n;
 
   const systemTheme = useSystemTheme();
 
-  const reps = useReps(locale);
-  const events = useEvents(locale);
-  const partners = usePartners();
-
   return (
     <>
       <Head>
-        <title>{"AEGLO - " + t("navigation.home")}</title>
-        {systemTheme !== "dark" && (
+        <title>{"AEGLO - " + t("navigation.pedagogy")}</title>
+        {systemTheme !== "dark" ? (
           <>
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon_dark/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon_dark/favicon-16x16.png" />
@@ -40,8 +29,7 @@ const Index = () => {
             <link rel="manifest" href="/favicon_dark/site.webmanifest" />
             <meta name="theme-color" content="#ffffff" />
           </>
-        )}
-        {systemTheme === "dark" && (
+        ) : (
           <>
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon_light/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon_light/favicon-16x16.png" />
@@ -52,20 +40,28 @@ const Index = () => {
         )}
       </Head>
       <Layout>
-        <DesktopMediaOverlay />
-        <Hero title={t("hero.title")} subtitle={t("hero.subtitle")} />
-        <MobileMediaOverlay />
-        <AspectRatio width="90vw" ratio={16 / 8}>
-          <Image src="images/background_home.png" alt="Home image" />
-        </AspectRatio>
-        <EventSection title={t("events.title")} eventItems={events} locale={locale} />
-        <RepresentativesSection title={t("representatives.title")} subtitle={t("representatives.subtitle")} reps={reps} />
-        <PartnersSection title={t("partners.title")} partners={partners} />
+        <Hero title={t("contact.title")} subtitle={t("contact.subtitle")} />
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          marginX={{ base: 8, md: 24 }}
+          marginY={{ base: 8, md: 24 }}
+          spacing={{ base: 12, md: 36 }}
+        >
+          <ContactUsForm
+            namePlaceholder={t("contact.form.name")}
+            emailPlaceholder={t("contact.form.email")}
+            bodyPlaceholder={t("contact.form.body")}
+            buttonText={t("contact.form.button")}
+            errorText={t("contact.form.errorMessage")}
+          />
+          <GoogleMap title={t("contact.location.name")} address={t("contact.location.address")} />
+        </Stack>
       </Layout>
     </>
   );
 };
-export default Index;
+
+export default Contact;
 
 export const getStaticProps: GetStaticProps<I18nProps<AegloLocale>> = async (context) => {
   const locale = context.locale || context.defaultLocale;
