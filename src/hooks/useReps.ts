@@ -9,6 +9,7 @@ interface ReprensentativeDto {
 }
 
 export const useReps = (locale: string): Representative[] => {
+  // TODO Hoster les photos dans le webserver de l'autre site au lieu ici pour y acceder par https://aeglo.ift.ulaval.ca/files/photo.png
   const reps: ReprensentativeDto[] = require("../data/reps.json");
 
   switch (locale) {
