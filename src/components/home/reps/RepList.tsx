@@ -9,6 +9,7 @@ interface RepListProps {
 }
 
 export const RepList: React.FC<RepListProps> = ({ reps }) => {
+  // TODO fix le layout, le ItemCarousel a pas l'air d'etre top pour cette section la
   return (
     <ItemCarousel gap={0}>
       {reps.map((rep, index) => (
