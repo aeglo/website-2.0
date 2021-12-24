@@ -66,6 +66,20 @@ export const table: AegloLocale = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae facilisis tellus. Proin lacinia purus sit amet enim efficitur ullamcorper. Pellentesque molestie commodo diam, ut aliquet quam tincidunt nec. Duis magna augue, sollicitudin eu sodales vel, vestibulum in dolor. Sed et accumsan nisi. In nec sapien at velit vestibulum porttitor. Sed finibus vulputate purus, eget posuere lectus pellentesque non. Quisque ut diam nec enim consectetur pulvinar sed ac lectus. Curabitur fermentum nunc in nisl accumsan pharetra. Aliquam erat volutpat. Morbi mollis cursus libero, sed feugiat eros luctus ut. Quisque facilisis neque ultricies eros venenatis vestibulum. Phasellus nec ante a ex aliquet molestie. Nunc magna orci, dictum sed porta eu, lacinia luctus nibh. Cras ac sollicitudin lectus. Sed nec orci et urna dictum consectetur nec eget purus. Aliquam erat volutpat."
     }
   },
+  contact: {
+    title: "Nous contacter",
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie laoreet quam eu ultricies. Fusce rhoncus tincidunt augue et condimentum. Aliquam vitae purus in nisi ultricies consequat ac non dui. Cras sollicitudin, leo et scelerisque scelerisque, ligula nisl dapibus mi, id egestas eros dui vel dui. Pellentesque vitae enim lacus. Vivamus sed commodo urna, vitae venenatis augue. Praesent blandit fermentum felis, consectetur fringilla neque maximus et. Sed pellentesque consectetur convallis. Mauris interdum volutpat commodo. Sed mi sem, elementum quis purus nec, venenatis interdum eros. Vivamus id tortor nisl.",
+    location: {
+      name: "AEGLO - Université Laval",
+      address: "Pavillon Alexandre Vachon - Local 00113, Université Laval, G1V 0A6"
+    },
+    form: {
+      name: "Prénom et nom",
+      email: "Adresse courriel",
+      body: "Message"
+    }
+  },
   footer: {
     address: "Pavillon Alexandre Vachon - Local 00113",
     email: "",

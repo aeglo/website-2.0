@@ -38,7 +38,6 @@ export interface AegloLocale {
       facebook: string;
     };
   };
-
   pedagogy: {
     title: string;
     subtitle: string;
@@ -57,6 +56,19 @@ export interface AegloLocale {
     problem: {
       title: string;
       description: string;
+    };
+  };
+  contact: {
+    title: string;
+    subtitle: string;
+    location: {
+      name: string;
+      address: string;
+    };
+    form: {
+      name: string;
+      email: string;
+      body: string;
     };
   };
   footer: {
