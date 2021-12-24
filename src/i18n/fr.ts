@@ -24,7 +24,7 @@ export const table: AegloLocale = {
   events: {
     title: "Événements à venir"
   },
-  members: {
+  representatives: {
     title: "",
     subtitle: ""
   },

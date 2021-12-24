@@ -21,7 +21,7 @@ export interface AegloLocale {
   events: {
     title: string;
   };
-  members: {
+  representatives: {
     title: string;
     subtitle: string;
   };
@@ -38,7 +38,6 @@ export interface AegloLocale {
       facebook: string;
     };
   };
-
   pedagogy: {
     title: string;
     subtitle: string;

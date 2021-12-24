@@ -1,6 +1,6 @@
 import { Event } from "../components/home/EventSection";
 
-interface RawEvent {
+interface EventDto {
   date: string;
   titleFR: string;
   titleEN: string;
@@ -11,7 +11,7 @@ interface RawEvent {
 }
 
 const useEvents = (locale: string): Event[] => {
-  const events: RawEvent[] = require("../data/events.json");
+  const events: EventDto[] = require("../data/events.json");
 
   // TODO refactor ca ptetre c'est pas tant nice
   switch (locale) {

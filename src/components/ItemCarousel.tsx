@@ -6,8 +6,8 @@ import { useMediaQuery, useTheme, Progress, VStack, Button, Flex, Box } from "@c
 
 import { ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons";
 import { motion, useAnimation, useMotionValue } from "framer-motion";
-import useBoundingRect from "../../../hooks/useBoundingRect";
-import percentage from "../../../utils/percentage";
+import useBoundingRect from "../hooks/useBoundingRect";
+import percentage from "../utils/percentage";
 
 const MotionFlex = motion(Flex);
 
@@ -18,7 +18,7 @@ const transitionProps = {
   mass: 3
 };
 
-const EventCarousel = ({ children, gap }) => {
+const ItemCarousel = ({ children, gap }) => {
   const [trackIsActive, setTrackIsActive] = useState(false);
   const [multiplier, setMultiplier] = useState(0.35);
   const [sliderWidth, setSliderWidth] = useState(0);
@@ -331,4 +331,4 @@ const Item = ({ setTrackIsActive, setActiveItem, activeItem, constraint, itemWid
   );
 };
 
-export default EventCarousel;
+export default ItemCarousel;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Event } from "../EventSection";
-import EventCarousel from "./EventCarousel";
+import ItemCarousel from "../../ItemCarousel";
 import { EventItem } from "./EventItem";
 
 interface EventListProps {
@@ -10,10 +10,10 @@ interface EventListProps {
 
 export const EventList: React.FC<EventListProps> = ({ events, locale }) => {
   return (
-    <EventCarousel gap={32}>
+    <ItemCarousel gap={32}>
       {events.map((event, index) => (
         <EventItem key={index} event={event} locale={locale} />
       ))}
-    </EventCarousel>
+    </ItemCarousel>
   );
 };
