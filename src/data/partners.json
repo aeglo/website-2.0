@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Dialog Insight",
+    "imageUrl": "http://aeglo.ift.ulaval.ca/img/DialogInsight_Logo_RGB.png",
+    "websiteUrl": "https://www.dialoginsight.com/"
+  },
+  {
+    "name": "Lahaie Gestion Financière",
+    "imageUrl": "http://aeglo.ift.ulaval.ca/img/lahaie.png",
+    "websiteUrl": "https://www.lahaiegf.com/"
+  },
+  {
+    "name": "Desjardins",
+    "imageUrl": "http://aeglo.ift.ulaval.ca/img/desjardins_logo_commandite.svg",
+    "websiteUrl": "https://www.desjardins.com/a-propos/desjardins/index.jsp"
+  },
+  {
+    "name": "Snipcart",
+    "imageUrl": "http://aeglo.ift.ulaval.ca/img/snipcart_logo_commandite.png",
+    "websiteUrl": "https://www.snipcart.com/"
+  }
+]

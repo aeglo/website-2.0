@@ -12,6 +12,8 @@ import { Layout } from "../layout/Layout";
 import { AspectRatio, Image } from "@chakra-ui/react";
 import { DesktopMediaOverlay } from "../components/home/medias/DesktopMediaOverlay";
 import { MobileMediaOverlay } from "../components/home/medias/MobileMediaOverlay";
+import { PartnersSection } from "../components/home/PartnersSection";
+import { usePartners } from "../hooks/usePartners";
 
 const Index = () => {
   const { locale } = useRouter();
@@ -21,6 +23,7 @@ const Index = () => {
   const systemTheme = useSystemTheme();
 
   const events = useEvents(locale);
+  const partners = usePartners();
 
   return (
     <>
@@ -53,6 +56,7 @@ const Index = () => {
           <Image src="images/background_home.png" alt="Home image" />
         </AspectRatio>
         <EventSection title={t("events.title")} eventItems={events} locale={locale} />
+        <PartnersSection title={t("partners.title")} partners={partners} />
       </Layout>
     </>
   );
