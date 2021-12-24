@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/image";
-import { Link } from "@chakra-ui/layout";
+import { AspectRatio, Link } from "@chakra-ui/layout";
 import React from "react";
 import { Partner } from "../PartnersSection";
 
@@ -9,7 +9,7 @@ interface PartnerItemProps {
 
 export const PartnerItem: React.FC<PartnerItemProps> = ({ partner }) => {
   return (
-    <Link href={partner.websiteUrl} key={partner.name}>
+    <Link href={partner.websiteUrl} key={partner.name} maxWidth={{ base: "100%", md: "40%" }}>
       <Image src={partner.imageUrl} alt={partner.name} />
     </Link>
   );
