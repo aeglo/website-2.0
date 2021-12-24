@@ -10,7 +10,7 @@ interface SectionProps {
 export const SectionItem: React.FC<SectionProps> = ({ section }) => {
   return (
     <VStack maxWidth={{ base: "100%", md: "25%" }}>
-      <Avatar icon={section.icon} backgroundColor="secondary" boxSize={24} />
+      <Avatar icon={section.icon} backgroundColor="secondary.default" boxSize={24} />
       <Heading>{section.title}</Heading>
       <Text>{section.description}</Text>
     </VStack>
