@@ -45,6 +45,14 @@ export const ContactUsForm: React.FC<ContactUsFormProps> = ({
     setIsBodyInvalid(false);
   }, [body]);
 
+  useEffect(() => {
+    if (status === "success") {
+      setName("");
+      setEmail("");
+      setBody("");
+    }
+  }, [status]);
+
   const handleFormSubmit = () => {
     setIsNameInvalid(isStringEmptyOrNull(name));
     setIsEmailInvalid(isStringEmptyOrNull(email));
