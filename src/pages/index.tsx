@@ -12,7 +12,7 @@ import { Layout } from "../layout/Layout";
 import { AspectRatio, Image } from "@chakra-ui/react";
 import { DesktopMediaOverlay } from "../components/home/medias/DesktopMediaOverlay";
 import { MobileMediaOverlay } from "../components/home/medias/MobileMediaOverlay";
-import { RepresentativesSecion } from "../components/home/RepresentativesSecion";
+import { RepresentativesSecion } from "../components/home/RepresentativesSection";
 import { useReps } from "../hooks/useReps";
 
 const Index = () => {
@@ -55,8 +55,8 @@ const Index = () => {
         <AspectRatio width="90vw" ratio={16 / 8}>
           <Image src="images/background_home.png" alt="Home image" />
         </AspectRatio>
-        <RepresentativesSecion title={t("representatives.title")} subtitle={t("representatives.subtitle")} reps={reps} />
         <EventSection title={t("events.title")} eventItems={events} locale={locale} />
+        <RepresentativesSecion title={t("representatives.title")} subtitle={t("representatives.subtitle")} reps={reps} />
       </Layout>
     </>
   );

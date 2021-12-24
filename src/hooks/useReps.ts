@@ -1,4 +1,4 @@
-import { Representative } from "../components/home/RepresentativesSecion";
+import { Representative } from "../components/home/RepresentativesSection";
 
 interface ReprensentativeDto {
   name: string;

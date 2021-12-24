@@ -12,11 +12,12 @@ const theme = extendTheme({
   colors: {
     black: "#16161D",
     main: "#242A2D",
-    secondary: "#0577FF"
+    secondary: "#0577FF",
+    dark: "#1c1d2c"
   },
   fonts: {
     heading: "brandon-grotesque",
-    body: "brandon-grotesque",
+    body: "brandon-grotesque"
   },
   breakpoints
 });

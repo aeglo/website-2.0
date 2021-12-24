@@ -1,7 +1,7 @@
 import { Stack } from "@chakra-ui/layout";
 import React from "react";
 import ItemCarousel from "../../ItemCarousel";
-import { Representative } from "../RepresentativesSecion";
+import { Representative } from "../RepresentativesSection";
 import { RepItem } from "./RepItem";
 
 interface RepListProps {
