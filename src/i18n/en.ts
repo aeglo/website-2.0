@@ -77,7 +77,9 @@ export const table: AegloLocale = {
     form: {
       name: "First and last name",
       email: "Email address",
-      body: "Message"
+      body: "Message",
+      button: "Send message",
+      errorMessage: "Something went wrong. Please try again or contact us directly at aeglo@aeglo.ift.ulaval.ca"
     }
   },
   footer: {

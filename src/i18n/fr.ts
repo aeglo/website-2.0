@@ -77,7 +77,10 @@ export const table: AegloLocale = {
     form: {
       name: "Prénom et nom",
       email: "Adresse courriel",
-      body: "Message"
+      body: "Message",
+      button: "Envoyer",
+      errorMessage:
+        "Une erreur est survenue lors de l'envoie du courriel. SVP réessayer ou nous contacter directement à aeglo@aeglo.ift.ulaval.ca"
     }
   },
   footer: {

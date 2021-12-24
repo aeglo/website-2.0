@@ -69,6 +69,8 @@ export interface AegloLocale {
       name: string;
       email: string;
       body: string;
+      button: string;
+      errorMessage: string;
     };
   };
   footer: {

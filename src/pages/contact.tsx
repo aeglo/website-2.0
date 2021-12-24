@@ -1,8 +1,11 @@
+import { HStack, Stack } from "@chakra-ui/layout";
+import { Center } from "@chakra-ui/react";
 import type { GetStaticProps } from "next";
 import { I18nProps, useI18n } from "next-rosetta";
 import Head from "next/head";
 import React from "react";
 import useSystemTheme from "react-use-system-theme";
+import { ContactUsForm } from "../components/contact/ContactUsForm";
 import { Hero } from "../components/Hero";
 import type { AegloLocale } from "../i18n";
 import { Layout } from "../layout/Layout";
@@ -37,6 +40,15 @@ const Contact = () => {
       </Head>
       <Layout>
         <Hero title={t("contact.title")} subtitle={t("contact.subtitle")} />
+        <Stack direction={{ base: "column", md: "row" }} marginX={12}>
+          <ContactUsForm
+            namePlaceholder={t("contact.form.name")}
+            emailPlaceholder={t("contact.form.email")}
+            bodyPlaceholder={t("contact.form.body")}
+            buttonText={t("contact.form.button")}
+            errorText={t("contact.form.errorMessage")}
+          />
+        </Stack>
       </Layout>
     </>
   );

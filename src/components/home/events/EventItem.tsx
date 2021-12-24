@@ -30,7 +30,7 @@ export const EventItem: React.FC<EventItemProps> = ({ event, key, locale }) => {
       padding={5}
     >
       <VStack marginBottom={6}>
-        <Text color="secondary" fontSize="xl">
+        <Text color="secondary.default" fontSize="xl">
           {eventDay}
         </Text>
 
@@ -41,7 +41,7 @@ export const EventItem: React.FC<EventItemProps> = ({ event, key, locale }) => {
         </Text>
 
         <Link key={key} href={event.link} isExternal>
-          <Heading color="secondary" fontSize="5xl">
+          <Heading color="secondary.default" fontSize="5xl">
             {event.title}
           </Heading>
         </Link>

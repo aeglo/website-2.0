@@ -4,7 +4,7 @@ import "focus-visible/dist/focus-visible";
 import { I18nProvider } from "next-rosetta";
 import { AppProps } from "next/app";
 import theme from "../theme/theme";
-import Fonts from '../theme/fonts'
+import Fonts from "../theme/fonts";
 
 const GlobalStyles = css`
   /*
@@ -14,7 +14,6 @@ const GlobalStyles = css`
   .js-focus-visible :focus:not([data-focus-visible-added]) {
     outline: none;
     box-shadow: none;
-    background: none;
   }
 `;
 
