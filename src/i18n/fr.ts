@@ -32,14 +32,9 @@ export const table: AegloLocale = {
     title: "Nos commanditaires"
   },
   links: {
-    title: "",
-    subtitle: "",
-    main: {
-      name: "",
-      grid: "",
-      department: "",
-      facebook: ""
-    }
+    title: "Liens utiles",
+    subtitle:
+      "Si tu es ou désires devenir un étudiant en génie logiciel à l'Université Laval, voici quelques liens utiles pour t'aider dans ton parcours."
   },
   pedagogy: {
     title: "Pédagogie",
