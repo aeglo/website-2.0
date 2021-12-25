@@ -1,6 +1,5 @@
-import { Box, Flex } from "@chakra-ui/layout";
-import { Button } from "@chakra-ui/react";
-import React, { useState } from "react";
+import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
+import React from "react";
 import { UsefulLinkTab } from "../UsefulLinksSection";
 import { UsefulLinkList } from "./UsefulLinkList";
 
@@ -8,19 +7,21 @@ interface UsefulLinkTabsProps {
   tabs: UsefulLinkTab[];
 }
 
-export const UsefulLinkTabs: React.FC<UsefulLinkTabsProps> = ({ tabs: sections }) => {
-  const [activeSection, setActiveSection] = useState(sections[0].title);
-
+export const UsefulLinkTabs: React.FC<UsefulLinkTabsProps> = ({ tabs }) => {
   return (
-    <Box>
-      <Flex>
-        {sections.map((section) => (
-          <Button isActive={section.title === activeSection} onClick={() => setActiveSection(section.title)}>
-            {section.title}
-          </Button>
+    <Tabs>
+      <TabList>
+        {tabs.map((tab) => (
+          <Tab>{tab.title}</Tab>
         ))}
-      </Flex>
-      <UsefulLinkList links={sections.find((section) => section.title === activeSection).links} />
-    </Box>
+      </TabList>
+      <TabPanels>
+        {tabs.map((tab) => (
+          <TabPanel>
+            <UsefulLinkList links={tab.links} />
+          </TabPanel>
+        ))}
+      </TabPanels>
+    </Tabs>
   );
 };
