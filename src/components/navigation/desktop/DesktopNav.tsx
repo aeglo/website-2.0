@@ -1,13 +1,15 @@
 import { useColorModeValue, Stack, Box, Popover, PopoverTrigger, PopoverContent } from "@chakra-ui/react";
 import React from "react";
-import { NavigationItem } from "../NavBar";
+import { NavigationItem } from "../NavigationItem";
 import { NextChakraLink } from "../NextChakraLink";
 
 interface DesktopNavProps {
   navigationItems: NavigationItem[];
+  textColor: string;
+  hoverColor: string;
 }
 
-export const DesktopNav: React.FC<DesktopNavProps> = ({ navigationItems }: DesktopNavProps) => {
+export const DesktopNav = ({ navigationItems, textColor, hoverColor }: DesktopNavProps) => {
   return (
     <Stack direction={"row"} spacing={4}>
       {navigationItems.map((navItem) => (
@@ -19,11 +21,11 @@ export const DesktopNav: React.FC<DesktopNavProps> = ({ navigationItems }: Deskt
                 href={navItem.href ?? "#"}
                 fontSize={"lg"}
                 fontWeight={500}
-                color="main"
+                color={textColor}
                 target={navItem.target}
                 _hover={{
                   textDecoration: "none",
-                  color: "secondary.default"
+                  color: hoverColor,
                 }}
               >
                 {navItem.label}

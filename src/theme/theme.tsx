@@ -10,13 +10,11 @@ const breakpoints = createBreakpoints({
 
 const theme = extendTheme({
   colors: {
+    white: "#fff",
     black: "#16161D",
     main: "#242A2D",
-    secondary: {
-      default: "#0577FF",
-      hover: "#6baeff"
-    },
-    lightGrey: "#d0d0d0"
+    secondary: "#0577FF",
+    darkSection: "#1B1F2B"
   },
   fonts: {
     heading: "brandon-grotesque",

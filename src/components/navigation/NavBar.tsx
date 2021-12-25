@@ -7,12 +7,7 @@ import { DesktopNav } from "./desktop/DesktopNav";
 import { LanguageButtons } from "./LanguageButtons";
 import { Logo } from "./Logo";
 import { MobileNav } from "./mobile/MobileNav";
-
-export interface NavigationItem {
-  label: string;
-  href?: string;
-  target?: string;
-}
+import { NavigationItem } from "./NavigationItem";
 
 export default function NavBar() {
   const i18n = useI18n<AegloLocale>();
@@ -67,17 +62,17 @@ export default function NavBar() {
           />
         </Flex>
 
-        <Flex paddingLeft={{ base: 0, md: "32px" }}>
+        <Flex paddingLeft={{ base: 0, md: "128px" }}>
           <Logo />
         </Flex>
 
         <Flex flex={{ base: 1 }} justify="center">
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            <DesktopNav navigationItems={NAV_ITEMS} />
+            <DesktopNav navigationItems={NAV_ITEMS} textColor="main" hoverColor="secondary" />
           </Flex>
         </Flex>
 
-        <Flex flex={{ base: 1, md: 0 }} justify={"flex-end"} paddingRight={{ base: 0, md: 32 }}>
+        <Flex flex={{ base: 1, md: 0 }} justify={"flex-end"} paddingRight={{ base: 0, md: "128px" }}>
           <LanguageButtons />
         </Flex>
       </Flex>
