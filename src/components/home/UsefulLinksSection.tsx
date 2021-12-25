@@ -22,8 +22,10 @@ interface UsefulLinksSectionProps {
 export const UsefulLinksSection: React.FC<UsefulLinksSectionProps> = ({ title, subtitle, tabs }) => {
   return (
     <Box id="partners" textAlign="center" paddingX={{ base: 8, md: 48 }} marginY={32}>
-      <Heading>{title}</Heading>
-      <Text>{subtitle}</Text>
+      <Heading marginY={4}>{title}</Heading>
+      <Text fontSize="xl" fontWeight="semibold" marginBottom={12}>
+        {subtitle}
+      </Text>
       <UsefulLinkTabs tabs={tabs} />
     </Box>
   );

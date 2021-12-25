@@ -15,7 +15,7 @@ export const UsefulLinkTabs: React.FC<UsefulLinkTabsProps> = ({ tabs }) => {
           <Tab>{tab.title}</Tab>
         ))}
       </TabList>
-      <TabPanels>
+      <TabPanels marginTop={6}>
         {tabs.map((tab) => (
           <TabPanel>
             <UsefulLinkList links={tab.links} />
