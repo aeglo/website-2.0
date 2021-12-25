@@ -31,12 +31,6 @@ export interface AegloLocale {
   links: {
     title: string;
     subtitle: string;
-    main: {
-      name: string;
-      grid: string;
-      department: string;
-      facebook: string;
-    };
   };
   pedagogy: {
     title: string;

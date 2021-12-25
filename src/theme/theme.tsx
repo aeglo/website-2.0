@@ -15,7 +15,8 @@ const theme = extendTheme({
     secondary: {
       default: "#0577FF",
       hover: "#6baeff"
-    }
+    },
+    lightGrey: "#d0d0d0"
   },
   fonts: {
     heading: "brandon-grotesque",

@@ -32,14 +32,8 @@ export const table: AegloLocale = {
     title: "Our partners"
   },
   links: {
-    title: "",
-    subtitle: "",
-    main: {
-      name: "",
-      grid: "",
-      department: "",
-      facebook: ""
-    }
+    title: "Useful links",
+    subtitle: "If you are a current or future software engineering student at Laval University, here are some links that could be useful."
   },
   pedagogy: {
     title: "Pedagogy",

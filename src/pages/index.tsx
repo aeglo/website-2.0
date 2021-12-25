@@ -14,11 +14,16 @@ import { DesktopMediaOverlay } from "../components/home/medias/DesktopMediaOverl
 import { MobileMediaOverlay } from "../components/home/medias/MobileMediaOverlay";
 import { PartnersSection } from "../components/home/PartnersSection";
 import { usePartners } from "../hooks/usePartners";
+import { useUsefulLinks } from "../hooks/useUsefulLinks";
+import { UsefulLinksSection } from "../components/home/UsefulLinksSection";
 
 const Index = () => {
   const { locale } = useRouter();
   const i18n = useI18n<AegloLocale>();
   const { t } = i18n;
+
+  const { state: usefulLinksStatus, getUsefulLinks } = useUsefulLinks();
+  const usefulLinks = getUsefulLinks(locale);
 
   const systemTheme = useSystemTheme();
 
@@ -57,6 +62,7 @@ const Index = () => {
         </AspectRatio>
         <EventSection title={t("events.title")} eventItems={events} locale={locale} />
         <PartnersSection title={t("partners.title")} partners={partners} />
+        <UsefulLinksSection title={t("links.title")} subtitle={t("links.subtitle")} tabs={usefulLinks} />
       </Layout>
     </>
   );
