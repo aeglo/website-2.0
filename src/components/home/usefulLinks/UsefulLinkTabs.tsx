@@ -12,7 +12,9 @@ export const UsefulLinkTabs: React.FC<UsefulLinkTabsProps> = ({ tabs }) => {
     <Tabs variant="soft-rounded" colorScheme="blue" align="center">
       <TabList justifyItems="center">
         {tabs.map((tab) => (
-          <Tab>{tab.title}</Tab>
+          <Tab paddingX={8} paddingY={3} marginX={12}>
+            {tab.title}
+          </Tab>
         ))}
       </TabList>
       <TabPanels marginTop={6}>
