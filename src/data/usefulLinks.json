@@ -43,11 +43,6 @@
         "nameFR": "ASETIN - ASSOCIATION DES ÉTUDIANTS EN INFORMATIQUE",
         "nameEN": "ASETIN - COMPUTER SCIENCE STUDENTS' ASSOCIATION",
         "href": "https://www.ift.ulaval.ca/en/programmes-et-cours/premier-cycle/grilles-de-cheminement-glo/"
-      },
-      {
-        "nameFR": "CHEAT SHEET",
-        "nameEN": "CHEAT SHEET",
-        "href": "https://www.ift.ulaval.ca/en/programmes-et-cours/premier-cycle/grilles-de-cheminement-glo/"
       }
     ]
   },
@@ -64,16 +59,6 @@
         "nameFR": "DÉPARTEMENT D'INFORMATIQUE ET DE GÉNIE LOGICIEL",
         "nameEN": "COMPUTER SCIENCE AND SOFTWARE ENGINEERING DEPARTMENT",
         "href": "https://www.ift.ulaval.ca/en/programmes-et-cours/premier-cycle/grilles-de-cheminement-glo/"
-      },
-      {
-        "nameFR": "ASETIN - ASSOCIATION DES ÉTUDIANTS EN INFORMATIQUE",
-        "nameEN": "ASETIN - COMPUTER SCIENCE STUDENTS' ASSOCIATION",
-        "href": "https://www.ift.ulaval.ca/en/programmes-et-cours/premier-cycle/grilles-de-cheminement-glo/"
-      },
-      {
-        "nameFR": "CHEAT SHEET",
-        "nameEN": "CHEAT SHEET",
-        "href": "https://www.ift.ulaval.ca/en/programmes-et-cours/premier-cycle/grilles-de-cheminement-glo/"
       }
     ]
   },
@@ -84,21 +69,6 @@
       {
         "nameFR": "GRILLES DE CHEMINEMENT",
         "nameEN": "CURRICULUM",
-        "href": "https://www.ift.ulaval.ca/en/programmes-et-cours/premier-cycle/grilles-de-cheminement-glo/"
-      },
-      {
-        "nameFR": "DÉPARTEMENT D'INFORMATIQUE ET DE GÉNIE LOGICIEL",
-        "nameEN": "COMPUTER SCIENCE AND SOFTWARE ENGINEERING DEPARTMENT",
-        "href": "https://www.ift.ulaval.ca/en/programmes-et-cours/premier-cycle/grilles-de-cheminement-glo/"
-      },
-      {
-        "nameFR": "ASETIN - ASSOCIATION DES ÉTUDIANTS EN INFORMATIQUE",
-        "nameEN": "ASETIN - COMPUTER SCIENCE STUDENTS' ASSOCIATION",
-        "href": "https://www.ift.ulaval.ca/en/programmes-et-cours/premier-cycle/grilles-de-cheminement-glo/"
-      },
-      {
-        "nameFR": "CHEAT SHEET",
-        "nameEN": "CHEAT SHEET",
         "href": "https://www.ift.ulaval.ca/en/programmes-et-cours/premier-cycle/grilles-de-cheminement-glo/"
       }
     ]
