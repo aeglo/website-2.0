@@ -10,10 +10,10 @@ interface UsefulLinkListProps {
 export const UsefulLinkList: React.FC<UsefulLinkListProps> = ({ links }) => {
   return (
     <Center>
-      <Stack direction="row" wrap="wrap" spacing={6}>
+      <Stack direction={{ base: "column", md: "row" }} wrap="wrap" spacing={{ base: 4, md: 6 }}>
         {links.map((link) => (
-          <Link href={link.href} isExternal>
-            <Button borderRadius={0} backgroundColor="lightGrey" _hover={{}}>
+          <Link href={link.href} isExternal backgroundColor="lightGrey">
+            <Button whiteSpace="normal" borderRadius={0} backgroundColor="lightGrey" _hover={{}}>
               {link.name}
             </Button>
           </Link>
