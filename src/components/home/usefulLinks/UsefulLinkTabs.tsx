@@ -1,4 +1,4 @@
-import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
+import { Center, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import React from "react";
 import { UsefulLinkTab } from "../UsefulLinksSection";
 import { UsefulLinkList } from "./UsefulLinkList";
@@ -9,8 +9,8 @@ interface UsefulLinkTabsProps {
 
 export const UsefulLinkTabs: React.FC<UsefulLinkTabsProps> = ({ tabs }) => {
   return (
-    <Tabs>
-      <TabList>
+    <Tabs variant="soft-rounded" colorScheme="blue" align="center">
+      <TabList justifyItems="center">
         {tabs.map((tab) => (
           <Tab>{tab.title}</Tab>
         ))}
