@@ -78,8 +78,9 @@ export const table: AegloLocale = {
   },
   footer: {
     address: "Pavillon Alexandre Vachon - Room 00113",
-    email: "",
-    follow: "",
-    madeBy: ""
+    email: "Email Address",
+    follow: "Follow us",
+    madeBy: "Made by:",
+    copyright: "All rights reserved"
   }
 };

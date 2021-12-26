@@ -1,6 +1,6 @@
 import { useColorModeValue, Stack, Box, Popover, PopoverTrigger, PopoverContent } from "@chakra-ui/react";
 import React from "react";
-import { NavigationItem } from "../NavigationItem";
+import { NavigationItem } from "../NavBar";
 import { NextChakraLink } from "../NextChakraLink";
 
 interface DesktopNavProps {

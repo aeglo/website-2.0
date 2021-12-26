@@ -10,12 +10,12 @@ import useEvents from "../hooks/useEvents";
 import type { AegloLocale } from "../i18n";
 import { Layout } from "../layout/Layout";
 import { AspectRatio, Image } from "@chakra-ui/react";
-import { DesktopMediaOverlay } from "../components/home/medias/DesktopMediaOverlay";
-import { MobileMediaOverlay } from "../components/home/medias/MobileMediaOverlay";
 import { PartnersSection } from "../components/home/PartnersSection";
 import { usePartners } from "../hooks/usePartners";
 import { useUsefulLinks } from "../hooks/useUsefulLinks";
 import { UsefulLinksSection } from "../components/home/UsefulLinksSection";
+import { DesktopMediaOverlay } from "../components/medias/DesktopMediaOverlay";
+import { MobileMediaOverlay } from "../components/medias/MobileMediaOverlay";
 
 const Index = () => {
   const { locale } = useRouter();

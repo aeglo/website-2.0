@@ -72,5 +72,6 @@ export interface AegloLocale {
     email: string;
     follow: string;
     madeBy: string;
+    copyright: string;
   };
 }

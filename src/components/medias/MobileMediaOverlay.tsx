@@ -7,7 +7,7 @@ interface MobileMediaOverlayProps {}
 export const MobileMediaOverlay: React.FC<MobileMediaOverlayProps> = ({}) => {
   return (
     <Box justifyItems="center" display={{ base: "grid", md: "none" }}>
-      <SocialMedias direction="row" />
+      <SocialMedias direction="row" color="main"/>
     </Box>
   );
 };
