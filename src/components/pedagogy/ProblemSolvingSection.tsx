@@ -9,12 +9,12 @@ interface ProblemSolvingSectionProps {
 
 export const ProblemSolvingSection: React.FC<ProblemSolvingSectionProps> = ({ title, subtitle }) => {
   return (
-    <Center marginTop={16} background="linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(77,56,56,1) 100%, rgba(0,212,255,1) 100%);">
-      <Box height="60vh" paddingTop={16} textAlign="center" paddingX="20vw">
-        <Heading fontSize="4xl" color="white">
+    <Center marginTop={16} background="main">
+      <Box height="789px" paddingTop={"128px"} textAlign="center" paddingX="20vw">
+        <Heading fontSize="52px" color="white">
           {title}
         </Heading>
-        <Text fontSize="xl" color="white" marginTop={4}>
+        <Text fontSize="24px" color="white" fontWeight={"bold"} marginTop={"48px"}>
           {subtitle}
         </Text>
       </Box>

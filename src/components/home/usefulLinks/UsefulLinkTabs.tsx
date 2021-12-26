@@ -9,7 +9,7 @@ interface UsefulLinkTabsProps {
 
 export const UsefulLinkTabs: React.FC<UsefulLinkTabsProps> = ({ tabs }) => {
   return (
-    <Tabs variant="soft-rounded" colorScheme="blue" align="center">
+    <Tabs variant="soft-rounded" colorScheme="blue" align="center" mb={{base: "128px", md: "196px"}}>
       <TabList justifyItems="center" overflow={{ base: "scoll", md: "" }}>
         {tabs.map((tab) => (
           <Tab paddingX={{ base: 2, md: 8 }} paddingY={3} marginX={{ base: 0, md: 12 }}>

@@ -39,7 +39,7 @@ export interface AegloLocale {
       title: string;
       description: string;
     };
-    reprensentative: {
+    representative: {
       title: string;
       description: string;
     };

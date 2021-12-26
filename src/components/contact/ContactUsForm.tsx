@@ -80,15 +80,15 @@ export const ContactUsForm: React.FC<ContactUsFormProps> = ({
     <VStack width={{ base: "100%", md: "50%" }} alignItems="start">
       <FormControl isRequired isInvalid={isNameInvalid}>
         <FormLabel>{namePlaceholder}</FormLabel>
-        <Input value={name} onChange={({ target }) => setName(target.value)} />
+        <Input maxW={"572px"} value={name} onChange={({ target }) => setName(target.value)} />
       </FormControl>
       <FormControl isRequired isInvalid={isEmailInvalid}>
         <FormLabel>{emailPlaceholder}</FormLabel>
-        <Input value={email} onChange={({ target }) => setEmail(target.value)} />
+        <Input maxW={"572px"} value={email} onChange={({ target }) => setEmail(target.value)} />
       </FormControl>
       <FormControl isRequired isInvalid={isBodyInvalid}>
         <FormLabel>{bodyPlaceholder}</FormLabel>
-        <Textarea value={body} onChange={({ target }) => setBody(target.value)} resize="none" minHeight={124} />
+        <Textarea maxW={"572px"} value={body} onChange={({ target }) => setBody(target.value)} resize="none" minHeight={124} />
       </FormControl>
       {status === "error" && <Text color="red">{errorText}</Text>}
       <Button

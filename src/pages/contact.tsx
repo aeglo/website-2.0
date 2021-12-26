@@ -1,4 +1,4 @@
-import { HStack, Stack } from "@chakra-ui/layout";
+import { Box, HStack, Stack } from "@chakra-ui/layout";
 import { Center } from "@chakra-ui/react";
 import type { GetStaticProps } from "next";
 import { I18nProps, useI18n } from "next-rosetta";
@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>{"AEGLO - " + t("navigation.pedagogy")}</title>
+        <title>{"AEGLO - " + t("navigation.contact")}</title>
         {systemTheme !== "dark" ? (
           <>
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon_dark/favicon-32x32.png" />
@@ -41,21 +41,23 @@ const Contact = () => {
       </Head>
       <Layout>
         <Hero title={t("contact.title")} subtitle={t("contact.subtitle")} />
-        <Stack
-          direction={{ base: "column", md: "row" }}
-          marginX={{ base: 8, md: 24 }}
-          marginY={{ base: 8, md: 24 }}
-          spacing={{ base: 12, md: 36 }}
-        >
-          <ContactUsForm
-            namePlaceholder={t("contact.form.name")}
-            emailPlaceholder={t("contact.form.email")}
-            bodyPlaceholder={t("contact.form.body")}
-            buttonText={t("contact.form.button")}
-            errorText={t("contact.form.errorMessage")}
-          />
-          <GoogleMap title={t("contact.location.name")} address={t("contact.location.address")} />
-        </Stack>
+        <Box>
+          <Stack
+            direction={{ base: "column", md: "row" }}
+            marginX={{ base: 8, md: "128px" }}
+            marginY={{ base: "128px", md: "196px" }}
+            spacing={{ base: 12, md: 36 }}
+          >
+            <ContactUsForm
+              namePlaceholder={t("contact.form.name")}
+              emailPlaceholder={t("contact.form.email")}
+              bodyPlaceholder={t("contact.form.body")}
+              buttonText={t("contact.form.button")}
+              errorText={t("contact.form.errorMessage")}
+            />
+            <GoogleMap title={t("contact.location.name")} address={t("contact.location.address")} />
+          </Stack>
+        </Box>
       </Layout>
     </>
   );
