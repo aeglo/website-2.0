@@ -7,7 +7,12 @@ import { DesktopNav } from "./desktop/DesktopNav";
 import { LanguageButtons } from "./LanguageButtons";
 import { Logo } from "./Logo";
 import { MobileNav } from "./mobile/MobileNav";
-import { NavigationItem } from "./NavigationItem";
+
+export interface NavigationItem {
+  label: string;
+  href?: string;
+  target?: string;
+}
 
 export default function NavBar() {
   const i18n = useI18n<AegloLocale>();
