@@ -33,8 +33,8 @@ const Pedagogy = () => {
       icon: <UsersThreeIcon boxSize={16} />
     },
     {
-      title: t("pedagogy.reprensentative.title"),
-      description: t("pedagogy.reprensentative.description"),
+      title: t("pedagogy.representative.title"),
+      description: t("pedagogy.representative.description"),
       icon: <UserIcon boxSize={16} />
     },
     {

@@ -39,32 +39,32 @@ export const table: AegloLocale = {
   pedagogy: {
     title: "Pédagogie",
     subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor.",
+      "Cette page se veut un outil de première ligne pour fournir les informations essentielles aux étudiants. Elle traite de tout ce qui touche au développement académique. Vous avez une question? Contactez votre représentant aux affaires pédagogiques.",
     comity: {
       title: "Comité de programme",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor."
+        "Le comité de programme a pour rôle de s’assurer de la qualité du programme d’étude. Il est composé du directeur du programme, de professeurs, de chargés de cours et d’étudiants. Les étudiants du Comité sont choisis selon les dispositions prévues dans la charte de l’AEGLO. Plus de détails sont fournis dans le règlement des études de l’Université Laval."
     },
-    reprensentative: {
+    representative: {
       title: "Représentant aux affaires pédagogiques",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor."
+        "Une bonne partie du rôle du rep. pédago. consiste à promouvoir les intérêts des étudiants au sein du comité de programme. Son mandat est de veiller à ce que le programme, notamment l’offre de cours, soit le plus cohérent possible avec les impératifs du génie logiciel dans la recherche, les orientations pédagogiques, les besoins du marché du travail, les attentes des étudiants et la réglementation universitaire. N’hésitez pas à le contacter pour toute question concernant ce mandat ou non, il vous orientera le cas échéant vers la ressource appropriée."
     },
     documents: {
       title: "Documents utiles",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod, risus a pellentesque congue, lectus metus molestie ipsum, eget rutrum tellus velit a diam. Donec maximus, nunc quis consequat aliquam, eros nunc viverra purus, quis suscipit velit nisl ac dolor."
+        "Voici une liste de documents pour ceux et celles qui souhaitent s’informer d’avantage."
     },
     problem: {
       title: "Traitement d'une problématique",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae facilisis tellus. Proin lacinia purus sit amet enim efficitur ullamcorper. Pellentesque molestie commodo diam, ut aliquet quam tincidunt nec. Duis magna augue, sollicitudin eu sodales vel, vestibulum in dolor. Sed et accumsan nisi. In nec sapien at velit vestibulum porttitor. Sed finibus vulputate purus, eget posuere lectus pellentesque non. Quisque ut diam nec enim consectetur pulvinar sed ac lectus. Curabitur fermentum nunc in nisl accumsan pharetra. Aliquam erat volutpat. Morbi mollis cursus libero, sed feugiat eros luctus ut. Quisque facilisis neque ultricies eros venenatis vestibulum. Phasellus nec ante a ex aliquet molestie. Nunc magna orci, dictum sed porta eu, lacinia luctus nibh. Cras ac sollicitudin lectus. Sed nec orci et urna dictum consectetur nec eget purus. Aliquam erat volutpat."
+        "Tout d’abord, il s’agit de tenir compte de tous les aspects du problème, autant de votre point de vue que celui de toutes les parties concernées. \nEnsuite, définir les démarches à entreprendre.\n- Les démarches personnelles de l’étudiant sont à prioriser dans la mesure du possible. En effet, vous êtes celui qui est le plus apte à résoudre votre problème, car vous êtes directement affecté.\n- Il s’agit ensuite de trouver la bonne ressource, votre rep. pédago. peut vous y aider.\n- Les discussions à l’amiable sont à privilégier.\n- S’assurer de respecter toutes les personnes impliquées."
     }
   },
   contact: {
     title: "Nous contacter",
     subtitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie laoreet quam eu ultricies. Fusce rhoncus tincidunt augue et condimentum. Aliquam vitae purus in nisi ultricies consequat ac non dui. Cras sollicitudin, leo et scelerisque scelerisque, ligula nisl dapibus mi, id egestas eros dui vel dui. Pellentesque vitae enim lacus. Vivamus sed commodo urna, vitae venenatis augue. Praesent blandit fermentum felis, consectetur fringilla neque maximus et. Sed pellentesque consectetur convallis. Mauris interdum volutpat commodo. Sed mi sem, elementum quis purus nec, venenatis interdum eros. Vivamus id tortor nisl.",
+      "Vous n’avez pas trouvé la réponse à votre recherche sur notre site web ou vous désirez simplement communiquer avec nous? Vous pouvez remplir le formulaire ci-dessous et nous vous reviendrons dès que possible.",
     location: {
       name: "AEGLO - UNIVERSITÉ LAVAL",
       address: "Pavillon Alexandre Vachon - Local 00113, Université Laval, G1V 0A6"

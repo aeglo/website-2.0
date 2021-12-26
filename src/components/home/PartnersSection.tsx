@@ -15,7 +15,7 @@ interface PartnersSectionProps {
 
 export const PartnersSection: React.FC<PartnersSectionProps> = ({ title, partners }) => {
   return (
-    <Box id="partners" textAlign="center" paddingX={{ base: 8, md: 48 }} marginY={32}>
+    <Box id="partners" textAlign="center" paddingX={{ base: 8, md: 48 }}>
       <Heading marginY={12}>{title}</Heading>
       <PartnersList partners={partners} />
     </Box>
