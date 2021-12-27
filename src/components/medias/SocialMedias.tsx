@@ -22,22 +22,22 @@ export const SocialMedias: React.FC<SocialMediasProps> = ({ direction, color }) 
     {
       name: "Discord",
       href: "https://discord.gg/3VenuWm",
-      icon: <DiscordIcon boxSize={8} color={color === "main" ? "white" : "darkSection"}/>
+      icon: <DiscordIcon boxSize={8} color={color === "main" ? "white" : "darkSection"} />
     },
     {
       name: "Facebook",
       href: "https://www.facebook.com/AEGLO-101893238568874/",
-      icon: <FacebookIcon boxSize={7} color={color === "main" ? "white" : "darkSection"}/>
+      icon: <FacebookIcon boxSize={7} color={color === "main" ? "white" : "darkSection"} />
     },
     {
       name: "LinkedIn",
       href: "https://www.linkedin.com/company/19022634",
-      icon: <LinkedInIcon boxSize={6} color={color === "main" ? "white" : "darkSection"}/>
+      icon: <LinkedInIcon boxSize={6} color={color === "main" ? "white" : "darkSection"} />
     },
     {
       name: "Github",
       href: "https://github.com/aeglo",
-      icon: <GithubIcon boxSize={10} color={color === "main" ? "white" : "darkSection"}/>
+      icon: <GithubIcon boxSize={10} color={color === "main" ? "white" : "darkSection"} />
     }
   ];
 
@@ -56,8 +56,8 @@ export const SocialMedias: React.FC<SocialMediasProps> = ({ direction, color }) 
             padding={6}
             boxSize={8}
             backgroundColor={color}
-            _hover={{ backgroundColor: "secondary" }}
-            _focus={{ backgroundColor: "secondary" }}
+            _hover={{ backgroundColor: "secondary.default" }}
+            _focus={{ backgroundColor: "secondary.default" }}
           />
         </Link>
       ))}

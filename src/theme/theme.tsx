@@ -13,7 +13,10 @@ const theme = extendTheme({
     white: "#fff",
     black: "#16161D",
     main: "#242A2D",
-    secondary: "#0577FF",
+    secondary: {
+      default: "#0577FF",
+      hover: "#6baeff"
+    },
     darkSection: "#1B1F2B"
   },
   fonts: {

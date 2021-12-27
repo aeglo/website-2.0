@@ -73,7 +73,7 @@ export default function NavBar() {
 
         <Flex flex={{ base: 1 }} justify="center">
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            <DesktopNav navigationItems={NAV_ITEMS} textColor="main" hoverColor="secondary" />
+            <DesktopNav navigationItems={NAV_ITEMS} textColor="main" hoverColor="secondary.default" />
           </Flex>
         </Flex>
 
