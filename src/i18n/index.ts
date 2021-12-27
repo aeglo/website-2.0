@@ -67,6 +67,12 @@ export interface AegloLocale {
       errorMessage: string;
     };
   };
+  fourOFour: {
+    title: string;
+    subtitle: string;
+    backHomeText: string;
+    pageName: string;
+  };
   footer: {
     address: string;
     email: string;
