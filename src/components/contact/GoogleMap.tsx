@@ -11,7 +11,9 @@ export const GoogleMap: React.FC<GoogleMapProps> = ({ title, address }) => {
   return (
     <Stack direction={{ base: "column", md: "row" }} width="full">
       <VStack>
-        <Heading color="secondary" fontSize={"36px"}>{title}</Heading>
+        <Heading color="secondary.default" fontSize={"36px"}>
+          {title}
+        </Heading>
         <Text fontSize="24px" fontWeight="bold" maxW={"393px"} textAlign={"left"}>
           {address}
         </Text>
