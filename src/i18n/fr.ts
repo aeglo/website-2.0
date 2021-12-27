@@ -52,8 +52,7 @@ export const table: AegloLocale = {
     },
     documents: {
       title: "Documents utiles",
-      description:
-        "Voici une liste de documents pour ceux et celles qui souhaitent s’informer d’avantage."
+      description: "Voici une liste de documents pour ceux et celles qui souhaitent s’informer d’avantage."
     },
     problem: {
       title: "Traitement d'une problématique",
@@ -78,11 +77,17 @@ export const table: AegloLocale = {
         "Une erreur est survenue lors de l'envoie du courriel. SVP réessayer ou nous contacter directement à aeglo@aeglo.ift.ulaval.ca"
     }
   },
+  fourOFour: {
+    title: "OUPS...",
+    subtitle: "La page que vous tentez d'accéder n'existe pas. Si vous pensez qu'il s'agit d'une erreur, n'hésitez pas à nous contacter.",
+    pageName: "Erreur",
+    backHomeText: "Retour à l'accueil"
+  },
   footer: {
     address: "Pavillon Alexandre Vachon - Local 00113",
     email: "Courriel",
     follow: "Suivez-nous",
     madeBy: "Réalisé par:",
-    copyright: "Tous droits réservés",
+    copyright: "Tous droits réservés"
   }
 };

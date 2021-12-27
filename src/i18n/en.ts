@@ -51,8 +51,7 @@ export const table: AegloLocale = {
     },
     documents: {
       title: "Useful documents",
-      description:
-        "Here is a list of documents for those who want to learn more."
+      description: "Here is a list of documents for those who want to learn more."
     },
     problem: {
       title: "Solving an issue",
@@ -75,6 +74,12 @@ export const table: AegloLocale = {
       button: "Send message",
       errorMessage: "Something went wrong. Please try again or contact us directly at aeglo@aeglo.ift.ulaval.ca"
     }
+  },
+  fourOFour: {
+    title: "OOPS...",
+    subtitle: "The page you're trying to access does not exist. If you think this is a mistake, please contact us.",
+    pageName: "Error",
+    backHomeText: "Back to home page"
   },
   footer: {
     address: "Pavillon Alexandre Vachon - Room 00113",
