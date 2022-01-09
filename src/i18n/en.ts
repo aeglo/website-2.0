@@ -25,8 +25,8 @@ export const table: AegloLocale = {
     title: "Happening soon"
   },
   representatives: {
-    title: "Representatives",
-    subtitle: "Below are the wonderful people making our team here to help you and plan activities !"
+    title: "Our team",
+    subtitle: "Below is the wonderful team managing the association and here to help you and plan activities !"
   },
   partners: {
     title: "Our partners"
