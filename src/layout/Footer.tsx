@@ -1,8 +1,14 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Stack } from "@chakra-ui/react";
+import { DesktopFooter } from "../components/footer/desktop/DesktopFooter";
+import { MobileFooter } from "../components/footer/mobile/MobileFooter";
 
-export const Footer = () => (
-  <Box>
-    <Text fontSize="4xl">Nos coordonnées</Text>
-    <Text>1234 rue de la medecine</Text>
-  </Box>
-);
+
+export const Footer = () => {
+
+  return (
+    <>
+      <DesktopFooter />
+      <MobileFooter />
+    </>
+  );
+};

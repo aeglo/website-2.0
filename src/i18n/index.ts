@@ -31,12 +31,6 @@ export interface AegloLocale {
   links: {
     title: string;
     subtitle: string;
-    main: {
-      name: string;
-      grid: string;
-      department: string;
-      facebook: string;
-    };
   };
   pedagogy: {
     title: string;
@@ -45,7 +39,7 @@ export interface AegloLocale {
       title: string;
       description: string;
     };
-    reprensentative: {
+    representative: {
       title: string;
       description: string;
     };
@@ -73,10 +67,17 @@ export interface AegloLocale {
       errorMessage: string;
     };
   };
+  fourOFour: {
+    title: string;
+    subtitle: string;
+    backHomeText: string;
+    pageName: string;
+  };
   footer: {
     address: string;
     email: string;
     follow: string;
     madeBy: string;
+    copyright: string;
   };
 }

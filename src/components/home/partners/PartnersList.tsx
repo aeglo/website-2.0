@@ -10,7 +10,7 @@ interface PartnersListProps {
 
 export const PartnersList: React.FC<PartnersListProps> = ({ partners }) => {
   return (
-    <Stack direction={{ base: "column", md: "row" }} flexWrap="wrap" spacing={12}>
+    <Stack direction={{ base: "column", md: "row" }} flexWrap="wrap" spacing={12} justify={"center"} mb={{base: "128px", md: "196px"}}>
       {partners.map((partner) => (
         <PartnerItem partner={partner} />
       ))}

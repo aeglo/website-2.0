@@ -1,10 +1,9 @@
 import emailjs, { init } from "emailjs-com";
 import { useState } from "react";
-
-type SendEmailStatus = "idle" | "loading" | "success" | "error";
+import { Status } from "./Status";
 
 export const useSendContactUsEmail = () => {
-  const [status, setStatus] = useState<SendEmailStatus>("idle");
+  const [status, setStatus] = useState<Status>("idle");
 
   // TODO sortir ca dans un .env
   init("user_tzrhFeAbbIWeyIn5lfmZj");

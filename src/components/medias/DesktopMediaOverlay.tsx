@@ -6,8 +6,10 @@ interface DesktopMediaOverlayProps {}
 
 export const DesktopMediaOverlay: React.FC<DesktopMediaOverlayProps> = ({}) => {
   return (
-    <Box sx={{ position: "sticky", top: "25%" }} marginLeft="90%" marginRight="32px" display={{ base: "none", md: "grid" }}>
-      <SocialMedias direction="column" />
+    <Box position="absolute" height="100%" right="10%" zIndex={2}>
+      <Box sx={{ position: "sticky", top: "25%" }} display={{ base: "none", md: "grid" }}>
+        <SocialMedias direction="column" color="main"/>
+      </Box>
     </Box>
   );
 };

@@ -9,7 +9,7 @@ interface PartnerItemProps {
 
 export const PartnerItem: React.FC<PartnerItemProps> = ({ partner }) => {
   return (
-    <Link href={partner.websiteUrl} key={partner.name} maxWidth={{ base: "100%", md: "40%" }}>
+    <Link href={partner.websiteUrl} key={partner.name} maxWidth={{ base: "100%", md: "40%" }} alignSelf={"center"}>
       <Image src={partner.imageUrl} alt={partner.name} />
     </Link>
   );
