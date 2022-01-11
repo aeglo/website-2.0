@@ -17,6 +17,7 @@ const theme = extendTheme({
       default: "#0577FF",
       hover: "#6baeff"
     },
+    dark: "#1c1d2c",
     darkSection: "#1B1F2B"
   },
   fonts: {

@@ -21,7 +21,7 @@ export interface AegloLocale {
   events: {
     title: string;
   };
-  members: {
+  representatives: {
     title: string;
     subtitle: string;
   };

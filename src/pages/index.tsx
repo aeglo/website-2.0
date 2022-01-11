@@ -1,21 +1,23 @@
+import { AspectRatio, Image } from "@chakra-ui/react";
 import type { GetStaticProps } from "next";
 import { I18nProps, useI18n } from "next-rosetta";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
 import useSystemTheme from "react-use-system-theme";
-import { EventSection } from "../components/home/EventSection";
 import { Hero } from "../components/Hero";
-import useEvents from "../hooks/useEvents";
-import type { AegloLocale } from "../i18n";
-import { Layout } from "../layout/Layout";
-import { AspectRatio, Image } from "@chakra-ui/react";
+import { EventSection } from "../components/home/EventSection";
 import { PartnersSection } from "../components/home/PartnersSection";
-import { usePartners } from "../hooks/usePartners";
-import { useUsefulLinks } from "../hooks/useUsefulLinks";
+import { RepresentativesSecion as RepresentativesSection } from "../components/home/RepresentativesSection";
 import { UsefulLinksSection } from "../components/home/UsefulLinksSection";
 import { DesktopMediaOverlay } from "../components/medias/DesktopMediaOverlay";
 import { MobileMediaOverlay } from "../components/medias/MobileMediaOverlay";
+import useEvents from "../hooks/useEvents";
+import { usePartners } from "../hooks/usePartners";
+import { useReps } from "../hooks/useReps";
+import { useUsefulLinks } from "../hooks/useUsefulLinks";
+import type { AegloLocale } from "../i18n";
+import { Layout } from "../layout/Layout";
 
 const Index = () => {
   const { locale } = useRouter();
@@ -27,6 +29,7 @@ const Index = () => {
 
   const systemTheme = useSystemTheme();
 
+  const reps = useReps(locale);
   const events = useEvents(locale);
   const partners = usePartners();
 
@@ -61,6 +64,7 @@ const Index = () => {
           <Image src="images/background_home.png" alt="Home image" />
         </AspectRatio>
         <EventSection title={t("events.title")} eventItems={events} locale={locale} />
+        <RepresentativesSection title={t("representatives.title")} subtitle={t("representatives.subtitle")} reps={reps} />
         <PartnersSection title={t("partners.title")} partners={partners} />
         <UsefulLinksSection title={t("links.title")} subtitle={t("links.subtitle")} tabs={usefulLinks} />
       </Layout>
