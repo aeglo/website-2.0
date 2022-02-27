@@ -1,0 +1,92 @@
+[
+    {
+        "asset": "images/ca/president.jpg",
+        "jobFR": "Président(e)",
+        "jobEN": "President",
+        "name": "Fabien Poulin",
+        "email": "president-aeglo@ift.ulaval.ca",
+        "descriptionFR": "Président de l'AEGLO",
+        "descriptionEN": "President of the AEGLO"
+    },
+    {
+        "asset": "images/ca/tresorier.jpg",
+        "jobFR": "Secrétaire-trésorier(e)",
+        "jobEN": "Secretary-treasurer",
+        "name": "Erika Bouret Villanueva",
+        "email": "tresorier.aeglo@ift.ulaval.ca",
+        "descriptionFR": "Secrétaire-trésorier(e) de l'AEGLO",
+        "descriptionEN": "Secrétaire-trésorier(e) de l'AEGLO"
+    },
+    {
+        "asset": "images/ca/comms.jpg",
+        "jobFR": "Rep. aux communications",
+        "jobEN": "Communications rep.",
+        "name": "Christophe Duchesne",
+        "email": "aeglo@aeglo.ift.ulaval.ca",
+        "descriptionFR": "Ceci est une description du poste de VP communications. Il peut y avoir plusieurs lignes comme ceci pour pouvoir bien décrire le poste. Dans le code il va être justifié.",
+        "descriptionEN": "Rep. aux communications de l'AEGLO"
+    },
+    {
+        "asset": "images/ca/pedago.jpg",
+        "jobFR": "Rep. aux affaires pédagogiques",
+        "jobEN": "Pedagogical affairs rep.",
+        "name": "Laurent Aubin",
+        "email": "aeglo@aeglo.ift.ulaval.ca",
+        "descriptionFR": "Rep. aux affaires pédagogiques de l'AEGLO",
+        "descriptionEN": "Rep. aux affaires pédagogiques de l'AEGLO"
+    },
+    {
+        "asset": "images/ca/socio.jpg",
+        "jobFR": "Rep. aux affaires socioculturelles",
+        "jobEN": "Socio-cultural affairs rep.",
+        "name": "Vincent Mercier",
+        "email": "socioculturelle.aeglo@ift.ulaval.ca",
+        "descriptionFR": "Rep. aux affaires socioculturelles",
+        "descriptionEN": "Rep. aux affaires socioculturelles"
+    },
+    {
+        "asset": "images/ca/finissant.jpg",
+        "jobFR": "Rep. aux affaires finissantes",
+        "jobEN": "Graduates' activities rep.",
+        "name": "Corine Bélanger",
+        "email": "corine.belanger.1@ulaval.ca",
+        "descriptionFR": "Rep. aux affaires finissantes de l'AEGLO",
+        "descriptionEN": "Rep. aux affaires finissantes de l'AEGLO"
+    },
+    {
+        "asset": "images/ca/externe.jpg",
+        "jobFR": "Rep. aux affaires externes",
+        "jobEN": "External affairs rep.",
+        "name": "Laurence Vachon",
+        "email": "laurence.vachon.1@ulaval.ca",
+        "descriptionFR": "Rep. aux affaires externes de l'AEGLO",
+        "descriptionEN": "Rep. aux affaires externes de l'AEGLO"
+    },
+    {
+        "asset": "images/ca/glo.jpg",
+        "jobFR": "Rep. génie logiciel",
+        "jobEN": "Software engineering rep.",
+        "name": "Émile Savard",
+        "email": "aeglo@aeglo.ift.ulaval.ca",
+        "descriptionFR": "Rep. génie logiciel de l'AEGLO",
+        "descriptionEN": "Rep. génie logiciel de l'AEGLO"
+    },
+    {
+        "asset": "images/ca/premiere.jpg",
+        "jobFR": "Rep. première année",
+        "jobEN": "Freshman rep.",
+        "name": "Marc-Anthony Girard",
+        "email": "marc-anthony.girard.1@ulaval.ca",
+        "descriptionFR": "Rep. première année de l'AEGLO",
+        "descriptionEN": "Rep. première année de l'AEGLO"
+    },
+    {
+        "asset": "images/ca/commandites.jpg",
+        "jobFR": "Rep. Commandites",
+        "jobEN": "Sponsors rep.",
+        "name": "Marc-Antoine Robin",
+        "email": "commandite.aeglo@ift.ulaval.ca",
+        "descriptionFR": "Rep. Commandites de l'AEGLO",
+        "descriptionEN": "Rep. Commandites de l'AEGLO"
+    }
+]

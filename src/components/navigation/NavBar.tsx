@@ -26,7 +26,7 @@ export default function NavBar() {
     },
     {
       label: t("navigation.members"),
-      href: "/#members"
+      href: "/members"
     },
     {
       label: t("navigation.partners"),

@@ -17,7 +17,7 @@ export const table: AegloLocale = {
     eventTitle: "",
     membersTitle: "",
     membersSubtitle: "",
-    parterns: "",
+    partners: "",
     linksTitle: "",
     linksSubtitle: ""
   },
@@ -25,8 +25,9 @@ export const table: AegloLocale = {
     title: "Happening soon"
   },
   members: {
-    title: "",
-    subtitle: ""
+    title: "Our Fabulous Team",
+    subtitle: "Here are the members of the administration council of the student association. These people are there to organize great activities and support you during your journey. To write to all representatives, use the following address:",
+    jobs: "The Representatives"
   },
   partners: {
     title: "Our partners"
