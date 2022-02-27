@@ -14,7 +14,7 @@ export interface AegloLocale {
     eventTitle: string;
     membersTitle: string;
     membersSubtitle: string;
-    parterns: string;
+    partners: string;
     linksTitle: string;
     linksSubtitle: string;
   };
@@ -24,6 +24,7 @@ export interface AegloLocale {
   members: {
     title: string;
     subtitle: string;
+    jobs: string;
   };
   partners: {
     title: string;
