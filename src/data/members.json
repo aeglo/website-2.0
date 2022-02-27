@@ -5,8 +5,8 @@
         "jobEN": "President",
         "name": "Fabien Poulin",
         "email": "president-aeglo@ift.ulaval.ca",
-        "descriptionFR": "Président de l'AEGLO",
-        "descriptionEN": "President of the AEGLO"
+        "descriptionFR": "Le président est responsable d'organiser et présider les rencontres du conseil d'administration. Il aide aussi les autres membres du CA et s'assure du bon déroulement des différents projets entrepris par l'association.",
+        "descriptionEN": "The president is responsible for organizing and chairing meetings of the administration council. He also helps the other members of the council and ensures the smooth running of the various projects undertaken by the association."
     },
     {
         "asset": "images/ca/tresorier.jpg",
@@ -14,8 +14,8 @@
         "jobEN": "Secretary-treasurer",
         "name": "Erika Bouret Villanueva",
         "email": "tresorier.aeglo@ift.ulaval.ca",
-        "descriptionFR": "Secrétaire-trésorier(e) de l'AEGLO",
-        "descriptionEN": "Secrétaire-trésorier(e) de l'AEGLO"
+        "descriptionFR": "Le secrétaire-trésorier est chargé d'effectuer les procès-verbaux lors des rencontres du CA, de gérer l'argent de l'association et de maintenir l'inventaire du local de l'AEGLO.",
+        "descriptionEN": "The secretary-treasurer is in charge of taking the minutes of board meetings, managing the association's money and maintaining the inventory of the AEGLO premises."
     },
     {
         "asset": "images/ca/comms.jpg",
@@ -23,8 +23,8 @@
         "jobEN": "Communications rep.",
         "name": "Christophe Duchesne",
         "email": "aeglo@aeglo.ift.ulaval.ca",
-        "descriptionFR": "Ceci est une description du poste de VP communications. Il peut y avoir plusieurs lignes comme ceci pour pouvoir bien décrire le poste. Dans le code il va être justifié.",
-        "descriptionEN": "Rep. aux communications de l'AEGLO"
+        "descriptionFR": "Le représentant aux communications est responsable de transmettre l'information pertinente aux membres via les différentes plateformes. Il est aussi responsable de la boîte courriel de l'association et du site web.",
+        "descriptionEN": "The communications representative is responsible for transmitting relevant information to members via the various platforms. He is also responsible for the association's mailbox and website."
     },
     {
         "asset": "images/ca/pedago.jpg",
@@ -32,8 +32,8 @@
         "jobEN": "Pedagogical affairs rep.",
         "name": "Laurent Aubin",
         "email": "aeglo@aeglo.ift.ulaval.ca",
-        "descriptionFR": "Rep. aux affaires pédagogiques de l'AEGLO",
-        "descriptionEN": "Rep. aux affaires pédagogiques de l'AEGLO"
+        "descriptionFR": "Le représentant aux affaires pédagogiques effectue le pont entre le département et les étudiants du baccalauréat. Il est entre autres responsable du commité de programme qui s'assure de la qualité du programme. Il est aussi là pour épauler les membres au niveau pédagogique.",
+        "descriptionEN": "The pedagogical affairs representative acts as a bridge between the department and the baccalaureate students. Among other things, he is responsible for the program committee, which ensures the quality of the program. He is also there to support the members at the educational level."
     },
     {
         "asset": "images/ca/socio.jpg",
@@ -41,8 +41,8 @@
         "jobEN": "Socio-cultural affairs rep.",
         "name": "Vincent Mercier",
         "email": "socioculturelle.aeglo@ift.ulaval.ca",
-        "descriptionFR": "Rep. aux affaires socioculturelles",
-        "descriptionEN": "Rep. aux affaires socioculturelles"
+        "descriptionFR": "Le représentant aux affaires socioculturelles est responsable d'organiser les différentes activités sociales de l'association.",
+        "descriptionEN": "The representative for socio-cultural affairs is responsible for organizing the various social activities of the association."
     },
     {
         "asset": "images/ca/finissant.jpg",
@@ -50,8 +50,8 @@
         "jobEN": "Graduates' activities rep.",
         "name": "Corine Bélanger",
         "email": "corine.belanger.1@ulaval.ca",
-        "descriptionFR": "Rep. aux affaires finissantes de l'AEGLO",
-        "descriptionEN": "Rep. aux affaires finissantes de l'AEGLO"
+        "descriptionFR": "Le représentant aux affaires finissantes est responsable d'organiser les différentes activités de fin d'études des étudiants telles que le bal des finissants et la cérémonie du jonc.",
+        "descriptionEN": "The graduating affairs representative is responsible for organizing the various graduation activities for students such as the prom and the ring ceremony."
     },
     {
         "asset": "images/ca/externe.jpg",
@@ -59,8 +59,8 @@
         "jobEN": "External affairs rep.",
         "name": "Laurence Vachon",
         "email": "laurence.vachon.1@ulaval.ca",
-        "descriptionFR": "Rep. aux affaires externes de l'AEGLO",
-        "descriptionEN": "Rep. aux affaires externes de l'AEGLO"
+        "descriptionFR": "Le représentant aux affaires externes représente les intérêts de l'AEGLO lors de rencontres du CA de l'AESGUL et lors des CAUCUS de la CADEUL. Il effectue aussi des rapports de ces rencontres et les transmet au CA de l'AEGLO.",
+        "descriptionEN": "The external affairs representative represents the interests of AEGLO during AESGUL's council meetings and during CADEUL's CAUCUS. He also makes reports of these meetings and forwards them to the AEGLO council."
     },
     {
         "asset": "images/ca/glo.jpg",
@@ -68,8 +68,8 @@
         "jobEN": "Software engineering rep.",
         "name": "Émile Savard",
         "email": "aeglo@aeglo.ift.ulaval.ca",
-        "descriptionFR": "Rep. génie logiciel de l'AEGLO",
-        "descriptionEN": "Rep. génie logiciel de l'AEGLO"
+        "descriptionFR": "Le représentant génie logiciel effectue le pont entre le conseil d'administration de l'AEGLO et celui de l'ASETIN.",
+        "descriptionEN": "The software engineering representative acts as a bridge between the council of AEGLO and that of ASETIN."
     },
     {
         "asset": "images/ca/premiere.jpg",
@@ -77,8 +77,8 @@
         "jobEN": "Freshman rep.",
         "name": "Marc-Anthony Girard",
         "email": "marc-anthony.girard.1@ulaval.ca",
-        "descriptionFR": "Rep. première année de l'AEGLO",
-        "descriptionEN": "Rep. première année de l'AEGLO"
+        "descriptionFR": "Le représentant première année représente les intérêts des nouveaux arrivants dans le baccalauréat et s'occupe de leur intégration.",
+        "descriptionEN": "The freshman representative represents the interests of newcomers to the baccalaureate and takes care of their integration."
     },
     {
         "asset": "images/ca/commandites.jpg",
@@ -86,7 +86,7 @@
         "jobEN": "Sponsors rep.",
         "name": "Marc-Antoine Robin",
         "email": "commandite.aeglo@ift.ulaval.ca",
-        "descriptionFR": "Rep. Commandites de l'AEGLO",
-        "descriptionEN": "Rep. Commandites de l'AEGLO"
+        "descriptionFR": "Le représentant des commandites est l'intermédiaire entre l'association et les différents partenaires. Il s'occupe aussi d'organiser les différents événements impliquant les entreprises commanditaires.",
+        "descriptionEN": "The sponsors representative is the intermediary between the association and the various partners. He is also in charge of organizing the various events involving the sponsoring companies."
     }
 ]

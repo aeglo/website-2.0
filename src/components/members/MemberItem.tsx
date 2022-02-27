@@ -19,6 +19,8 @@ export const MemberItem = ({ member, key }: MemberItemProps) => {
       backgroundImage={`url(${member.asset})`}
       backgroundSize="cover"
       backgroundPosition="center top"
+      backgroundColor="#1b1f2b38"
+      backgroundBlendMode="overlay"
       position="relative"
     >
       <VStack position="absolute" bottom={0} right={0} pb={{ base: "24px", md: "72px" }} pr={{ base: "36px", md: "128px" }} alignItems="end">
