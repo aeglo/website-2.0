@@ -53,7 +53,7 @@ export const MobileFooter = () => {
           </Link>
         </Stack>
         <Text fontSize="12px" fontWeight="normal" color="white" align={"center"} mt={"48px"}>
-          © Copyright 2021 AEGLO - {t("footer.copyright")}
+          © Copyright 2022 AEGLO - {t("footer.copyright")}
         </Text>
       </VStack>
     </Box>

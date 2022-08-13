@@ -1,17 +1,75 @@
-import { Partner } from "../components/home/PartnersSection";
+import { Partner } from "../pages/partners";
 
 interface PartnerDto {
   name: string;
-  imageUrl: string;
-  websiteUrl: string;
+  asset: string;
+  website: string;
+  linkedin: string;
+  descriptionFR: string;
+  descriptionEN: string;
+  plan: "Platinum" | "Gold" | "Silver" | "Bronze";
 }
 
-export const usePartners = (): Partner[] => {
+export const usePartners = (): any => {
   const partners: PartnerDto[] = require("../data/partners.json");
 
-  return partners.map((partner) => ({
+  const allPartners: Partner[] = partners.map((partner) => ({
     name: partner.name,
-    imageUrl: partner.imageUrl,
-    websiteUrl: partner.websiteUrl
+    asset: partner.asset,
+    website: partner.website,
+    linkedin: partner.linkedin,
+    descriptionFR: partner.descriptionFR,
+    descriptionEN: partner.descriptionEN,
+    plan: partner.plan,
   }));
+
+  const platinumPartners: Partner[] = partners
+    .filter((partner) => partner.plan === "Platinum")
+    .map((partner) => ({
+      name: partner.name,
+      asset: partner.asset,
+      website: partner.website,
+      linkedin: partner.linkedin,
+      descriptionFR: partner.descriptionFR,
+      descriptionEN: partner.descriptionEN,
+      plan: "Platinum",
+    }));
+
+  const goldPartners: Partner[] = partners
+    .filter((partner) => partner.plan === "Gold")
+    .map((partner) => ({
+      name: partner.name,
+      asset: partner.asset,
+      website: partner.website,
+      linkedin: partner.linkedin,
+      descriptionFR: partner.descriptionFR,
+      descriptionEN: partner.descriptionEN,
+      plan: "Gold",
+    }));
+
+  const silverPartners: Partner[] = partners
+    .filter((partner) => partner.plan === "Silver")
+    .map((partner) => ({
+      name: partner.name,
+      asset: partner.asset,
+      website: partner.website,
+      linkedin: partner.linkedin,
+      descriptionFR: partner.descriptionFR,
+      descriptionEN: partner.descriptionEN,
+      plan: "Silver",
+    }));
+
+  const bronzePartners: Partner[] = partners
+    .filter((partner) => partner.plan === "Bronze")
+    .map((partner) => ({
+      name: partner.name,
+      asset: partner.asset,
+      website: partner.website,
+      linkedin: partner.linkedin,
+      descriptionFR: partner.descriptionFR,
+      descriptionEN: partner.descriptionEN,
+      plan: "Bronze",
+    }));
+
+  return { allPartners, platinumPartners, goldPartners, silverPartners, bronzePartners };
 };

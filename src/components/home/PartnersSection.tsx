@@ -1,12 +1,7 @@
 import { Box, Heading } from "@chakra-ui/react";
 import React from "react";
+import { Partner } from "../../pages/partners";
 import { PartnersList } from "./partners/PartnersList";
-
-export interface Partner {
-  name: string;
-  imageUrl: string;
-  websiteUrl: string;
-}
 
 interface PartnersSectionProps {
   title: string;

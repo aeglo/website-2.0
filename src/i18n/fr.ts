@@ -29,8 +29,16 @@ export const table: AegloLocale = {
     subtitle: "Voici les membres du conseil d'administration de l'association étudiante. Ces personnes sont présentes pour vous organiser de super activités et vous épauler durant votre parcours. Pour écrire à tous les représentants, utilisez l'adresse suivante:",
     jobs: "Les représentants",
   },
+  plans: {
+    platinum: "Partenaires Platine",
+    gold: "Partenaires Or",
+    silver: "Partenaires Argent",
+    bronze: "Partenaires Bronze",
+  },
   partners: {
-    title: "Nos commanditaires"
+    title: "Nos commanditaires",
+    subtitle: "Nous tenons à remercier les commanditaires de l'AEGLO qui soutiennent les étudiants et étudiantes en génie logiciel lors de leur parcours universitaire. Si vous êtes une entreprise et vous désirez devenir un de nos commanditaires, jetez un oeil à notre",
+    partnershipPlan: "plan de partenariat",
   },
   links: {
     title: "Liens utiles",
