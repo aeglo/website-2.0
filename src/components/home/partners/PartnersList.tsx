@@ -1,7 +1,7 @@
 import { Box, Flex, Stack, VStack } from "@chakra-ui/layout";
 import { HStack } from "@chakra-ui/react";
 import React from "react";
-import { Partner } from "../PartnersSection";
+import { Partner } from "../../../pages/partners";
 import { PartnerItem } from "./PartnerItem";
 
 interface PartnersListProps {

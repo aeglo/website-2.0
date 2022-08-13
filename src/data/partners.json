@@ -1,22 +1,38 @@
 [
   {
     "name": "Dialog Insight",
-    "imageUrl": "http://aeglo.ift.ulaval.ca/img/DialogInsight_Logo_RGB.png",
-    "websiteUrl": "https://www.dialoginsight.com/"
+    "asset": "http://aeglo.ift.ulaval.ca/img/DialogInsight_Logo_RGB.png",
+    "website": "https://www.dialoginsight.com/",
+    "linkedin": "https://www.linkedin.com/company/dialoginsight/",
+    "descriptionFR": "Dialog Insight, nous développons un Customer Data Platform qui a un réel impact sur la façon dont nos clients exploitent leurs données. Nous offrons des solutions pour faciliter la centralisation des données clients, l'orchestration de campagnes en mode omnicanal et l'analyse des performances globales. Toutes nos équipes travaillent vers un but commun : développer une application réellement flexible, capable de s’adapter à tous les contextes d'une entreprise. Le défi est majeur, mais tellement enrichissant, puisque nous sommes constamment en train de repousser les limites pour développer des fonctionnalités complexes, mais faciles à manier par nos utilisateurs.",
+    "descriptionEN": "Dialog Insight, nous développons un Customer Data Platform qui a un réel impact sur la façon dont nos clients exploitent leurs données. Nous offrons des solutions pour faciliter la centralisation des données clients, l'orchestration de campagnes en mode omnicanal et l'analyse des performances globales. Toutes nos équipes travaillent vers un but commun : développer une application réellement flexible, capable de s’adapter à tous les contextes d'une entreprise. Le défi est majeur, mais tellement enrichissant, puisque nous sommes constamment en train de repousser les limites pour développer des fonctionnalités complexes, mais faciles à manier par nos utilisateurs.",
+    "plan": "Platinum"
   },
   {
     "name": "Lahaie Gestion Financière",
-    "imageUrl": "http://aeglo.ift.ulaval.ca/img/lahaie.png",
-    "websiteUrl": "https://www.lahaiegf.com/"
+    "asset": "http://aeglo.ift.ulaval.ca/img/lahaie.png",
+    "website": "https://www.lahaiegf.com/",
+    "linkedin": "https://www.linkedin.com/company/lahaiegestionfinanciere/about/",
+    "descriptionFR": "Le premier cabinet de services financiers dédié à la technologie. Lahaie Gestion financière assiste les entrepreneurs et les professionnels innovants dans l'atteinte de leurs objectifs professionnels et personnels. Nous vulgarisons le domaine financier pour vous permettre de prendre vos propres décisions. Nous travaillons sans papier et nos processus épurés permettent à nos clients de garder le focus sur ce qui les anime réellement.",
+    "descriptionEN": "Le premier cabinet de services financiers dédié à la technologie. Lahaie Gestion financière assiste les entrepreneurs et les professionnels innovants dans l'atteinte de leurs objectifs professionnels et personnels. Nous vulgarisons le domaine financier pour vous permettre de prendre vos propres décisions. Nous travaillons sans papier et nos processus épurés permettent à nos clients de garder le focus sur ce qui les anime réellement.",
+    "plan": "Gold"
   },
   {
     "name": "Desjardins",
-    "imageUrl": "http://aeglo.ift.ulaval.ca/img/desjardins_logo_commandite.svg",
-    "websiteUrl": "https://www.desjardins.com/a-propos/desjardins/index.jsp"
+    "asset": "http://aeglo.ift.ulaval.ca/img/desjardins_logo_commandite.svg",
+    "website": "https://www.desjardins.com/a-propos/desjardins/index.jsp",
+    "linkedin": "https://www.linkedin.com/company/desjardins/",
+    "descriptionFR": "À l'avant-garde en matière d'innovation dans les technologies large bande et les médias. Notre mission est de contribuer au mieux-être économique et social des personnes et des collectivités dans les limites compatibles de notre champ d'action : en développant un réseau coopératif intégré de services financiers sécuritaires et rentables, sur une base permanente, propriété des membres et administré par eux, et un réseau d'entreprises financières complémentaires, à rendement concurrentiel et contrôlé par eux. en faisant l'éducation à la démocratie, à l'économie, à la solidarité et à la responsabilité individuelle et collective, particulièrement auprès de nos membres, de nos dirigeants et de nos employés. Chez Desjardins, nous considérons l'argent comme un levier qui favorise l'autonomie et le développement des personnes et des collectivités.",
+    "descriptionEN": "À l'avant-garde en matière d'innovation dans les technologies large bande et les médias. Notre mission est de contribuer au mieux-être économique et social des personnes et des collectivités dans les limites compatibles de notre champ d'action : en développant un réseau coopératif intégré de services financiers sécuritaires et rentables, sur une base permanente, propriété des membres et administré par eux, et un réseau d'entreprises financières complémentaires, à rendement concurrentiel et contrôlé par eux. en faisant l'éducation à la démocratie, à l'économie, à la solidarité et à la responsabilité individuelle et collective, particulièrement auprès de nos membres, de nos dirigeants et de nos employés. Chez Desjardins, nous considérons l'argent comme un levier qui favorise l'autonomie et le développement des personnes et des collectivités.",
+    "plan": "Silver"
   },
   {
     "name": "Snipcart",
-    "imageUrl": "http://aeglo.ift.ulaval.ca/img/snipcart_logo_commandite.png",
-    "websiteUrl": "https://www.snipcart.com/"
+    "asset": "http://aeglo.ift.ulaval.ca/img/snipcart_logo_commandite.png",
+    "website": "https://www.snipcart.com/",
+    "linkedin": "https://www.linkedin.com/company/snipcart/",
+    "descriptionFR": "Une solution d'E-Commerce visant les développeurs. Snipcart est un SaaS de e-commerce pour développeurs située à Québec et qui est en activité depuis 8 ans. Snipcart est une plateforme de panier d'achat permettant d'ajouter du commerce électronique personnalisé à n'importe quel site ou application web en quelques minutes.",
+    "descriptionEN": "Une solution d'E-Commerce visant les développeurs. Snipcart est un SaaS de e-commerce pour développeurs située à Québec et qui est en activité depuis 8 ans. Snipcart est une plateforme de panier d'achat permettant d'ajouter du commerce électronique personnalisé à n'importe quel site ou application web en quelques minutes.",
+    "plan": "Silver"
   }
 ]

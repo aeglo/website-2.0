@@ -28,7 +28,7 @@ const Index = () => {
   const systemTheme = useSystemTheme();
 
   const events = useEvents(locale);
-  const partners = usePartners();
+  const { allPartners } = usePartners();
 
   return (
     <>
@@ -61,7 +61,7 @@ const Index = () => {
           <Image src="images/background_home.png" alt="Home image" />
         </AspectRatio>
         <EventSection title={t("events.title")} eventItems={events} locale={locale} />
-        <PartnersSection title={t("partners.title")} partners={partners} />
+        <PartnersSection title={t("partners.title")} partners={allPartners} />
         <UsefulLinksSection title={t("links.title")} subtitle={t("links.subtitle")} tabs={usefulLinks} />
       </Layout>
     </>

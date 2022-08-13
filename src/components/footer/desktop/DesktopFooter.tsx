@@ -88,7 +88,7 @@ export const DesktopFooter = () => {
         </Stack>
       </Stack>
       <Text fontSize="16px" fontWeight="normal" color="white" align={"center"} mt={"81px"}>
-        © Copyright 2021 AEGLO - {t("footer.copyright")}
+        © Copyright 2022 AEGLO - {t("footer.copyright")}
       </Text>
     </Box>
   );

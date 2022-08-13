@@ -30,7 +30,7 @@ export default function NavBar() {
     },
     {
       label: t("navigation.partners"),
-      href: "/#partners"
+      href: "/partners"
     },
     {
       label: t("navigation.pedagogy"),

@@ -29,8 +29,16 @@ export const table: AegloLocale = {
     subtitle: "Here are the members of the administration council of the student association. These people are there to organize great activities and support you during your journey. To write to all representatives, use the following address:",
     jobs: "The Representatives"
   },
+  plans: {
+    platinum: "Platinum Sponsors",
+    gold: "Gold Sponsors",
+    silver: "Silver Sponsors",
+    bronze: "Bronze Sponsors",
+  },
   partners: {
-    title: "Our partners"
+    title: "Our partners",
+    subtitle: "We would like to thank the sponsors of AEGLO who support software engineering students during their university journey. If you are a company and you wish to become one of our sponsors, take a look at our",
+    partnershipPlan: "partnership plan",
   },
   links: {
     title: "Useful links",

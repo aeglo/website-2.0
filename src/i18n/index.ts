@@ -26,8 +26,16 @@ export interface AegloLocale {
     subtitle: string;
     jobs: string;
   };
+  plans: {
+    platinum: string;
+    gold: string,
+    silver: string,
+    bronze: string,
+  };
   partners: {
     title: string;
+    subtitle: string;
+    partnershipPlan: string;
   };
   links: {
     title: string;
