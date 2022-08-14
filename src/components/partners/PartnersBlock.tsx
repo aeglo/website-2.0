@@ -10,9 +10,9 @@ interface PartnersBlockProps {
 
 export const PartnersBlock = ({ partners, backgroundColor }: PartnersBlockProps) => {
   return (
-    <Flex h="648px">
+    <Flex h="648px" w='100%' flexDirection={{ base: "column", md: "row" }}>
       {partners.length ? (partners.map((partner, index) => (
-        <PartnerItem partner={partner} itemKey={index + partner.name} backgroundColor={backgroundColor} />
+        <PartnerItem partner={partner} itemKey={index + partner.name} backgroundColor={backgroundColor} maxHeight={`${648 / partners.length}px`}/>
       ))) : (<NoPartner backgroundColor={backgroundColor}/>)}
     </Flex>
   );
