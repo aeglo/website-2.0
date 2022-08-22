@@ -88,7 +88,7 @@ export const table: AegloLocale = {
     title: "OOPS...",
     subtitle: "The page you're trying to access does not exist. If you think this is a mistake, please contact us.",
     pageName: "Error",
-    backHomeText: "Back to home page"
+    backHomeText: "<-- Back to Earth"
   },
   footer: {
     address: "Pavillon Alexandre Vachon - Room 00113",

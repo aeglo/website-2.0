@@ -38,12 +38,12 @@ export default function Custom404() {
         )}
       </Head>
       <Layout>
-        <Box height="80vh" paddingTop="10vh">
+        <Box paddingY="10vh">
           <VStack justify={"center"} alignContent={"center"}>
-            <AspectRatio width={{ base: "350px", md: "675px" }} ratio={2}>
+            <AspectRatio width={{ base: "370px", md: "676px" }} ratio={1.95} mb={"48px"}>
               <Img src={"images/404.png"} alt="404" />
             </AspectRatio>
-            <Heading fontSize={{ base: "6xl", md: "8xl" }} fontWeight={"bold"} color={"main"} mt={"48px"}>
+            <Heading fontSize={{ base: "6xl", md: "8xl" }} fontWeight={"bold"} color={"main"}>
               {t("fourOFour.title")}
             </Heading>
             <Text
@@ -53,11 +53,12 @@ export default function Custom404() {
               textAlign={"center"}
               mt={"8px"}
               paddingX={{ base: 2, md: 0 }}
+              maxW={{ base: "248px", md: "724px" }}
             >
               {t("fourOFour.subtitle")}
             </Text>
-            <NextChakraLink href="/">
-              <Text fontSize={{ base: "lg", md: "2xl" }} fontWeight={"medium"} color={"secondary"} textAlign={"center"} mt={"16px"}>
+            <NextChakraLink href="/" style={{ textDecoration: 'none' }}>
+              <Text fontSize={{ base: "lg", md: "2xl" }} fontWeight={"medium"} color={"secondary.default"} textAlign={"center"} mt={"24px"}>
                 {t("fourOFour.backHomeText")}
               </Text>
             </NextChakraLink>
