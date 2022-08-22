@@ -28,6 +28,7 @@ export const EventItem: React.FC<EventItemProps> = ({ event, key, locale }) => {
       rounded={20}
       flex={1}
       padding={5}
+      margin={4}
     >
       <VStack marginBottom={6}>
         <Text color="secondary.default" fontSize="xl">

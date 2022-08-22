@@ -10,7 +10,7 @@ interface EventListProps {
 
 export const EventList: React.FC<EventListProps> = ({ events, locale }) => {
   return (
-    <EventCarousel gap={32}>
+    <EventCarousel>
       {events.map((event, index) => (
         <EventItem key={index} event={event} locale={locale} />
       ))}
