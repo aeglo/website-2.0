@@ -26,7 +26,7 @@ export const PartnerItem = ({ partner, itemKey, backgroundColor, maxHeight }: Pa
             onMouseEnter={() => setShowInfos(true)}
             onMouseLeave={() => setShowInfos(false)} >
             {showInfos && (<Box display="flex" flexDirection="column" w='100%' h='100%' bgGradient='linear(to-t, darkSection, rgba(27, 31, 43, 0.42))' alignItems="center" justifyContent="flex-end">
-                <Text marginTop="2vh" fontSize={{ base: "16px", md: "20px" }} fontWeight="bold" textAlign="center" marginX={50} color="white" overflowY="scroll">
+                <Text marginTop="2vh" fontSize={{ base: "16px", md: "20px" }} fontWeight="bold" textAlign="center" marginX={50} color="white" overflowY="auto">
                     {partner.descriptionFR}
                 </Text>
                 <Stack direction={"row"} mt="48px" display="flex" justifyContent="center">
