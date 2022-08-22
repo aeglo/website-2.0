@@ -17,11 +17,11 @@ export const DesktopFooter = () => {
     },
     {
       label: t("navigation.members"),
-      href: "/#members"
+      href: "/members"
     },
     {
       label: t("navigation.partners"),
-      href: "/#partners"
+      href: "/partners"
     },
     {
       label: t("navigation.pedagogy"),
