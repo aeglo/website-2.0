@@ -90,7 +90,7 @@ export const table: AegloLocale = {
     title: "OUPS...",
     subtitle: "La page que vous tentez d'accéder n'existe pas. Si vous pensez qu'il s'agit d'une erreur, n'hésitez pas à nous contacter.",
     pageName: "Erreur",
-    backHomeText: "Retour à l'accueil"
+    backHomeText: "<-- Retour sur Terre"
   },
   footer: {
     address: "Pavillon Alexandre Vachon - Local 00113",
