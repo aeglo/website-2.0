@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, Navigation, Autoplay } from 'swiper';
+import { Navigation, Autoplay } from 'swiper';
 
 import 'swiper/css/bundle';
 import 'swiper/css/effect-fade';
@@ -14,8 +14,7 @@ const MembersCarousel = ({ children }) => {
           autoplay={{
               delay: 2500, 
               disableOnInteraction: false}} 
-              modules={[EffectFade, Navigation, Autoplay]} 
-              effect="fade" 
+              modules={[Navigation, Autoplay]} 
               spaceBetween={0} 
               slidesPerView={1}>
             {children.map((child, index) => (

@@ -11,14 +11,14 @@ export const MemberItem = ({ member, key }: MemberItemProps) => {
   return (
     <Box
       w="100%"
-      h={{ base: "596px", md: "1496px" }}
+      h={{ base: "596px", md: "996px" }}
       justifyContent="left"
       flexDirection="column"
       overflow="hidden"
       color="black"
       backgroundImage={`url(${member.asset})`}
       backgroundSize="cover"
-      backgroundPosition="center top"
+      backgroundPosition="25% 15%"
       backgroundColor="#1b1f2b38"
       backgroundBlendMode="overlay"
       position="relative"
@@ -32,7 +32,7 @@ export const MemberItem = ({ member, key }: MemberItemProps) => {
           {member.name.toUpperCase()}
         </Text>
 
-        <Link key={key} fontSize={{ base: "14px", md: "36px" }} fontWeight="bold" color="secondary.default" href="mailto:${member.email}">
+        <Link key={key} fontSize={{ base: "14px", md: "36px" }} fontWeight="bold" color="secondary.default" href={`mailto:${member.email}`}>
         {member.email}
         </Link>
 
