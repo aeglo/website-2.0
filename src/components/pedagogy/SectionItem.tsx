@@ -19,11 +19,12 @@ export const SectionItem: React.FC<SectionProps> = ({ section }) => {
         <Avatar icon={section.icon} backgroundColor="secondary.default" boxSize={24} />
         <Heading textAlign={"center"}>{section.title}</Heading>
         <Text textAlign={"justify"}>{section.description}</Text>
-        <Link color="secondary.default">- Le règlement des études</Link>
-        <Link color="secondary.default">- La déclaration des droits des étudiants et des étudiantes</Link>
-        <Link color="secondary.default">- Règlements et documents officiels de la Faculté des Sciences et de Génie</Link>
-        <Link color="secondary.default">- Règlements et documents officiels du département d’informatique et de génie logiciel</Link>
-        <Link color="secondary.default">- Le bureau des droits étudiants</Link>
+        <Link alignSelf={"start"} style={{ textDecoration: 'none'}} color="secondary.default" href="https://www.ulaval.ca/sites/default/files/notre-universite/direction-gouv/Documents%20officiels/R%C3%A8glements/Reglement_des_etudes.pdf" isExternal>- Le règlement des études</Link>
+        <Link alignSelf={"start"} style={{ textDecoration: 'none'}} color="secondary.default" href="https://ombudsman.ulaval.ca/mieux-connaitre-lombudsman/declaration-des-droits-des-etudiants/" isExternal>- La déclaration des droits des étudiants et des étudiantes</Link>
+        <Link alignSelf={"start"} style={{ textDecoration: 'none'}} color="secondary.default" href="https://www.ulaval.ca/notre-universite/direction-et-gouvernance/bureau-du-secretaire-general/documents-officiels" isExternal>- Règlements et documents officiels de l'Université Laval</Link>
+        <Link alignSelf={"start"} style={{ textDecoration: 'none'}} color="secondary.default" href="https://www.fsg.ulaval.ca/espace-facultaire/etudiants-actuels/reglements-et-documents-officiels/" isExternal>- Règlements et documents officiels de la Faculté des Sciences et de Génie</Link>
+        <Link alignSelf={"start"} style={{ textDecoration: 'none'}} color="secondary.default" href="https://www.ift.ulaval.ca/departement-et-professeurs/reglements-et-documents-officiels/" isExternal>- Règlements et documents officiels du département d’informatique et de génie logiciel</Link>
+        <Link alignSelf={"start"} style={{ textDecoration: 'none'}} color="secondary.default" href="https://www.cadeul.com/bde/" isExternal>- Le bureau des droits étudiants</Link>
       </VStack>
     );
   }
