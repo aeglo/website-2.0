@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper';
 
 import 'swiper/css/bundle';
-import 'swiper/css/effect-fade';
 import "swiper/css/navigation";
 
 const MembersCarousel = ({ children }) => {
