@@ -17,7 +17,7 @@ const MembersCarousel = ({ children }) => {
               spaceBetween={0} 
               slidesPerView={1}>
             {children.map((child, index) => (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={'membersSlide' + index}>
                     {child}
                 </SwiperSlide>
             ))}

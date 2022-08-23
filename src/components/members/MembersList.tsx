@@ -11,7 +11,7 @@ export const MembersList = ({ members } : MembersListProps) => {
   return (
     <MembersCarousel>
       {members.map((member, index) => (
-        <MemberItem member={member} key={index}/>
+        <MemberItem member={member} itemKey={index}/>
       ))}
     </MembersCarousel>
   );

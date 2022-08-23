@@ -3,11 +3,10 @@ import { Member } from "../../pages/members";
 
 interface MemberItemProps {
   member: Member;
-  key: any;
+  itemKey: any;
 }
 
-export const MemberItem = ({ member, key }: MemberItemProps) => {
-
+export const MemberItem = ({ member, itemKey }: MemberItemProps) => {
   return (
     <Box
       w="100%"
@@ -32,7 +31,7 @@ export const MemberItem = ({ member, key }: MemberItemProps) => {
           {member.name.toUpperCase()}
         </Text>
 
-        <Link key={key} fontSize={{ base: "14px", md: "36px" }} fontWeight="bold" color="secondary.default" href={`mailto:${member.email}`}>
+        <Link key={'membersItem' + itemKey} fontSize={{ base: "14px", md: "36px" }} fontWeight="bold" color="secondary.default" href={`mailto:${member.email}`}>
         {member.email}
         </Link>
 

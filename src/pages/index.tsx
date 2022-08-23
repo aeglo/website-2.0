@@ -16,6 +16,8 @@ import { useUsefulLinks } from "../hooks/useUsefulLinks";
 import { UsefulLinksSection } from "../components/home/UsefulLinksSection";
 import { DesktopMediaOverlay } from "../components/medias/DesktopMediaOverlay";
 import { MobileMediaOverlay } from "../components/medias/MobileMediaOverlay";
+import { MembersSection } from "../components/home/MembersSection";
+import useMembers from "../hooks/useMembers";
 
 const Index = () => {
   const { locale } = useRouter();
@@ -24,6 +26,7 @@ const Index = () => {
 
   const { state: usefulLinksStatus, getUsefulLinks } = useUsefulLinks();
   const usefulLinks = getUsefulLinks(locale);
+  const members = useMembers(locale);
 
   const systemTheme = useSystemTheme();
 
@@ -61,6 +64,7 @@ const Index = () => {
           <Image src="images/background_home.png" alt="Home image" />
         </AspectRatio>
         <EventSection title={t("events.title")} eventItems={events} locale={locale} />
+        <MembersSection title={t("hero.membersTitle")} subtitle={t("hero.membersSubtitle")} members={members} />
         <PartnersSection title={t("partners.title")} partners={allPartners} />
         <UsefulLinksSection title={t("links.title")} subtitle={t("links.subtitle")} tabs={usefulLinks} />
       </Layout>
