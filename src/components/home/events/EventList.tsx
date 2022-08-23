@@ -12,7 +12,7 @@ export const EventList: React.FC<EventListProps> = ({ events, locale }) => {
   return (
     <EventCarousel>
       {events.map((event, index) => (
-        <EventItem key={index} event={event} locale={locale} />
+        <EventItem itemKey={index} event={event} locale={locale} />
       ))}
     </EventCarousel>
   );

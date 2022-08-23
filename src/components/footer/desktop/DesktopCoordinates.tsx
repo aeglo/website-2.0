@@ -10,7 +10,7 @@ export const DesktopCoordinates = () => {
     <Box>
       <HStack>
         <AspectRatio width="128px">
-          <Img src="images/aeglo_logo.png" fallbackSrc="images/aeglo_logo.png" alt="Aeglo logo" />
+          <Img src="images/aeglo_logo.png" fallbacksrc="images/aeglo_logo.png" alt="Aeglo logo" />
         </AspectRatio>
         <Stack direction="column" spacing={0}>
           <Text fontSize="20px" fontWeight="bold" color="white">

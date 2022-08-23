@@ -7,15 +7,13 @@ import { Event } from "../EventSection";
 
 interface EventItemProps {
   event: Event;
-  key: any;
+  itemKey: any;
   locale: string;
 }
 
-export const EventItem: React.FC<EventItemProps> = ({ event, key, locale }) => {
+export const EventItem: React.FC<EventItemProps> = ({ event, itemKey, locale }) => {
   const eventDay = getWeekdayFromDate(event.date, locale);
   const eventDate = `${event.date.getDate()} ${getMonthFromDate(event.date, locale)}`;
-
-  console.log(event.link);
 
   return (
     <Flex
@@ -41,7 +39,7 @@ export const EventItem: React.FC<EventItemProps> = ({ event, key, locale }) => {
           {event.time}
         </Text>
 
-        <Link key={key} href={event.link} isExternal>
+        <Link key={'eventItem' + itemKey} href={event.link} isExternal>
           <Heading color="secondary.default" fontSize="5xl">
             {event.title}
           </Heading>

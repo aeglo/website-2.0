@@ -15,8 +15,8 @@ export const table: AegloLocale = {
     subtitle:
       "Welcome to your software engineering association website. You will find here all resources related to Laval University's software engineering program. You will also find useful information on events, activities, parties, etc.",
     eventTitle: "",
-    membersTitle: "",
-    membersSubtitle: "",
+    membersTitle: "Representatives",
+    membersSubtitle: "Here is the wonderful team taking care of the association and who are present to help you and organize the activities!",
     partners: "",
     linksTitle: "",
     linksSubtitle: ""
