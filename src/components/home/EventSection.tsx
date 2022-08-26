@@ -20,10 +20,10 @@ export interface Event {
 export const EventSection: React.FC<EventSectionProps> = ({ title, eventItems, locale }) => {
   return (
     <Box id="home" paddingTop={{ base: 0, md: "10vh" }}>
-      <Stack direction="column" paddingX={{ base: "5vw", md: "25%" }} textAlign="center" marginY={{base: "128px", md: "196px"}}>
+      {eventItems.length && (<Stack direction="column" paddingX={{ base: "5vw", md: "25%" }} textAlign="center" marginY={{ base: "128px", md: "196px" }}>
         <Heading marginBottom={8}>{title}</Heading>
         <EventList events={eventItems} locale={locale} />
-      </Stack>
+      </Stack>)}
     </Box>
   );
 };
