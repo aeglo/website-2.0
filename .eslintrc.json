@@ -6,6 +6,7 @@
   "plugins": ["prettier"],
   "rules": {
     "react/jsx-props-no-spreading": "off",
-    "operator-linebreak": "off"
+    "operator-linebreak": "off",
+    "react/require-default-props": "off"
   }
 }
