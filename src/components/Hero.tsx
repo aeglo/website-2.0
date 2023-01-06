@@ -27,12 +27,12 @@ export default function Hero({
       px={{ base: '1.5rem', lg: '8rem' }}
     >
       <Fade in>
-        <Heading fontSize={{ base: '3.125rem', lg: '12.25rem' }} color="white" textAlign={{ base: 'center', lg: 'start' }}>
-          {title}
+        <Heading fontSize={{ base: '3.125rem', lg: '7rem' }} color="white" textAlign={{ base: 'center', lg: 'start' }}>
+          {title.toUpperCase()}
         </Heading>
       </Fade>
       <Fade in>
-        <Text fontSize={{ base: '1.25rem', lg: '1.5rem' }} fontWeight="bold" color="white" whiteSpace="pre-line" textAlign={{ base: 'center', lg: 'start' }}>{subtitle}</Text>
+        <Text fontSize={{ base: '1.25rem', lg: '1.5rem' }} fontWeight="bold" color="white" maxW={{ base: '100%', lg: '44rem' }} whiteSpace="pre-line" textAlign={{ base: 'center', lg: 'start' }}>{subtitle}</Text>
       </Fade>
       <Fade in>
         <Flex justify={{ base: 'center', lg: 'start' }} mt="1rem">{children}</Flex>

@@ -81,7 +81,7 @@ export default function Footer() {
                 fontSize="1.25rem"
                 fontWeight="medium"
                 color="white"
-                href="/"
+                href="/executif"
                 _hover={{ textDecoration: 'none', color: 'secondary.default' }}
                 _active={{ color: 'secondary.default' }}
               >
@@ -92,7 +92,7 @@ export default function Footer() {
                 fontSize="1.25rem"
                 fontWeight="medium"
                 color="white"
-                href="/"
+                href="/partenaires"
                 _hover={{ textDecoration: 'none', color: 'secondary.default' }}
                 _active={{ color: 'secondary.default' }}
               >
@@ -103,7 +103,7 @@ export default function Footer() {
                 fontSize="1.25rem"
                 fontWeight="medium"
                 color="white"
-                href="/"
+                href="/pedagogie"
                 _hover={{ textDecoration: 'none', color: 'secondary.default' }}
                 _active={{ color: 'secondary.default' }}
               >
@@ -114,9 +114,10 @@ export default function Footer() {
                 fontSize="1.25rem"
                 fontWeight="medium"
                 color="white"
-                href="/"
+                href="/files/charte.pdf"
                 _hover={{ textDecoration: 'none', color: 'secondary.default' }}
                 _active={{ color: 'secondary.default' }}
+                isExternal
               >
                 Charte
               </Link>
@@ -125,7 +126,7 @@ export default function Footer() {
                 fontSize="1.25rem"
                 fontWeight="medium"
                 color="white"
-                href="/"
+                href="/contact"
                 _hover={{ textDecoration: 'none', color: 'secondary.default' }}
                 _active={{ color: 'secondary.default' }}
               >
