@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { Box } from '@chakra-ui/react';
-import NavBar from '../components/NavBar';
+import Layout from '../layout/Layout';
 
 export default function Home() {
   return (
@@ -12,8 +12,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar />
-      <Box bgColor="blue" h="2000px" />
+      <Layout>
+        <Box bgColor="blue" h="1000px" />
+      </Layout>
     </>
   );
 }
