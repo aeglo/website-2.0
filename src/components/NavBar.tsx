@@ -115,7 +115,7 @@ export default function NavBar() {
             </Link>
             <Link
               as={NextLink}
-              href="/"
+              href="/executif"
               mt={{ base: '2rem', lg: '4rem' }}
               color="main"
               _hover={{ textDecoration: 'none', color: 'secondary.default' }}
@@ -124,7 +124,7 @@ export default function NavBar() {
             </Link>
             <Link
               as={NextLink}
-              href="/"
+              href="/partenaires"
               mt={{ base: '2rem', lg: '4rem' }}
               color="main"
               _hover={{ textDecoration: 'none', color: 'secondary.default' }}
@@ -133,7 +133,7 @@ export default function NavBar() {
             </Link>
             <Link
               as={NextLink}
-              href="/"
+              href="/pedagogie"
               mt={{ base: '2rem', lg: '4rem' }}
               color="main"
               _hover={{ textDecoration: 'none', color: 'secondary.default' }}
@@ -142,16 +142,17 @@ export default function NavBar() {
             </Link>
             <Link
               as={NextLink}
-              href="/"
+              href="/files/charte.pdf"
               mt={{ base: '2rem', lg: '4rem' }}
               color="main"
               _hover={{ textDecoration: 'none', color: 'secondary.default' }}
+              isExternal
             >
               <Heading>Charte</Heading>
             </Link>
             <Link
               as={NextLink}
-              href="/"
+              href="/contact"
               mt={{ base: '2rem', lg: '4rem' }}
               color="main"
               _hover={{ textDecoration: 'none', color: 'secondary.default' }}
