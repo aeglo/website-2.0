@@ -1,9 +1,9 @@
 import { Icon, IconProps } from '@chakra-ui/react';
 import React from 'react';
 
-interface AegloLogoFullProps extends IconProps {}
+interface AegloLogoProps extends IconProps {}
 
-export default function AegloLogo({ color, ...props }: AegloLogoFullProps) {
+export default function AegloLogo({ color, ...props }: AegloLogoProps) {
   return (
     <Icon viewBox="0 0 512 126" color={color} {...props}>
       <polygon points="252,33.5 252,42.5 243,42.5 243,60.5 243,78.5 243,96.5 252,96.5 252,105.5 261,105.5 297,105.5 297,87.5 261,87.5 261,78.5 297,78.5 297,60.5 261,60.5 261,51.5 297,51.5 297,33.5 261,33.5" fill={color?.toString()} />
