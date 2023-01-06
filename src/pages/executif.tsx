@@ -1,17 +1,16 @@
-import React from 'react';
 import Head from 'next/head';
-import Layout from '../layout/Layout';
+import React from 'react';
 import Hero from '../components/Hero';
-import SocialMedias from '../components/SocialMedias';
+import Layout from '../layout/Layout';
 
-export default function Home() {
+export default function Executive() {
   return (
     <>
       <Head>
-        <title>AEGLO - Accueil</title>
+        <title>AEGLO - Exécutif</title>
         <meta name="description" content="Bienvenue sur le site officiel de l'AEGLO, votre association pour étudiants en Génie Logiciel. Vous trouverez ici les liens vers toutes les ressources importantes en lien avec le baccalauréat en Génie Logiciel à l'Université Laval ainsi que les événements, sorties, partys, etc." />
         <meta name="keywords" content="aeglo, genie, logiciel, software, engineering, association, étudiant, étudiante, université, laval" />
-        <meta property="og:title" content="AEGLO - Accueil" />
+        <meta property="og:title" content="AEGLO - Exécutif" />
         <meta property="og:description" content="Bienvenue sur le site officiel de l'AEGLO, votre association pour étudiants en Génie Logiciel. Vous trouverez ici les liens vers toutes les ressources importantes en lien avec le baccalauréat en Génie Logiciel à l'Université Laval ainsi que les événements, sorties, partys, etc." />
         <meta property="og:url" content="http://aeglo.ift.ulaval.ca/" />
         <meta property="og:site_name" content="AEGLO" />
@@ -23,9 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Hero img="home_banner.jpeg" title="AEGLO" subtitle={"Association des étudiants et étudiantes en\ngénie logiciel de l'Université Laval"}>
-          <SocialMedias direction="row" color="white" />
-        </Hero>
+        <Hero img="aeglo_executif.jpeg" title="Exécutif" subtitle="Une merveilleuse équipe présente pour vous épauler et vous organiser de super activités!" />
       </Layout>
     </>
   );
