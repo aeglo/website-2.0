@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
-import { Box } from '@chakra-ui/react';
 import Layout from '../layout/Layout';
+import Hero from '../components/Hero';
+import SocialMedias from '../components/SocialMedias';
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Box bgColor="blue" h="1000px" />
+        <Hero img="home_banner.jpeg" title="AEGLO" subtitle={"Association des étudiants et étudiantes en\ngénie logiciel de l'Université Laval"}>
+          <SocialMedias direction="row" color="white" />
+        </Hero>
       </Layout>
     </>
   );
