@@ -70,7 +70,9 @@ export default function Pedagogy() {
             align="center"
           >
             <Avatar
-              icon={<ThreeUsersIcon boxSize={{ base: '8.5rem', lg: '22.75rem' }} />}
+              icon={
+                <ThreeUsersIcon boxSize={{ base: '8.5rem', lg: '22.75rem' }} />
+              }
               bgColor="secondary.default"
               boxSize={{ base: '15rem', lg: '40rem' }}
             />
@@ -225,6 +227,70 @@ export default function Pedagogy() {
               </Link>
             </VStack>
           </Stack>
+        </Flex>
+        <Flex
+          px={{ base: '1.5rem', lg: '8rem' }}
+          py="6.25rem"
+          direction="column"
+          gap="6.25rem"
+          bgColor="main"
+        >
+          <Heading
+            fontSize={{ base: '2.25rem', lg: '5.625rem' }}
+            textAlign={{ base: 'center', lg: 'start' }}
+            color="white"
+          >
+            Traitement d&apos;une problématique
+          </Heading>
+          <Flex direction="column" gap="1rem">
+            <Text
+              fontSize={{ base: '0.875rem', lg: '1.5rem' }}
+              fontWeight="medium"
+              color="white"
+              textAlign={{ base: 'justify', lg: 'start' }}
+            >
+              Tout d&apos;abord, il s&apos;agit de tenir compte de tous les
+              aspects du problème, autant de votre point de vue que celui de
+              toutes les parties concernées. Ensuite, définir les démarches à
+              entreprendre.
+            </Text>
+            <Text
+              fontSize={{ base: '0.875rem', lg: '1.5rem' }}
+              fontWeight="medium"
+              color="white"
+              textAlign={{ base: 'justify', lg: 'start' }}
+            >
+              - Les démarches personnelles de l&apos;étudiant sont à prioriser
+              dans la mesure du possible. En effet, vous êtes celui qui est le
+              plus apte à résoudre votre problème, car vous êtes directement
+              affecté.
+            </Text>
+            <Text
+              fontSize={{ base: '0.875rem', lg: '1.5rem' }}
+              fontWeight="medium"
+              color="white"
+              textAlign={{ base: 'justify', lg: 'start' }}
+            >
+              - Il s&apos;agit ensuite de trouver la bonne ressource, votre rep.
+              pédago. peut vous y aider.
+            </Text>
+            <Text
+              fontSize={{ base: '0.875rem', lg: '1.5rem' }}
+              fontWeight="medium"
+              color="white"
+              textAlign={{ base: 'justify', lg: 'start' }}
+            >
+              - Les discussions à l&apos;amiable sont à privilégier.
+            </Text>
+            <Text
+              fontSize={{ base: '0.875rem', lg: '1.5rem' }}
+              fontWeight="medium"
+              color="white"
+              textAlign={{ base: 'justify', lg: 'start' }}
+            >
+              - S&apos;assurer de respecter toutes les personnes impliquées.
+            </Text>
+          </Flex>
         </Flex>
       </Layout>
     </>
