@@ -48,7 +48,7 @@ export default function Contact() {
           direction="column"
           gap="6.25rem"
         >
-          <Heading textAlign="center">Pour nous joindre</Heading>
+          <Heading fontSize={{ base: '2.25rem', lg: '5.625rem' }} textAlign={{ base: 'center', lg: 'start' }}>Pour nous joindre</Heading>
           <Flex
             direction={{ base: 'column', lg: 'row' }}
             justify="space-between"
