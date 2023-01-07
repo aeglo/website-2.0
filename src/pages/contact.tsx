@@ -1,5 +1,8 @@
+import { Flex, Heading } from '@chakra-ui/react';
 import Head from 'next/head';
 import React from 'react';
+import ContactUsForm from '../components/contact/ContactUsForm';
+import GoogleMap from '../components/contact/GoogleMap';
 import Hero from '../components/Hero';
 import Layout from '../layout/Layout';
 
@@ -39,6 +42,21 @@ export default function Contact() {
           title="Contact"
           subtitle="Vous n'avez pas trouvé la réponse à votre recherche ou vous désirez simplement communiquer avec nous?"
         />
+        <Flex
+          px={{ base: '1.5rem', lg: '8rem' }}
+          py="6.25rem"
+          direction="column"
+          gap="6.25rem"
+        >
+          <Heading textAlign="center">Pour nous joindre</Heading>
+          <Flex
+            direction={{ base: 'column', lg: 'row' }}
+            justify="space-between"
+          >
+            <ContactUsForm />
+            <GoogleMap />
+          </Flex>
+        </Flex>
       </Layout>
     </>
   );
