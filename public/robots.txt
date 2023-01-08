@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: http://aeglo.ift.ulaval.ca/
+
+# Sitemaps
+Sitemap: http://aeglo.ift.ulaval.ca/sitemap.xml
