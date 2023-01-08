@@ -298,6 +298,7 @@ export default function Home({
           >
             {sponsors.map((sponsor) => (
               <Link
+                key={sponsor.name}
                 as={NextLink}
                 href={sponsor.website}
                 maxWidth={{ base: '100%', lg: '40%' }}

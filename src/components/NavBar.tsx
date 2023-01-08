@@ -13,7 +13,6 @@ import {
 import NextLink from 'next/link';
 import React, { useCallback, useEffect, useState } from 'react';
 import AegloLogo from '../icons/AegloLogo';
-import LocaleMenu from './LocaleMenu';
 
 export default function NavBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -82,9 +81,7 @@ export default function NavBar() {
           </Link>
         </Flex>
 
-        <Flex flex={{ lg: 1 }} justify="flex-end">
-          <LocaleMenu />
-        </Flex>
+        <Flex flex={{ lg: 1 }} justify="flex-end" />
       </Flex>
       <Drawer placement="top" onClose={onClose} isOpen={isOpen} isFullHeight>
         <DrawerOverlay />
