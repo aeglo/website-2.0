@@ -21,7 +21,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper';
+import { Navigation } from 'swiper';
 import NextLink from 'next/link';
 import Layout from '../layout/Layout';
 import Hero from '../components/Hero';
@@ -231,11 +231,7 @@ export default function Home({
             <Swiper
               navigation
               loop
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: true,
-              }}
-              modules={[Navigation, Autoplay]}
+              modules={[Navigation]}
               slidesPerView={slidesPerView}
             >
               {execs.map((exec) => (

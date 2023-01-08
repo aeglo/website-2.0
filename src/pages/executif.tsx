@@ -5,7 +5,7 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Navigation } from 'swiper';
+import { EffectFade, Navigation } from 'swiper';
 import Hero from '../components/Hero';
 import Layout from '../layout/Layout';
 import 'swiper/css';
@@ -97,12 +97,8 @@ export default function Executive({ data }: { data: Exec[] }) {
           navigation
           effect="fade"
           slidesPerView={1}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: true,
-          }}
           loop
-          modules={[Autoplay, Navigation, EffectFade]}
+          modules={[Navigation, EffectFade]}
         >
           {data.map((executive) => (
             <SwiperSlide key={executive.title}>
