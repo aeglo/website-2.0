@@ -1,0 +1,30 @@
+name: Deploy website
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 19
+          cache: yarn
+
+      - name: Build
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
+          yarn export
+          touch out/.nojekyll
+      
+      - name: Deploy
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          host: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: "out"
