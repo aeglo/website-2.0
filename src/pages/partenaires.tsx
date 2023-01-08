@@ -12,9 +12,30 @@ import Head from 'next/head';
 import NextLink from 'next/link';
 import React from 'react';
 import Hero from '../components/Hero';
+import partners from '../data/partners';
 import Layout from '../layout/Layout';
 
-export default function Partners() {
+export async function getStaticProps() {
+  return {
+    props: {
+      data: partners,
+    },
+  };
+}
+
+interface Partner {
+  name: string;
+  logo: string;
+  website: string;
+  plan: 'Platinum' | 'Gold' | 'Silver' | 'Bronze';
+}
+
+export default function Partners({ data }: { data: Partner[] }) {
+  const platinum = data.filter((p) => p.plan === 'Platinum');
+  const gold = data.filter((p) => p.plan === 'Gold');
+  const silver = data.filter((p) => p.plan === 'Silver');
+  const bronze = data.filter((p) => p.plan === 'Bronze');
+
   return (
     <>
       <Head>
@@ -62,20 +83,47 @@ export default function Partners() {
           >
             Partenaires Platine
           </Heading>
-          <Grid w="100%" templateColumns="repeat(1, auto)" gap="4rem">
-            <Center>
-              <GridItem>
-                <Link
-                  as={NextLink}
-                  href="https://www.dialoginsight.com/"
-                  _hover={{ textDecoration: 'none' }}
-                  isExternal
-                >
-                  <Img src="/partners/dialog_insight_logo.png" />
-                </Link>
-              </GridItem>
-            </Center>
-          </Grid>
+          {platinum.length > 0 ? (
+            <Grid w="100%" templateColumns={{ base: 'repeat(1, auto)', lg: `repeat(${Math.min(3, platinum.length)}, auto)` }} gap="4rem">
+              { platinum.map((p) => (
+                <Center key={p.name}>
+                  <GridItem>
+                    <Link
+                      as={NextLink}
+                      href={p.website}
+                      _hover={{ textDecoration: 'none' }}
+                      isExternal
+                    >
+                      <Img src={p.logo} alt={p.name} />
+                    </Link>
+                  </GridItem>
+                </Center>
+              ))}
+            </Grid>
+          ) : (
+            <Text
+              fontSize={{ base: '1.125rem', lg: '1.5rem' }}
+              fontWeight="bold"
+              alignSelf="center"
+              maxW="40rem"
+              textAlign="center"
+            >
+              Nous n&apos;avons aucun partenaire platine pour l&apos;instant.
+              Consultez notre
+              {' '}
+              <Link
+                as={NextLink}
+                href="/files/PlanDePartenariat_AEGLO.pdf"
+                color="secondary.default"
+                isExternal
+              >
+                plan de partenariat
+              </Link>
+              {' '}
+              afin de savoir quels bénéfices sont inclus et devenez notre
+              premier partenaire bronze.
+            </Text>
+          )}
 
           <Heading
             fontSize={{ base: '2.25rem', lg: '5.625rem' }}
@@ -83,20 +131,47 @@ export default function Partners() {
           >
             Partenaires Or
           </Heading>
-          <Grid w="100%" templateColumns="repeat(1, auto)" gap="4rem">
-            <Center>
-              <GridItem>
-                <Link
-                  as={NextLink}
-                  href="https://www.lahaiegf.com/"
-                  _hover={{ textDecoration: 'none' }}
-                  isExternal
-                >
-                  <Img src="/partners/lahaie_logo.png" />
-                </Link>
-              </GridItem>
-            </Center>
-          </Grid>
+          {gold.length > 0 ? (
+            <Grid w="100%" templateColumns={{ base: 'repeat(1, auto)', lg: `repeat(${Math.min(3, gold.length)}, auto)` }} gap="4rem">
+              { gold.map((p) => (
+                <Center key={p.name}>
+                  <GridItem>
+                    <Link
+                      as={NextLink}
+                      href={p.website}
+                      _hover={{ textDecoration: 'none' }}
+                      isExternal
+                    >
+                      <Img src={p.logo} alt={p.name} />
+                    </Link>
+                  </GridItem>
+                </Center>
+              ))}
+            </Grid>
+          ) : (
+            <Text
+              fontSize={{ base: '1.125rem', lg: '1.5rem' }}
+              fontWeight="bold"
+              alignSelf="center"
+              maxW="40rem"
+              textAlign="center"
+            >
+              Nous n&apos;avons aucun partenaire or pour l&apos;instant.
+              Consultez notre
+              {' '}
+              <Link
+                as={NextLink}
+                href="/files/PlanDePartenariat_AEGLO.pdf"
+                color="secondary.default"
+                isExternal
+              >
+                plan de partenariat
+              </Link>
+              {' '}
+              afin de savoir quels bénéfices sont inclus et devenez notre
+              premier partenaire bronze.
+            </Text>
+          )}
 
           <Heading
             fontSize={{ base: '2.25rem', lg: '5.625rem' }}
@@ -104,49 +179,47 @@ export default function Partners() {
           >
             Partenaires Argent
           </Heading>
-          <Grid
-            w="100%"
-            alignSelf="center"
-            templateColumns={{ base: 'repeat(1, auto)', lg: 'repeat(3, auto)' }}
-            gap="4rem"
-          >
-            <Center>
-              <GridItem>
-                <Link
-                  as={NextLink}
-                  href="https://www.desjardins.com/"
-                  _hover={{ textDecoration: 'none' }}
-                  isExternal
-                >
-                  <Img src="/partners/desjardins_logo.svg" />
-                </Link>
-              </GridItem>
-            </Center>
-            <Center>
-              <GridItem>
-                <Link
-                  as={NextLink}
-                  href="https://www.bell.ca/"
-                  _hover={{ textDecoration: 'none' }}
-                  isExternal
-                >
-                  <Img src="/partners/bell_logo.png" />
-                </Link>
-              </GridItem>
-            </Center>
-            <Center>
-              <GridItem>
-                <Link
-                  as={NextLink}
-                  href="https://snipcart.com/"
-                  _hover={{ textDecoration: 'none' }}
-                  isExternal
-                >
-                  <Img src="/partners/snipcart_logo.png" />
-                </Link>
-              </GridItem>
-            </Center>
-          </Grid>
+          {silver.length > 0 ? (
+            <Grid w="100%" templateColumns={{ base: 'repeat(1, auto)', lg: `repeat(${Math.min(3, silver.length)}, auto)` }} gap="4rem">
+              { silver.map((p) => (
+                <Center key={p.name}>
+                  <GridItem>
+                    <Link
+                      as={NextLink}
+                      href={p.website}
+                      _hover={{ textDecoration: 'none' }}
+                      isExternal
+                    >
+                      <Img src={p.logo} alt={p.name} />
+                    </Link>
+                  </GridItem>
+                </Center>
+              ))}
+            </Grid>
+          ) : (
+            <Text
+              fontSize={{ base: '1.125rem', lg: '1.5rem' }}
+              fontWeight="bold"
+              alignSelf="center"
+              maxW="40rem"
+              textAlign="center"
+            >
+              Nous n&apos;avons aucun partenaire argent pour l&apos;instant.
+              Consultez notre
+              {' '}
+              <Link
+                as={NextLink}
+                href="/files/PlanDePartenariat_AEGLO.pdf"
+                color="secondary.default"
+                isExternal
+              >
+                plan de partenariat
+              </Link>
+              {' '}
+              afin de savoir quels bénéfices sont inclus et devenez notre
+              premier partenaire bronze.
+            </Text>
+          )}
 
           <Heading
             fontSize={{ base: '2.25rem', lg: '5.625rem' }}
@@ -154,28 +227,47 @@ export default function Partners() {
           >
             Partenaires Bronze
           </Heading>
-          <Text
-            fontSize={{ base: '1.125rem', lg: '1.5rem' }}
-            fontWeight="bold"
-            alignSelf="center"
-            maxW="40rem"
-            textAlign="center"
-          >
-            Nous n&apos;avons aucun partenaire bronze pour l&apos;instant.
-            Consultez notre
-            {' '}
-            <Link
-              as={NextLink}
-              href="/files/PlanDePartenariat_AEGLO.pdf"
-              color="secondary.default"
-              isExternal
+          {bronze.length > 0 ? (
+            <Grid w="100%" templateColumns={{ base: 'repeat(1, auto)', lg: `repeat(${Math.min(3, bronze.length)}, auto)` }} gap="4rem">
+              { bronze.map((p) => (
+                <Center key={p.name}>
+                  <GridItem>
+                    <Link
+                      as={NextLink}
+                      href={p.website}
+                      _hover={{ textDecoration: 'none' }}
+                      isExternal
+                    >
+                      <Img src={p.logo} alt={p.name} />
+                    </Link>
+                  </GridItem>
+                </Center>
+              ))}
+            </Grid>
+          ) : (
+            <Text
+              fontSize={{ base: '1.125rem', lg: '1.5rem' }}
+              fontWeight="bold"
+              alignSelf="center"
+              maxW="40rem"
+              textAlign="center"
             >
-              plan de partenariat
-            </Link>
-            {' '}
-            afin de savoir quels bénéfices sont inclus et devenez notre premier
-            partenaire bronze.
-          </Text>
+              Nous n&apos;avons aucun partenaire bronze pour l&apos;instant.
+              Consultez notre
+              {' '}
+              <Link
+                as={NextLink}
+                href="/files/PlanDePartenariat_AEGLO.pdf"
+                color="secondary.default"
+                isExternal
+              >
+                plan de partenariat
+              </Link>
+              {' '}
+              afin de savoir quels bénéfices sont inclus et devenez notre
+              premier partenaire bronze.
+            </Text>
+          )}
 
           <Heading
             fontSize={{ base: '2.25rem', lg: '5.625rem' }}
