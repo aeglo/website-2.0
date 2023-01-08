@@ -145,18 +145,15 @@ export default function Executive({ data }: { data: Exec[] }) {
                     </Text>
                   </Stack>
                 </Flex>
-                <Flex
+                <Img
+                  maxW={{ base: '100%', lg: '751px' }}
                   maxH="894px"
-                  maxW="751px"
-                  alignSelf={{ base: 'center', lg: '' }}
-                >
-                  <Img
-                    src={executive.img}
-                    alt={executive.name}
-                    objectFit="cover"
-                    objectPosition="top"
-                  />
-                </Flex>
+                  alignContent="center"
+                  src={executive.img}
+                  alt={executive.name}
+                  objectFit="cover"
+                  objectPosition="top"
+                />
               </Flex>
             </SwiperSlide>
           ))}
