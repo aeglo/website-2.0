@@ -233,6 +233,7 @@ export default function Home({
               loop
               modules={[Navigation]}
               slidesPerView={slidesPerView}
+              cssMode
             >
               {execs.map((exec) => (
                 <SwiperSlide key={exec.title}>
