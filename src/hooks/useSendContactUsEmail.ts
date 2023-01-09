@@ -2,17 +2,22 @@ import emailjs, { init } from 'emailjs-com';
 import { useState } from 'react';
 import { Status } from './status';
 
-const useSendContactUsEmail = () => {
+interface UseSendContactUsEmail {
+  publicKey: string;
+  serviceId: string;
+  templateId: string;
+}
+
+const useSendContactUsEmail = ({ publicKey, serviceId, templateId }: UseSendContactUsEmail) => {
   const [status, setStatus] = useState<Status>('idle');
 
-  // TODO sortir ca dans un .env
-  init('user_tzrhFeAbbIWeyIn5lfmZj');
+  init(publicKey);
 
   const sendEmail = (name: string, email: string, body: string) => {
     setStatus('loading');
 
     emailjs
-      .send('service_9n4hwcr', 'template_c8d22ud', {
+      .send(serviceId, templateId, {
         from_name: name,
         message: body,
         reply_to: email,

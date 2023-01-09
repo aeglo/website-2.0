@@ -6,7 +6,27 @@ import GoogleMap from '../components/contact/GoogleMap';
 import Hero from '../components/Hero';
 import Layout from '../layout/Layout';
 
-export default function Contact() {
+export async function getStaticProps() {
+  return {
+    props: {
+      publicKey: process.env.EMAIL_PUBLIC_KEY,
+      serviceId: process.env.EMAIL_SERVICE,
+      templateId: process.env.EMAIL_TEMPLATE,
+      mapsApiKey: process.env.MAPS_API_KEY,
+    },
+  };
+}
+
+interface ContactProps {
+  publicKey: string;
+  serviceId: string;
+  templateId: string;
+  mapsApiKey: string;
+}
+
+export default function Contact({
+  publicKey, serviceId, templateId, mapsApiKey,
+}: ContactProps) {
   return (
     <>
       <Head>
@@ -48,13 +68,22 @@ export default function Contact() {
           direction="column"
           gap="6.25rem"
         >
-          <Heading fontSize={{ base: '2.25rem', lg: '5.625rem' }} textAlign={{ base: 'center', lg: 'start' }}>Pour nous joindre</Heading>
+          <Heading
+            fontSize={{ base: '2.25rem', lg: '5.625rem' }}
+            textAlign={{ base: 'center', lg: 'start' }}
+          >
+            Pour nous joindre
+          </Heading>
           <Flex
             direction={{ base: 'column', lg: 'row' }}
             justify="space-between"
           >
-            <ContactUsForm />
-            <GoogleMap />
+            <ContactUsForm
+              publicKey={publicKey}
+              serviceId={serviceId}
+              templateId={templateId}
+            />
+            <GoogleMap mapsApiKey={mapsApiKey} />
           </Flex>
         </Flex>
       </Layout>
