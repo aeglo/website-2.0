@@ -6,7 +6,13 @@ import React, { useEffect, useState } from 'react';
 import useSendContactUsEmail from '../../hooks/useSendContactUsEmail';
 import isStringEmptyOrNull from '../../utils/isStringEmptyOrNull';
 
-export default function ContactUsForm() {
+interface ContactUsFormProps {
+  publicKey: string;
+  serviceId: string;
+  templateId: string;
+}
+
+export default function ContactUsForm({ publicKey, serviceId, templateId }: ContactUsFormProps) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [body, setBody] = useState('');
@@ -14,7 +20,7 @@ export default function ContactUsForm() {
   const [isEmailInvalid, setIsEmailInvalid] = useState(false);
   const [isBodyInvalid, setIsBodyInvalid] = useState(false);
 
-  const { status, sendEmail } = useSendContactUsEmail();
+  const { status, sendEmail } = useSendContactUsEmail({ publicKey, serviceId, templateId });
 
   useEffect(() => {
     setIsNameInvalid(false);
