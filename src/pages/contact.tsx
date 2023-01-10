@@ -20,9 +20,7 @@ interface ContactProps {
   mapsApiKey: string;
 }
 
-export default function Contact({
-  formId, mapsApiKey,
-}: ContactProps) {
+export default function Contact({ formId, mapsApiKey }: ContactProps) {
   return (
     <>
       <Head>
