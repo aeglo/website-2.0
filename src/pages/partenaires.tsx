@@ -27,7 +27,7 @@ interface Partner {
   name: string;
   logo: string;
   website: string;
-  plan: 'Platinum' | 'Gold' | 'Silver' | 'Bronze';
+  plan: 'Platinum' | 'Gold' | 'Silver' | 'Bronze' | 'Special';
 }
 
 export default function Partners({ data }: { data: Partner[] }) {
@@ -35,6 +35,7 @@ export default function Partners({ data }: { data: Partner[] }) {
   const gold = data.filter((p) => p.plan === 'Gold');
   const silver = data.filter((p) => p.plan === 'Silver');
   const bronze = data.filter((p) => p.plan === 'Bronze');
+  const special = data.filter((p) => p.plan === 'Special');
 
   return (
     <>
@@ -253,6 +254,54 @@ export default function Partners({ data }: { data: Partner[] }) {
               textAlign="center"
             >
               Nous n&apos;avons aucun partenaire bronze pour l&apos;instant.
+              Consultez notre
+              {' '}
+              <Link
+                as={NextLink}
+                href="/files/PlanDePartenariat_AEGLO.pdf"
+                color="secondary.default"
+                isExternal
+              >
+                plan de partenariat
+              </Link>
+              {' '}
+              afin de savoir quels bénéfices sont inclus et devenez notre
+              premier partenaire bronze.
+            </Text>
+          )}
+
+          <Heading
+            fontSize={{ base: '2.25rem', lg: '5.625rem' }}
+            textAlign={{ base: 'center', lg: 'start' }}
+          >
+            Partenaires Spéciaux
+          </Heading>
+          {special.length > 0 ? (
+            <Grid w="100%" templateColumns={{ base: 'repeat(1, auto)', lg: `repeat(${Math.min(3, special.length)}, auto)` }} gap="4rem">
+              { special.map((p) => (
+                <Center key={p.name}>
+                  <GridItem>
+                    <Link
+                      as={NextLink}
+                      href={p.website}
+                      _hover={{ textDecoration: 'none' }}
+                      isExternal
+                    >
+                      <Img src={p.logo} alt={p.name} />
+                    </Link>
+                  </GridItem>
+                </Center>
+              ))}
+            </Grid>
+          ) : (
+            <Text
+              fontSize={{ base: '1.125rem', lg: '1.5rem' }}
+              fontWeight="bold"
+              alignSelf="center"
+              maxW="40rem"
+              textAlign="center"
+            >
+              Nous n&apos;avons aucun partenaire argent pour l&apos;instant.
               Consultez notre
               {' '}
               <Link
