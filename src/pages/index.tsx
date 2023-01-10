@@ -66,7 +66,7 @@ interface Partner {
   name: string;
   logo: string;
   website: string;
-  plan: 'Platinum' | 'Gold' | 'Silver' | 'Bronze';
+  plan: 'Platinum' | 'Gold' | 'Silver' | 'Bronze' | 'Special';
 }
 
 interface UsefulLink {

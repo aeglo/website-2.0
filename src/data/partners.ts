@@ -2,7 +2,7 @@ interface Partner {
   name: string;
   logo: string;
   website: string;
-  plan: 'Platinum' | 'Gold' | 'Silver' | 'Bronze';
+  plan: 'Platinum' | 'Gold' | 'Silver' | 'Bronze' | 'Special';
 }
 
 const partners: Partner[] = [
@@ -35,6 +35,12 @@ const partners: Partner[] = [
     logo: '/partners/snipcart_logo.png',
     website: 'https://snipcart.com/',
     plan: 'Silver',
+  },
+  {
+    name: 'Guru',
+    logo: '/partners/guru_logo.png',
+    website: 'https://www.guruenergy.com/',
+    plan: 'Special',
   },
 ];
 
