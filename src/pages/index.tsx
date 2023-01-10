@@ -48,7 +48,11 @@ export async function getStaticProps() {
 
 interface Event {
   name: string;
-  date: string;
+  date: {
+    day: number;
+    month: number;
+    year: number;
+  };
   time: string;
   location: string;
   link: string;
@@ -175,13 +179,31 @@ export default function Home({
                     color="secondary.default"
                     fontSize={{ base: '1rem', lg: '2rem' }}
                   >
-                    {getWeekdayFromDate(new Date(activity.date), 'fr')}
+                    {getWeekdayFromDate(
+                      new Date(
+                        activity.date.year,
+                        activity.date.month - 1,
+                        activity.date.day,
+                      ),
+                      'fr',
+                    )}
                   </Text>
                   <Heading fontSize={{ base: '2.25rem', lg: '4rem' }}>
-                    {new Date(activity.date).getDate()}
+                    {new Date(
+                      activity.date.year,
+                      activity.date.month - 1,
+                      activity.date.day,
+                    ).getDate()}
                   </Heading>
                   <Heading fontSize={{ base: '2.25rem', lg: '4rem' }}>
-                    {getMonthFromDate(new Date(activity.date), 'fr')}
+                    {getMonthFromDate(
+                      new Date(
+                        activity.date.year,
+                        activity.date.month - 1,
+                        activity.date.day,
+                      ),
+                      'fr',
+                    )}
                   </Heading>
                   <Text
                     fontSize={{ base: '1.25rem', lg: '2.25rem' }}
