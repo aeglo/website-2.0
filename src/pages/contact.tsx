@@ -9,23 +9,19 @@ import Layout from '../layout/Layout';
 export async function getStaticProps() {
   return {
     props: {
-      publicKey: process.env.EMAIL_PUBLIC_KEY,
-      serviceId: process.env.EMAIL_SERVICE,
-      templateId: process.env.EMAIL_TEMPLATE,
+      formId: process.env.FORM_ID,
       mapsApiKey: process.env.MAPS_API_KEY,
     },
   };
 }
 
 interface ContactProps {
-  publicKey: string;
-  serviceId: string;
-  templateId: string;
+  formId: string;
   mapsApiKey: string;
 }
 
 export default function Contact({
-  publicKey, serviceId, templateId, mapsApiKey,
+  formId, mapsApiKey,
 }: ContactProps) {
   return (
     <>
@@ -78,11 +74,7 @@ export default function Contact({
             direction={{ base: 'column', lg: 'row' }}
             justify="space-between"
           >
-            <ContactUsForm
-              publicKey={publicKey}
-              serviceId={serviceId}
-              templateId={templateId}
-            />
+            <ContactUsForm formId={formId} />
             <GoogleMap mapsApiKey={mapsApiKey} />
           </Flex>
         </Flex>
