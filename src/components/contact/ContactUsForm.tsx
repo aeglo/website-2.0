@@ -1,10 +1,15 @@
 import { CheckIcon } from '@chakra-ui/icons';
 import {
-  Button, FormControl, FormLabel, Input, Spinner, Textarea, VStack, Text,
+  Button, FormLabel, Input, Spinner, Textarea, VStack, Text,
 } from '@chakra-ui/react';
+<<<<<<< Updated upstream
 import React, { useEffect, useState } from 'react';
 import useSendContactUsEmail from '../../hooks/useSendContactUsEmail';
 import isStringEmptyOrNull from '../../utils/isStringEmptyOrNull';
+=======
+import { useForm, ValidationError } from '@formspree/react';
+import React from 'react';
+>>>>>>> Stashed changes
 
 interface ContactUsFormProps {
   publicKey: string;
@@ -12,6 +17,7 @@ interface ContactUsFormProps {
   templateId: string;
 }
 
+<<<<<<< Updated upstream
 export default function ContactUsForm({ publicKey, serviceId, templateId }: ContactUsFormProps) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -53,6 +59,11 @@ export default function ContactUsForm({ publicKey, serviceId, templateId }: Cont
     }
   };
 
+=======
+export default function ContactUsForm({ formId }: ContactUsFormProps) {
+  const [state, handleSubmit] = useForm(formId);
+
+>>>>>>> Stashed changes
   const getButtonIcon = () => {
     if (status === 'loading') {
       return <Spinner />;
@@ -67,6 +78,7 @@ export default function ContactUsForm({ publicKey, serviceId, templateId }: Cont
 
   return (
     <VStack width={{ base: '100%', lg: '35%' }} alignContent={{ base: 'center', lg: 'start' }}>
+<<<<<<< Updated upstream
       <FormControl isRequired isInvalid={isNameInvalid}>
         <FormLabel>Nom complet</FormLabel>
         <Input value={name} onChange={({ target }) => setName(target.value)} />
@@ -89,6 +101,28 @@ export default function ContactUsForm({ publicKey, serviceId, templateId }: Cont
       >
         Envoyer
       </Button>
+=======
+      <form onSubmit={handleSubmit} method="POST">
+        <FormLabel>Adresse courriel</FormLabel>
+        <Input name="email" id="email" isRequired />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <FormLabel mt="1rem">Message</FormLabel>
+        <Textarea name="message" id="message" isRequired resize="none" minHeight={124} />
+        <ValidationError prefix="Message" field="message" errors={state.errors} />
+        {state.errors.length > 0 && <Text color="red">Une erreur est survenue lors de l&apos;envoie du courriel. SVP réessayer ou nous contacter directement à aeglo@aeglo.ift.ulaval.ca</Text>}
+        <Button
+          type="submit"
+          disabled={state.submitting}
+          backgroundColor="secondary.default"
+          color="white"
+          _hover={{ backgroundColor: 'secondary.hover' }}
+          rightIcon={getButtonIcon()}
+          mt="1rem"
+        >
+          Envoyer
+        </Button>
+      </form>
+>>>>>>> Stashed changes
     </VStack>
   );
 }
