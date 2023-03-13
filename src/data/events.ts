@@ -13,15 +13,15 @@ interface Event {
 // Limited to 3 events in the code
 const events: Event[] = [
   {
-    name: 'La meilleure soirée de votre vie!!!',
+    name: 'Assemblée générale',
     date: {
-      day: 10,
-      month: 1,
+      day: 27,
+      month: 3,
       year: 2023,
     },
-    time: '19h00',
-    location: 'Cafétéria du Pouliot',
-    link: 'https://fb.me/e/4dwA3WOk4',
+    time: '12h00',
+    location: 'Pavillon Alexandre-Vachon',
+    link: 'https://fb.me/e/3tiAdy9US',
   },
 ];
 
