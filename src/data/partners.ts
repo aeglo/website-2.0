@@ -13,27 +13,15 @@ const partners: Partner[] = [
     plan: 'Platinum',
   },
   {
-    name: 'Lahaie Gestion Financière',
-    logo: '/partners/lahaie_logo.png',
+    name: 'LFX Cabinet de services financiers',
+    logo: '/partners/LFX_logo.jpg',
     website: 'https://www.lahaiegf.com/',
-    plan: 'Gold',
-  },
-  {
-    name: 'Desjardins',
-    logo: '/partners/desjardins_logo.svg',
-    website: 'https://www.desjardins.com/',
-    plan: 'Silver',
+    plan: 'Platinum',
   },
   {
     name: 'Bell',
     logo: '/partners/bell_logo.png',
     website: 'https://www.bell.ca/',
-    plan: 'Silver',
-  },
-  {
-    name: 'Snipcart',
-    logo: '/partners/snipcart_logo.png',
-    website: 'https://snipcart.com/',
     plan: 'Silver',
   },
   {
