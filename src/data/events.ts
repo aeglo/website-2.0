@@ -13,15 +13,26 @@ interface Event {
 // Limited to 3 events in the code
 const events: Event[] = [
   {
-    name: 'Assemblée générale',
+    name: 'Rentrée et début des initiations',
     date: {
-      day: 27,
-      month: 3,
+      day: 5,
+      month: 9,
       year: 2023,
     },
-    time: '12h00',
-    location: 'Pavillon Alexandre-Vachon',
-    link: 'https://fb.me/e/3tiAdy9US',
+    time: '8h30',
+    location: 'Université laval',
+    link: '',
+  },
+  {
+    name: 'Début de la semaine de lecture',
+    date: {
+      day: 30,
+      month: 10,
+      year: 2023,
+    },
+    time: '8h30',
+    location: 'Université laval',
+    link: '',
   },
 ];
 
