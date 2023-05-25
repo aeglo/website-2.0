@@ -32,7 +32,7 @@ const executives: Executive[] = [
     name: 'Alexandre Mathieu',
     title: 'Rep. aux affaires pédagogiques',
     email: 'aeglo@aeglo.ift.ulaval.ca',
-    desc: "Le représentant aux affaires pédagogiques effectue le pont entre le département et les étudiants du baccalauréat. Il est entre autres responsable du commité de programme qui s'assure de la qualité du programme. Il est aussi là pour épauler les membres au niveau pédagogique.",
+    desc: "Le représentant aux affaires pédagogiques effectue le pont entre le département et les étudiants du baccalauréat. Il est entre autres responsable du comité de programme qui s'assure de la qualité du programme. Il est aussi là pour épauler les membres au niveau pédagogique.",
     img: '/executives/Alexandre_Mathieu.jpeg',
   },
   {
