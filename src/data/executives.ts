@@ -19,7 +19,7 @@ const executives: Executive[] = [
     title: 'Secrétaire-trésorier(e)',
     email: 'tresorier.aeglo@ift.ulaval.ca',
     desc: "Le secrétaire-trésorier est chargé d'effectuer les procès-verbaux lors des rencontres du CA, de gérer l'argent de l'association et de maintenir l'inventaire du local de l'AEGLO.",
-    img: '/executives/placeholder.png',
+    img: '/executives/Charles_Viau.jpg',
   },
   {
     name: 'Xavier Hamel',
@@ -40,28 +40,28 @@ const executives: Executive[] = [
     title: 'Rep. aux affaires socioculturelles',
     email: 'socioculturelle.aeglo@ift.ulaval.ca',
     desc: "Le représentant aux affaires socioculturelles est responsable d'organiser les différentes activités sociales de l'association.",
-    img: '/executives/placeholder.png',
+    img: '/executives/Nathan_Paquet.jpg',
   },
   {
     name: 'Thomas Mondor',
     title: 'Rep. aux activités finissantes',
-    email: 'marc-antoine.robin.1@ulaval.ca',
+    email: 'thomas.mondors.1@ulaval.ca',
     desc: "Le représentant aux activités finissantes est responsable d'organiser les différentes activités de fin d'études des étudiants telles que le bal des finissants et la cérémonie du jonc.",
-    img: '/executives/placeholder.png',
+    img: '/executives/Thomas_Mondor.jpg',
   },
   {
     name: 'Kim St-Pierre',
     title: 'Rep. aux affaires externes',
-    email: 'laurence.vachon.1@ulaval.ca',
+    email: 'kim.st-pierre.2@ulaval.ca',
     desc: "Le représentant aux affaires externes représente les intérêts de l'AEGLO lors de rencontres du CA de l'AESGUL et lors des CAUCUS de la CADEUL. Il effectue aussi des rapports de ces rencontres et les transmet au CA de l'AEGLO.",
-    img: '/executives/placeholder.png',
+    img: '/executives/Kim_St-Pierre.jpg',
   },
   {
     name: 'Samuel Grenier',
     title: 'Rep. génie logiciel',
     email: 'aeglo@aeglo.ift.ulaval.ca',
     desc: "Le représentant génie logiciel effectue le pont entre le conseil d'administration de l'AEGLO et celui de l'ASETIN.",
-    img: '/executives/placeholder.png',
+    img: '/executives/Samuel_Grenier.jpg',
   },
   {
     name: 'Xavier Hamel',
@@ -75,7 +75,7 @@ const executives: Executive[] = [
     title: 'Rep. Commandites',
     email: 'commandite.aeglo@ift.ulaval.ca',
     desc: "Le représentant des commandites est l'intermédiaire entre l'association et les différents partenaires. Il s'occupe aussi d'organiser les différents événements impliquant les entreprises commanditaires.",
-    img: '/executives/placeholder.png',
+    img: '/executives/Loic_Boutet.jpg',
   },
 ];
 
