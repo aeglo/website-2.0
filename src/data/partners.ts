@@ -15,14 +15,14 @@ const partners: Partner[] = [
   {
     name: 'LFX Cabinet de services financiers',
     logo: '/partners/LFX_logo.jpg',
-    website: 'https://www.lahaiegf.com/',
+    website: 'https://www.teamlfx.com/',
     plan: 'Platinum',
   },
   {
-    name: 'Bell',
-    logo: '/partners/bell_logo.png',
-    website: 'https://www.bell.ca/',
-    plan: 'Silver',
+    name: 'Coveo',
+    logo: '/partners/Logo Coveo.webp',
+    website: 'https://www.coveo.com/fr',
+    plan: 'Gold',
   },
   {
     name: 'Guru',

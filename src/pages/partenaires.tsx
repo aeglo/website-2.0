@@ -170,7 +170,7 @@ export default function Partners({ data }: { data: Partner[] }) {
               </Link>
               {' '}
               afin de savoir quels bénéfices sont inclus et devenez notre
-              premier partenaire bronze.
+              premier partenaire or.
             </Text>
           )}
 
@@ -218,7 +218,7 @@ export default function Partners({ data }: { data: Partner[] }) {
               </Link>
               {' '}
               afin de savoir quels bénéfices sont inclus et devenez notre
-              premier partenaire bronze.
+              premier partenaire argent.
             </Text>
           )}
 
@@ -301,7 +301,7 @@ export default function Partners({ data }: { data: Partner[] }) {
               maxW="40rem"
               textAlign="center"
             >
-              Nous n&apos;avons aucun partenaire argent pour l&apos;instant.
+              Nous n&apos;avons aucun partenaire spécial pour l&apos;instant.
               Consultez notre
               {' '}
               <Link
@@ -314,7 +314,7 @@ export default function Partners({ data }: { data: Partner[] }) {
               </Link>
               {' '}
               afin de savoir quels bénéfices sont inclus et devenez notre
-              premier partenaire bronze.
+              premier partenaire spécial.
             </Text>
           )}
 
