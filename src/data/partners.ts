@@ -19,6 +19,12 @@ const partners: Partner[] = [
     plan: 'Platinum',
   },
   {
+    name: 'Bell',
+    logo: '/partners/bell_logo.png',
+    website: 'https://www.bell.ca/Accueil',
+    plan: 'Gold',
+  },
+  {
     name: 'Coveo',
     logo: '/partners/Logo Coveo.webp',
     website: 'https://www.coveo.com/fr',

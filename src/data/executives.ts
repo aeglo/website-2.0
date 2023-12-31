@@ -15,11 +15,11 @@ const executives: Executive[] = [
     img: '/executives/Christophe_Duchesne.jpeg',
   },
   {
-    name: 'Charles Viau',
+    name: 'Nicolas_Lauzon',
     title: 'Secrétaire-trésorier(e)',
     email: 'tresorier.aeglo@ift.ulaval.ca',
     desc: "Le secrétaire-trésorier est chargé d'effectuer les procès-verbaux lors des rencontres du CA, de gérer l'argent de l'association et de maintenir l'inventaire du local de l'AEGLO.",
-    img: '/executives/Charles_Viau.jpg',
+    img: '/executives/Nicolas_Lauzon.jpg',
   },
   {
     name: 'Xavier Hamel',
@@ -64,11 +64,11 @@ const executives: Executive[] = [
     img: '/executives/Samuel_Grenier.jpg',
   },
   {
-    name: 'Xavier Hamel',
+    name: 'Sébastien Dubé',
     title: 'Rep. première année',
     email: 'aeglo@aeglo.ift.ulaval.ca',
     desc: "Le représentant première année représente les intérêts des nouveaux arrivants dans le baccalauréat et s'occupe de leur intégration.",
-    img: '/executives/Xavier_Hamel.jpeg',
+    img: '/executives/placeholder.png',
   },
   {
     name: 'Loïc Boutet',

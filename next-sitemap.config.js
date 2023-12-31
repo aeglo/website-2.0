@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: "https://aeglo.ift.ulaval.ca/",
+    siteUrl: "https://aeglo.ca/",
     generateRobotsTxt: true,
 };
