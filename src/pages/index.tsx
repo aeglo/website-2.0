@@ -8,7 +8,6 @@ import {
   Heading,
   Img,
   Link,
-  SimpleGrid,
   Stack,
   Tab,
   TabList,
@@ -100,13 +99,17 @@ export default function Home({
   const [isGreaterThanXl] = useMediaQuery(`(min-width: ${breakpoints.xl})`);
 
   let slidesPerView = 1;
+  let eventsPerView = 1;
 
   if (isGreaterThanXl) {
     slidesPerView = 5;
+    eventsPerView = 3;
   } else if (isGreaterThanLg) {
     slidesPerView = 3;
+    eventsPerView = 2;
   } else if (isGreaterThanSm) {
     slidesPerView = 2;
+    eventsPerView = 2;
   }
 
   return (
@@ -161,77 +164,81 @@ export default function Home({
           >
             Événements à venir
           </Heading>
-          <SimpleGrid columns={{ base: 1, lg: 3 }} spacing="6rem">
-            {activities.map((activity) => (
-              <Flex
-                key={activity.name}
-                boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
-                justifyContent="left"
-                flexDirection="column"
-                overflow="hidden"
-                color="black"
-                backgroundColor="base.d100"
-                rounded="1.8rem"
-                padding="2.25rem"
-              >
-                <Stack>
-                  <Text
-                    color="secondary.default"
-                    fontSize={{ base: '1rem', lg: '2rem' }}
-                  >
-                    {getWeekdayFromDate(
-                      new Date(
-                        activity.date.year,
-                        activity.date.month - 1,
-                        activity.date.day,
-                      ),
-                      'fr',
-                    )}
-                  </Text>
-                  <Heading fontSize={{ base: '2.25rem', lg: '4rem' }}>
-                    {new Date(
-                      activity.date.year,
-                      activity.date.month - 1,
-                      activity.date.day,
-                    ).getDate()}
-                  </Heading>
-                  <Heading fontSize={{ base: '2.25rem', lg: '4rem' }}>
-                    {getMonthFromDate(
-                      new Date(
-                        activity.date.year,
-                        activity.date.month - 1,
-                        activity.date.day,
-                      ),
-                      'fr',
-                    )}
-                  </Heading>
-                  <Text
-                    fontSize={{ base: '1.25rem', lg: '2.25rem' }}
-                    fontWeight="semibold"
-                  >
-                    {activity.time}
-                  </Text>
-                  <Link
-                    as={NextLink}
-                    href={activity.link}
-                    color="secondary.default"
-                    fontSize={{ base: '1.5rem', lg: '3.25rem' }}
-                    fontWeight="semibold"
-                    _hover={{ textDecoration: 'none' }}
-                    isExternal
-                  >
-                    {activity.name}
-                  </Link>
-                  <Text
-                    fontSize={{ base: '1.25rem', lg: '2.25rem' }}
-                    fontWeight="semibold"
-                  >
-                    {activity.location}
-                  </Text>
-                </Stack>
-              </Flex>
-            ))}
-          </SimpleGrid>
+          <Box w="100%">
+            <Swiper
+              navigation
+              modules={[Navigation]}
+              slidesPerView={eventsPerView}
+              cssMode
+              style={{padding:"0 2.5rem 0 2.5rem"}}>
+                {activities.map((activity) => {
+                  
+                  let activityDate = new Date(
+                    activity.date.year,
+                    activity.date.month -1,
+                    activity.date.day,
+                  )
+                  
+                  return(
+                    <SwiperSlide 
+                      key={activity.name}
+                      style={{padding:"8px 0", height:"auto"}}
+                      >
+                      <Flex
+                        boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
+                        justifyContent="left"
+                        flexDirection="column"
+                        overflow="hidden"
+                        color="black"
+                        backgroundColor="base.d100"
+                        rounded="1.8rem"
+                        padding="2.25rem"
+                        margin="0 1rem"
+                        height="100%"
+                      >
+                    <Stack>
+                      <Text
+                        color="secondary.default"
+                        fontSize={{ base: '0.75rem', xl: '1.55rem' }}
+                      >
+                        {getWeekdayFromDate(activityDate, 'fr',)}
+                      </Text>
+                      <Heading fontSize={{ base: '1.875rem', xl: '3.08rem' }}>
+                        {activityDate.getDate()}
+                      </Heading>
+                      <Heading fontSize={{ base: '1.875rem', xl: '3.08rem' }}>
+                        {getMonthFromDate(activityDate, 'fr', )}
+                      </Heading>
+                      <Text
+                        fontSize={{ base: '1.05rem', xl: '1.75rem' }}
+                        fontWeight="semibold"
+                      >
+                        {activity.time}
+                      </Text>
+                      <Link
+                        as={NextLink}
+                        href={activity.link}
+                        color="secondary.default"
+                        fontSize={{ base: '1.25rem', xl: '2.5rem' }}
+                        fontWeight="semibold"
+                        _hover={{ textDecoration: 'none' }}
+                        isExternal
+                      >
+                        {activity.name}
+                      </Link>
+                      <Text
+                        fontSize={{ base: '1.05rem', xl: '1.75rem' }}
+                        fontWeight="semibold"
+                      >
+                        {activity.location}
+                      </Text>
+                    </Stack>
+                    </Flex>
+                  </SwiperSlide>
+                  )
+                })}
+            </Swiper>
+          </Box>
         </Flex>
 
         <Flex
