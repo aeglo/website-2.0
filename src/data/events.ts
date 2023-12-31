@@ -34,7 +34,6 @@ const events: Event[] = [
     location: 'Pavillon Alexandre-Vachon',
     link: '',
   },
-  
 ];
 
 export default events;
