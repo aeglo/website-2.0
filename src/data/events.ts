@@ -10,7 +10,6 @@ interface Event {
   link: string;
 }
 
-// Limited to 3 events in the code
 const events: Event[] = [
   {
     name: "Épluchette de blé d'Inde",
