@@ -64,7 +64,7 @@ const executives: Executive[] = [
     img: '/executives/placeholder.png',
   },
   {
-    name: 'Sébastien Dubé',
+    name: 'Loïck Asselin Lucas',
     title: 'Rep. première année',
     email: 'aeglo@aeglo.ift.ulaval.ca',
     desc: "Le représentant première année représente les intérêts des nouveaux arrivants dans le baccalauréat et s'occupe de leur intégration.",

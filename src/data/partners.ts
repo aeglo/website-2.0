@@ -16,19 +16,32 @@ const partners: Partner[] = [
     name: 'LFX Cabinet de services financiers',
     logo: '/partners/LFX_logo.jpg',
     website: 'https://www.teamlfx.com/',
-    plan: 'Platinum',
-  },
-  {
-    name: 'Bell',
-    logo: '/partners/bell_logo.png',
-    website: 'https://www.bell.ca/Accueil',
     plan: 'Gold',
   },
+
   {
     name: 'Coveo',
     logo: '/partners/Logo Coveo.webp',
     website: 'https://www.coveo.com/fr',
     plan: 'Gold',
+  },
+  {
+    name: 'Fondation Previan',
+    logo: '/partners/previan_logo.png',
+    website: 'https://previan.com/fr/fondation/',
+    plan: 'Silver',
+  },
+  {
+    name: 'Innovmetric',
+    logo: '/partners/innovmetric_logo.png',
+    website: 'https://www.innovmetric.com/fr',
+    plan: 'Silver',
+  },
+  {
+    name: 'Pizza Salvatoré',
+    logo: '/partners/salvatore_logo.png',
+    website: 'https://salvatore.com/fr/',
+    plan: 'Special',
   },
   {
     name: 'Guru',
