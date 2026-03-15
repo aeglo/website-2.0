@@ -12,25 +12,7 @@ const partners: Partner[] = [
     website: 'https://www.dialoginsight.com/',
     plan: 'Platinum',
   },
-  {
-    name: 'LFX Cabinet de services financiers',
-    logo: '/partners/LFX_logo.jpg',
-    website: 'https://www.teamlfx.com/',
-    plan: 'Gold',
-  },
 
-  {
-    name: 'Coveo',
-    logo: '/partners/Logo Coveo.webp',
-    website: 'https://www.coveo.com/fr',
-    plan: 'Gold',
-  },
-  {
-    name: 'Fondation Previan',
-    logo: '/partners/previan_logo.png',
-    website: 'https://previan.com/fr/fondation/',
-    plan: 'Silver',
-  },
   {
     name: 'Innovmetric',
     logo: '/partners/innovmetric_logo.png',
