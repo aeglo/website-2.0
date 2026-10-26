@@ -23,7 +23,7 @@ const executives: Executive[] = [
   },
   {
     name: 'Lamine Gueye',
-    title: 'Rep. aux communications',
+    title: 'Rep. aux commandites',
     email: 'communications@aeglo.ca',
     desc: 'Le représentant aux communications est responsable de transmettre l\'information pertinente aux membres via les différentes plateformes. Il est aussi responsable de la boîte courriel de l\'association et du site web.',
     img: '/executives/Lamine_Gueye.jpg',
