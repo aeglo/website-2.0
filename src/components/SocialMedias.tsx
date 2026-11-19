@@ -5,6 +5,8 @@ import DiscordIcon from '../icons/DiscordIcon';
 import FacebookIcon from '../icons/FacebookIcon';
 import GithubIcon from '../icons/GithubIcon';
 import LinkedInIcon from '../icons/LinkedInIcon';
+import MerchIcon from '../icons/MerchIcon';
+
 
 interface SocialMediasProps {
   direction: 'row' | 'column';
@@ -42,7 +44,7 @@ export default function SocialMedias({ direction, color }: SocialMediasProps) {
     {
       name: 'Merch',
       href: 'https://www.zeffy.com/fr-CA/ticketing/merch-aeglo',
-      icon: <GithubIcon boxSize={10} color={color === 'main' ? 'white' : 'darkSection'} />,
+      icon: <MerchIcon boxSize={10} color={color === 'main' ? 'white' : 'darkSection'} />,
     },
   ];
 
