@@ -37,7 +37,7 @@ const executives: Executive[] = [
   },
   {
     name: 'Miguel Bouffard',
-    title: 'Rep. aux affaires socioculturelles',
+    title: 'Rep. affaires socioculturelles',
     email: 'socioc@aeglo.ca',
     desc: 'Le représentant aux affaires socioculturelles est responsable d\'organiser les différentes activités sociales de l\'association.',
     img: '/executives/Miguel_Bouffard.jpg',
