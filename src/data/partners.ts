@@ -24,8 +24,7 @@ const partners: Partner[] = [
     website: 'https://www.innovmetric.com/fr',
     plan: 'Silver',
   },
-
-   {
+  {
     name: 'Mirego',
     logo: '/partners/mirego_logo.png',
     website: 'https://www.mirego.com/fr',
@@ -43,12 +42,7 @@ const partners: Partner[] = [
     website: 'https://salvatore.com/fr/',
     plan: 'Special',
   },
-  {
-    name: 'Guru',
-    logo: '/partners/guru_logo.png',
-    website: 'https://www.guruenergy.com/',
-    plan: 'Special',
-  },
+
 ];
 
 export default partners;
