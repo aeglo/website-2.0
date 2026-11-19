@@ -43,7 +43,7 @@ export default function SocialMedias({ direction, color }: SocialMediasProps) {
     {
       name: 'Merch',
       href: 'https://www.zeffy.com/fr-CA/ticketing/merch-aeglo',
-      icon: <MerchIcon boxSize={10} color={color === 'main' ? 'white' : 'darkSection'} />,
+      icon: <MerchIcon boxSize={8} color={color === 'main' ? 'white' : 'darkSection'} />,
     },
   ];
 
