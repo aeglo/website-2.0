@@ -7,7 +7,6 @@ import GithubIcon from '../icons/GithubIcon';
 import LinkedInIcon from '../icons/LinkedInIcon';
 import MerchIcon from '../icons/MerchIcon';
 
-
 interface SocialMediasProps {
   direction: 'row' | 'column';
   color: 'main' | 'white';
