@@ -42,7 +42,6 @@ const partners: Partner[] = [
     website: 'https://salvatore.com/fr/',
     plan: 'Special',
   },
-
 ];
 
 export default partners;
