@@ -140,7 +140,7 @@ export default function Home({
       </Head>
       <Layout>
         <Hero
-          img="home_banner.jpeg"
+          img="home_banner.jpg"
           title="AEGLO"
           subtitle={
             "Association des étudiants et étudiantes en\ngénie logiciel de l'Université Laval"
