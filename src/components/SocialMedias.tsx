@@ -39,7 +39,7 @@ export default function SocialMedias({ direction, color }: SocialMediasProps) {
       href: 'https://github.com/aeglo',
       icon: <GithubIcon boxSize={10} color={color === 'main' ? 'white' : 'darkSection'} />,
     },
-     {
+    {
       name: 'Merch',
       href: 'https://www.zeffy.com/fr-CA/ticketing/merch-aeglo',
       icon: <GithubIcon boxSize={10} color={color === 'main' ? 'white' : 'darkSection'} />,
