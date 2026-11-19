@@ -1,10 +1,10 @@
 import { Icon, IconProps } from '@chakra-ui/react';
 import React from 'react';
 
-interface TShirtIconProps extends IconProps {
+interface MerchIconProps extends IconProps {
 }
 
-export default function TShirtIcon({ color = '#4F46E5', ...props }: TShirtIconProps) {
+export default function MerchIcon({ color = '#4F46E5', ...props }: MerchIconProps) {
   return (
     <Icon viewBox="52 52 408 408" {...props}>
       <svg>
