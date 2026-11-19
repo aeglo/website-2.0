@@ -43,12 +43,7 @@ const partners: Partner[] = [
     website: 'https://salvatore.com/fr/',
     plan: 'Special',
   },
-  {
-    name: 'Guru',
-    logo: '/partners/guru_logo.png',
-    website: 'https://www.guruenergy.com/',
-    plan: 'Special',
-  },
+
 ];
 
 export default partners;
