@@ -23,7 +23,7 @@ const executives: Executive[] = [
   },
   {
     name: 'Lucie Lafoucriere',
-    title: 'Rep. aux communicaytion',
+    title: 'Rep. aux communications',
     email: 'communications@aeglo.ca',
     desc: 'La représentante aux communications est responsable de transmettre l\'information pertinente aux membres via les différentes plateformes. Elle est aussi responsable de la boîte courriel de l\'association et du site web.',
     img: '/executives/Lucie_Lafoucriere.jpg',
@@ -65,9 +65,9 @@ const executives: Executive[] = [
   },
   {
     name: 'William Dietz',
-    title: 'Rep. première année',
+    title: 'Rep. des premières années',
     email: 'premiere@aeglo.ca',
-    desc: 'Le représentant première année représente les intérêts des nouveaux arrivants dans le baccalauréat et s\'occupe de leur intégration.',
+    desc: 'Le représentant des premières années représente les intérêts des nouveaux arrivants dans le baccalauréat et s\'occupe de leur intégration.',
     img: '/executives/William_Dietz.jpg',
   },
   {
