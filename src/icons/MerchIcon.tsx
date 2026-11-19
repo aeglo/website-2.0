@@ -7,27 +7,10 @@ interface MerchIconProps extends IconProps {
 export default function MerchIcon({ color = '#4F46E5', ...props }: MerchIconProps) {
   return (
     <Icon viewBox="52 52 408 408" {...props}>
-      <svg>
-        <path
-          d="M176 64 L64 128 L100 208 L144 188 L144 440 Q144 448 152 448 L360 448 Q368 448 368 440 L368 188 L412 208 L448 128 L336 64 Q320 112 256 112 Q192 112 176 64 Z"
-          fill={color as string}
-        />
-        <path
-          d="M176 64 Q192 112 256 112 Q320 112 336 64"
-          fill="none"
-          stroke="#000"
-          strokeOpacity={0.35}
-          strokeWidth={12}
-          strokeLinecap="round"
-        />
-        <path
-          d="M144 188 L120 140 M368 188 L392 140 M150 424 H362"
-          fill="none"
-          stroke="#000"
-          strokeOpacity={0.25}
-          strokeWidth={8}
-          strokeLinecap="round"
-        />
+      <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.316 4.055C19.556 3.478 15 1.985 15 2a3 3 0 1 1-6 0c0-.015-4.556 1.478-6.317 
+        2.055A.992.992 0 0 0 2 5.003v3.716a1 1 0 0 0 1.242.97L6 9v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9l2.758.689A1 1 0 0 0 22 
+        8.719V5.003a.992.992 0 0 0-.684-.948z" />
       </svg>
     </Icon>
   );
